@@ -737,7 +737,7 @@ CREATE TABLE `api_user` (
 
 LOCK TABLES `api_user` WRITE;
 /*!40000 ALTER TABLE `api_user` DISABLE KEYS */;
-INSERT INTO `api_user` VALUES (1,'Light','Speed','moezjaffer@gmail.com','lightspeed','c85564a96bb62c30f5f4724c0a3573b1:Wi','2014-06-18 23:01:21','2014-06-19 03:01:20',0,0,1);
+INSERT INTO `api_user` VALUES (1,'Light','Speed','moezjaffer@gmail.com','lightspeed','c85564a96bb62c30f5f4724c0a3573b1:Wi','2014-06-18 23:36:35','2014-06-19 03:01:20',1748,0,1);
 /*!40000 ALTER TABLE `api_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -883,7 +883,7 @@ CREATE TABLE `catalog_category_entity` (
   PRIMARY KEY (`entity_id`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_LEVEL` (`level`),
   KEY `IDX_CATALOG_CATEGORY_ENTITY_PATH_ENTITY_ID` (`path`,`entity_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Table';
+) ENGINE=InnoDB AUTO_INCREMENT=155 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -892,8 +892,80 @@ CREATE TABLE `catalog_category_entity` (
 
 LOCK TABLES `catalog_category_entity` WRITE;
 /*!40000 ALTER TABLE `catalog_category_entity` DISABLE KEYS */;
-INSERT INTO `catalog_category_entity` VALUES (1,9,12,0,'2007-07-20 11:46:08','2007-08-07 02:50:15','1',1,0,1);
-INSERT INTO `catalog_category_entity` VALUES (3,9,12,1,'2007-08-22 08:54:41','2012-10-03 21:05:06','1/3',3,1,0);
+INSERT INTO `catalog_category_entity` VALUES (1,9,12,0,'2007-07-20 11:46:08','2007-08-07 02:50:15','1',1,0,73);
+INSERT INTO `catalog_category_entity` VALUES (3,9,12,1,'2007-08-22 08:54:41','2014-06-19 03:29:16','1/3',3,1,0);
+INSERT INTO `catalog_category_entity` VALUES (83,9,12,1,'2014-06-19 03:29:52','2014-06-19 03:29:52','1/83',4,1,71);
+INSERT INTO `catalog_category_entity` VALUES (84,9,12,83,'2014-06-19 03:29:55','2014-06-19 03:29:55','1/83/84',1,2,20);
+INSERT INTO `catalog_category_entity` VALUES (85,9,12,83,'2014-06-19 03:29:57','2014-06-19 03:29:57','1/83/85',2,2,3);
+INSERT INTO `catalog_category_entity` VALUES (86,9,12,83,'2014-06-19 03:30:00','2014-06-19 03:30:00','1/83/86',3,2,4);
+INSERT INTO `catalog_category_entity` VALUES (87,9,12,83,'2014-06-19 03:30:07','2014-06-19 03:30:07','1/83/87',4,2,3);
+INSERT INTO `catalog_category_entity` VALUES (88,9,12,83,'2014-06-19 03:30:09','2014-06-19 03:30:09','1/83/88',5,2,8);
+INSERT INTO `catalog_category_entity` VALUES (89,9,12,83,'2014-06-19 03:30:13','2014-06-19 03:30:13','1/83/89',6,2,13);
+INSERT INTO `catalog_category_entity` VALUES (90,9,12,83,'2014-06-19 03:30:16','2014-06-19 03:30:16','1/83/90',7,2,3);
+INSERT INTO `catalog_category_entity` VALUES (91,9,12,83,'2014-06-19 03:30:18','2014-06-19 03:30:18','1/83/91',8,2,2);
+INSERT INTO `catalog_category_entity` VALUES (92,9,12,83,'2014-06-19 03:30:22','2014-06-19 03:30:22','1/83/92',9,2,2);
+INSERT INTO `catalog_category_entity` VALUES (93,9,12,83,'2014-06-19 03:30:24','2014-06-19 03:30:24','1/83/93',10,2,0);
+INSERT INTO `catalog_category_entity` VALUES (94,9,12,83,'2014-06-19 03:30:26','2014-06-19 03:30:26','1/83/94',11,2,0);
+INSERT INTO `catalog_category_entity` VALUES (95,9,12,83,'2014-06-19 03:30:28','2014-06-19 03:30:28','1/83/95',12,2,0);
+INSERT INTO `catalog_category_entity` VALUES (96,9,12,83,'2014-06-19 03:30:31','2014-06-19 03:30:31','1/83/96',13,2,0);
+INSERT INTO `catalog_category_entity` VALUES (97,9,12,84,'2014-06-19 03:30:33','2014-06-19 03:30:33','1/83/84/97',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (98,9,12,84,'2014-06-19 03:30:35','2014-06-19 03:30:35','1/83/84/98',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (99,9,12,84,'2014-06-19 03:30:37','2014-06-19 03:30:37','1/83/84/99',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (100,9,12,84,'2014-06-19 03:30:39','2014-06-19 03:30:39','1/83/84/100',4,3,0);
+INSERT INTO `catalog_category_entity` VALUES (101,9,12,84,'2014-06-19 03:30:41','2014-06-19 03:30:41','1/83/84/101',5,3,0);
+INSERT INTO `catalog_category_entity` VALUES (102,9,12,84,'2014-06-19 03:30:43','2014-06-19 03:30:43','1/83/84/102',6,3,0);
+INSERT INTO `catalog_category_entity` VALUES (103,9,12,84,'2014-06-19 03:30:46','2014-06-19 03:30:46','1/83/84/103',7,3,0);
+INSERT INTO `catalog_category_entity` VALUES (104,9,12,84,'2014-06-19 03:30:48','2014-06-19 03:30:48','1/83/84/104',8,3,0);
+INSERT INTO `catalog_category_entity` VALUES (105,9,12,84,'2014-06-19 03:30:50','2014-06-19 03:30:50','1/83/84/105',9,3,0);
+INSERT INTO `catalog_category_entity` VALUES (106,9,12,84,'2014-06-19 03:30:53','2014-06-19 03:30:53','1/83/84/106',10,3,0);
+INSERT INTO `catalog_category_entity` VALUES (107,9,12,84,'2014-06-19 03:30:55','2014-06-19 03:30:55','1/83/84/107',11,3,0);
+INSERT INTO `catalog_category_entity` VALUES (108,9,12,84,'2014-06-19 03:30:57','2014-06-19 03:30:57','1/83/84/108',12,3,0);
+INSERT INTO `catalog_category_entity` VALUES (109,9,12,84,'2014-06-19 03:31:00','2014-06-19 03:31:00','1/83/84/109',13,3,0);
+INSERT INTO `catalog_category_entity` VALUES (110,9,12,84,'2014-06-19 03:31:02','2014-06-19 03:31:02','1/83/84/110',14,3,0);
+INSERT INTO `catalog_category_entity` VALUES (111,9,12,84,'2014-06-19 03:31:04','2014-06-19 03:31:04','1/83/84/111',15,3,0);
+INSERT INTO `catalog_category_entity` VALUES (112,9,12,84,'2014-06-19 03:31:07','2014-06-19 03:31:07','1/83/84/112',16,3,0);
+INSERT INTO `catalog_category_entity` VALUES (113,9,12,84,'2014-06-19 03:31:09','2014-06-19 03:31:09','1/83/84/113',17,3,0);
+INSERT INTO `catalog_category_entity` VALUES (114,9,12,84,'2014-06-19 03:31:10','2014-06-19 03:31:10','1/83/84/114',18,3,0);
+INSERT INTO `catalog_category_entity` VALUES (115,9,12,84,'2014-06-19 03:31:12','2014-06-19 03:31:12','1/83/84/115',19,3,0);
+INSERT INTO `catalog_category_entity` VALUES (116,9,12,84,'2014-06-19 03:31:14','2014-06-19 03:31:14','1/83/84/116',20,3,0);
+INSERT INTO `catalog_category_entity` VALUES (117,9,12,85,'2014-06-19 03:31:17','2014-06-19 03:31:17','1/83/85/117',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (118,9,12,85,'2014-06-19 03:31:19','2014-06-19 03:31:19','1/83/85/118',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (119,9,12,85,'2014-06-19 03:31:21','2014-06-19 03:31:21','1/83/85/119',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (120,9,12,86,'2014-06-19 03:31:22','2014-06-19 03:31:22','1/83/86/120',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (121,9,12,86,'2014-06-19 03:31:24','2014-06-19 03:31:24','1/83/86/121',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (122,9,12,86,'2014-06-19 03:31:27','2014-06-19 03:31:27','1/83/86/122',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (123,9,12,86,'2014-06-19 03:31:29','2014-06-19 03:31:29','1/83/86/123',4,3,0);
+INSERT INTO `catalog_category_entity` VALUES (124,9,12,87,'2014-06-19 03:31:30','2014-06-19 03:31:30','1/83/87/124',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (125,9,12,87,'2014-06-19 03:31:32','2014-06-19 03:31:32','1/83/87/125',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (126,9,12,87,'2014-06-19 03:31:34','2014-06-19 03:31:34','1/83/87/126',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (127,9,12,88,'2014-06-19 03:31:36','2014-06-19 03:31:36','1/83/88/127',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (128,9,12,88,'2014-06-19 03:31:39','2014-06-19 03:31:39','1/83/88/128',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (129,9,12,88,'2014-06-19 03:31:41','2014-06-19 03:31:41','1/83/88/129',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (130,9,12,88,'2014-06-19 03:31:43','2014-06-19 03:31:43','1/83/88/130',4,3,0);
+INSERT INTO `catalog_category_entity` VALUES (131,9,12,88,'2014-06-19 03:31:45','2014-06-19 03:31:45','1/83/88/131',5,3,0);
+INSERT INTO `catalog_category_entity` VALUES (132,9,12,88,'2014-06-19 03:31:47','2014-06-19 03:31:47','1/83/88/132',6,3,0);
+INSERT INTO `catalog_category_entity` VALUES (133,9,12,88,'2014-06-19 03:31:49','2014-06-19 03:31:49','1/83/88/133',7,3,0);
+INSERT INTO `catalog_category_entity` VALUES (134,9,12,88,'2014-06-19 03:31:52','2014-06-19 03:31:52','1/83/88/134',8,3,0);
+INSERT INTO `catalog_category_entity` VALUES (135,9,12,89,'2014-06-19 03:31:54','2014-06-19 03:31:54','1/83/89/135',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (136,9,12,89,'2014-06-19 03:31:56','2014-06-19 03:31:56','1/83/89/136',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (137,9,12,89,'2014-06-19 03:31:59','2014-06-19 03:31:59','1/83/89/137',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (138,9,12,89,'2014-06-19 03:32:01','2014-06-19 03:32:01','1/83/89/138',4,3,0);
+INSERT INTO `catalog_category_entity` VALUES (139,9,12,89,'2014-06-19 03:32:04','2014-06-19 03:32:04','1/83/89/139',5,3,0);
+INSERT INTO `catalog_category_entity` VALUES (140,9,12,89,'2014-06-19 03:32:06','2014-06-19 03:32:06','1/83/89/140',6,3,0);
+INSERT INTO `catalog_category_entity` VALUES (141,9,12,89,'2014-06-19 03:32:07','2014-06-19 03:32:07','1/83/89/141',7,3,0);
+INSERT INTO `catalog_category_entity` VALUES (142,9,12,89,'2014-06-19 03:32:09','2014-06-19 03:32:09','1/83/89/142',8,3,0);
+INSERT INTO `catalog_category_entity` VALUES (143,9,12,89,'2014-06-19 03:32:11','2014-06-19 03:32:11','1/83/89/143',9,3,0);
+INSERT INTO `catalog_category_entity` VALUES (144,9,12,89,'2014-06-19 03:32:13','2014-06-19 03:32:13','1/83/89/144',10,3,0);
+INSERT INTO `catalog_category_entity` VALUES (145,9,12,89,'2014-06-19 03:32:15','2014-06-19 03:32:15','1/83/89/145',11,3,0);
+INSERT INTO `catalog_category_entity` VALUES (146,9,12,89,'2014-06-19 03:32:18','2014-06-19 03:32:18','1/83/89/146',12,3,0);
+INSERT INTO `catalog_category_entity` VALUES (147,9,12,89,'2014-06-19 03:32:20','2014-06-19 03:32:20','1/83/89/147',13,3,0);
+INSERT INTO `catalog_category_entity` VALUES (148,9,12,90,'2014-06-19 03:32:23','2014-06-19 03:32:23','1/83/90/148',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (149,9,12,90,'2014-06-19 03:32:24','2014-06-19 03:32:24','1/83/90/149',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (150,9,12,90,'2014-06-19 03:32:26','2014-06-19 03:32:26','1/83/90/150',3,3,0);
+INSERT INTO `catalog_category_entity` VALUES (151,9,12,91,'2014-06-19 03:32:28','2014-06-19 03:32:28','1/83/91/151',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (152,9,12,91,'2014-06-19 03:32:30','2014-06-19 03:32:30','1/83/91/152',2,3,0);
+INSERT INTO `catalog_category_entity` VALUES (153,9,12,92,'2014-06-19 03:32:32','2014-06-19 03:32:32','1/83/92/153',1,3,0);
+INSERT INTO `catalog_category_entity` VALUES (154,9,12,92,'2014-06-19 03:32:34','2014-06-19 03:32:34','1/83/92/154',2,3,0);
 /*!40000 ALTER TABLE `catalog_category_entity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -919,7 +991,7 @@ CREATE TABLE `catalog_category_entity_datetime` (
   CONSTRAINT `FK_CATALOG_CATEGORY_ENTITY_DATETIME_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_DTIME_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_DTIME_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Datetime Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -990,7 +1062,7 @@ CREATE TABLE `catalog_category_entity_int` (
   CONSTRAINT `FK_CATALOG_CATEGORY_ENTITY_INT_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_INT_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_INT_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=235 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=524 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Integer Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1006,6 +1078,150 @@ INSERT INTO `catalog_category_entity_int` VALUES (78,9,934,0,3,1);
 INSERT INTO `catalog_category_entity_int` VALUES (171,9,117,0,3,NULL);
 INSERT INTO `catalog_category_entity_int` VALUES (172,9,120,0,3,0);
 INSERT INTO `catalog_category_entity_int` VALUES (173,9,938,0,3,0);
+INSERT INTO `catalog_category_entity_int` VALUES (380,9,119,0,83,1);
+INSERT INTO `catalog_category_entity_int` VALUES (381,9,934,0,83,1);
+INSERT INTO `catalog_category_entity_int` VALUES (382,9,119,0,84,1);
+INSERT INTO `catalog_category_entity_int` VALUES (383,9,934,0,84,1);
+INSERT INTO `catalog_category_entity_int` VALUES (384,9,119,0,85,1);
+INSERT INTO `catalog_category_entity_int` VALUES (385,9,934,0,85,1);
+INSERT INTO `catalog_category_entity_int` VALUES (386,9,119,0,86,1);
+INSERT INTO `catalog_category_entity_int` VALUES (387,9,934,0,86,1);
+INSERT INTO `catalog_category_entity_int` VALUES (388,9,119,0,87,1);
+INSERT INTO `catalog_category_entity_int` VALUES (389,9,934,0,87,1);
+INSERT INTO `catalog_category_entity_int` VALUES (390,9,119,0,88,1);
+INSERT INTO `catalog_category_entity_int` VALUES (391,9,934,0,88,1);
+INSERT INTO `catalog_category_entity_int` VALUES (392,9,119,0,89,1);
+INSERT INTO `catalog_category_entity_int` VALUES (393,9,934,0,89,1);
+INSERT INTO `catalog_category_entity_int` VALUES (394,9,119,0,90,1);
+INSERT INTO `catalog_category_entity_int` VALUES (395,9,934,0,90,1);
+INSERT INTO `catalog_category_entity_int` VALUES (396,9,119,0,91,1);
+INSERT INTO `catalog_category_entity_int` VALUES (397,9,934,0,91,1);
+INSERT INTO `catalog_category_entity_int` VALUES (398,9,119,0,92,1);
+INSERT INTO `catalog_category_entity_int` VALUES (399,9,934,0,92,1);
+INSERT INTO `catalog_category_entity_int` VALUES (400,9,119,0,93,1);
+INSERT INTO `catalog_category_entity_int` VALUES (401,9,934,0,93,1);
+INSERT INTO `catalog_category_entity_int` VALUES (402,9,119,0,94,1);
+INSERT INTO `catalog_category_entity_int` VALUES (403,9,934,0,94,1);
+INSERT INTO `catalog_category_entity_int` VALUES (404,9,119,0,95,1);
+INSERT INTO `catalog_category_entity_int` VALUES (405,9,934,0,95,1);
+INSERT INTO `catalog_category_entity_int` VALUES (406,9,119,0,96,1);
+INSERT INTO `catalog_category_entity_int` VALUES (407,9,934,0,96,1);
+INSERT INTO `catalog_category_entity_int` VALUES (408,9,119,0,97,1);
+INSERT INTO `catalog_category_entity_int` VALUES (409,9,934,0,97,1);
+INSERT INTO `catalog_category_entity_int` VALUES (410,9,119,0,98,1);
+INSERT INTO `catalog_category_entity_int` VALUES (411,9,934,0,98,1);
+INSERT INTO `catalog_category_entity_int` VALUES (412,9,119,0,99,1);
+INSERT INTO `catalog_category_entity_int` VALUES (413,9,934,0,99,1);
+INSERT INTO `catalog_category_entity_int` VALUES (414,9,119,0,100,1);
+INSERT INTO `catalog_category_entity_int` VALUES (415,9,934,0,100,1);
+INSERT INTO `catalog_category_entity_int` VALUES (416,9,119,0,101,1);
+INSERT INTO `catalog_category_entity_int` VALUES (417,9,934,0,101,1);
+INSERT INTO `catalog_category_entity_int` VALUES (418,9,119,0,102,1);
+INSERT INTO `catalog_category_entity_int` VALUES (419,9,934,0,102,1);
+INSERT INTO `catalog_category_entity_int` VALUES (420,9,119,0,103,1);
+INSERT INTO `catalog_category_entity_int` VALUES (421,9,934,0,103,1);
+INSERT INTO `catalog_category_entity_int` VALUES (422,9,119,0,104,1);
+INSERT INTO `catalog_category_entity_int` VALUES (423,9,934,0,104,1);
+INSERT INTO `catalog_category_entity_int` VALUES (424,9,119,0,105,1);
+INSERT INTO `catalog_category_entity_int` VALUES (425,9,934,0,105,1);
+INSERT INTO `catalog_category_entity_int` VALUES (426,9,119,0,106,1);
+INSERT INTO `catalog_category_entity_int` VALUES (427,9,934,0,106,1);
+INSERT INTO `catalog_category_entity_int` VALUES (428,9,119,0,107,1);
+INSERT INTO `catalog_category_entity_int` VALUES (429,9,934,0,107,1);
+INSERT INTO `catalog_category_entity_int` VALUES (430,9,119,0,108,1);
+INSERT INTO `catalog_category_entity_int` VALUES (431,9,934,0,108,1);
+INSERT INTO `catalog_category_entity_int` VALUES (432,9,119,0,109,1);
+INSERT INTO `catalog_category_entity_int` VALUES (433,9,934,0,109,1);
+INSERT INTO `catalog_category_entity_int` VALUES (434,9,119,0,110,1);
+INSERT INTO `catalog_category_entity_int` VALUES (435,9,934,0,110,1);
+INSERT INTO `catalog_category_entity_int` VALUES (436,9,119,0,111,1);
+INSERT INTO `catalog_category_entity_int` VALUES (437,9,934,0,111,1);
+INSERT INTO `catalog_category_entity_int` VALUES (438,9,119,0,112,1);
+INSERT INTO `catalog_category_entity_int` VALUES (439,9,934,0,112,1);
+INSERT INTO `catalog_category_entity_int` VALUES (440,9,119,0,113,1);
+INSERT INTO `catalog_category_entity_int` VALUES (441,9,934,0,113,1);
+INSERT INTO `catalog_category_entity_int` VALUES (442,9,119,0,114,1);
+INSERT INTO `catalog_category_entity_int` VALUES (443,9,934,0,114,1);
+INSERT INTO `catalog_category_entity_int` VALUES (444,9,119,0,115,1);
+INSERT INTO `catalog_category_entity_int` VALUES (445,9,934,0,115,1);
+INSERT INTO `catalog_category_entity_int` VALUES (446,9,119,0,116,1);
+INSERT INTO `catalog_category_entity_int` VALUES (447,9,934,0,116,1);
+INSERT INTO `catalog_category_entity_int` VALUES (448,9,119,0,117,1);
+INSERT INTO `catalog_category_entity_int` VALUES (449,9,934,0,117,1);
+INSERT INTO `catalog_category_entity_int` VALUES (450,9,119,0,118,1);
+INSERT INTO `catalog_category_entity_int` VALUES (451,9,934,0,118,1);
+INSERT INTO `catalog_category_entity_int` VALUES (452,9,119,0,119,1);
+INSERT INTO `catalog_category_entity_int` VALUES (453,9,934,0,119,1);
+INSERT INTO `catalog_category_entity_int` VALUES (454,9,119,0,120,1);
+INSERT INTO `catalog_category_entity_int` VALUES (455,9,934,0,120,1);
+INSERT INTO `catalog_category_entity_int` VALUES (456,9,119,0,121,1);
+INSERT INTO `catalog_category_entity_int` VALUES (457,9,934,0,121,1);
+INSERT INTO `catalog_category_entity_int` VALUES (458,9,119,0,122,1);
+INSERT INTO `catalog_category_entity_int` VALUES (459,9,934,0,122,1);
+INSERT INTO `catalog_category_entity_int` VALUES (460,9,119,0,123,1);
+INSERT INTO `catalog_category_entity_int` VALUES (461,9,934,0,123,1);
+INSERT INTO `catalog_category_entity_int` VALUES (462,9,119,0,124,1);
+INSERT INTO `catalog_category_entity_int` VALUES (463,9,934,0,124,1);
+INSERT INTO `catalog_category_entity_int` VALUES (464,9,119,0,125,1);
+INSERT INTO `catalog_category_entity_int` VALUES (465,9,934,0,125,1);
+INSERT INTO `catalog_category_entity_int` VALUES (466,9,119,0,126,1);
+INSERT INTO `catalog_category_entity_int` VALUES (467,9,934,0,126,1);
+INSERT INTO `catalog_category_entity_int` VALUES (468,9,119,0,127,1);
+INSERT INTO `catalog_category_entity_int` VALUES (469,9,934,0,127,1);
+INSERT INTO `catalog_category_entity_int` VALUES (470,9,119,0,128,1);
+INSERT INTO `catalog_category_entity_int` VALUES (471,9,934,0,128,1);
+INSERT INTO `catalog_category_entity_int` VALUES (472,9,119,0,129,1);
+INSERT INTO `catalog_category_entity_int` VALUES (473,9,934,0,129,1);
+INSERT INTO `catalog_category_entity_int` VALUES (474,9,119,0,130,1);
+INSERT INTO `catalog_category_entity_int` VALUES (475,9,934,0,130,1);
+INSERT INTO `catalog_category_entity_int` VALUES (476,9,119,0,131,1);
+INSERT INTO `catalog_category_entity_int` VALUES (477,9,934,0,131,1);
+INSERT INTO `catalog_category_entity_int` VALUES (478,9,119,0,132,1);
+INSERT INTO `catalog_category_entity_int` VALUES (479,9,934,0,132,1);
+INSERT INTO `catalog_category_entity_int` VALUES (480,9,119,0,133,1);
+INSERT INTO `catalog_category_entity_int` VALUES (481,9,934,0,133,1);
+INSERT INTO `catalog_category_entity_int` VALUES (482,9,119,0,134,1);
+INSERT INTO `catalog_category_entity_int` VALUES (483,9,934,0,134,1);
+INSERT INTO `catalog_category_entity_int` VALUES (484,9,119,0,135,1);
+INSERT INTO `catalog_category_entity_int` VALUES (485,9,934,0,135,1);
+INSERT INTO `catalog_category_entity_int` VALUES (486,9,119,0,136,1);
+INSERT INTO `catalog_category_entity_int` VALUES (487,9,934,0,136,1);
+INSERT INTO `catalog_category_entity_int` VALUES (488,9,119,0,137,1);
+INSERT INTO `catalog_category_entity_int` VALUES (489,9,934,0,137,1);
+INSERT INTO `catalog_category_entity_int` VALUES (490,9,119,0,138,1);
+INSERT INTO `catalog_category_entity_int` VALUES (491,9,934,0,138,1);
+INSERT INTO `catalog_category_entity_int` VALUES (492,9,119,0,139,1);
+INSERT INTO `catalog_category_entity_int` VALUES (493,9,934,0,139,1);
+INSERT INTO `catalog_category_entity_int` VALUES (494,9,119,0,140,1);
+INSERT INTO `catalog_category_entity_int` VALUES (495,9,934,0,140,1);
+INSERT INTO `catalog_category_entity_int` VALUES (496,9,119,0,141,1);
+INSERT INTO `catalog_category_entity_int` VALUES (497,9,934,0,141,1);
+INSERT INTO `catalog_category_entity_int` VALUES (498,9,119,0,142,1);
+INSERT INTO `catalog_category_entity_int` VALUES (499,9,934,0,142,1);
+INSERT INTO `catalog_category_entity_int` VALUES (500,9,119,0,143,1);
+INSERT INTO `catalog_category_entity_int` VALUES (501,9,934,0,143,1);
+INSERT INTO `catalog_category_entity_int` VALUES (502,9,119,0,144,1);
+INSERT INTO `catalog_category_entity_int` VALUES (503,9,934,0,144,1);
+INSERT INTO `catalog_category_entity_int` VALUES (504,9,119,0,145,1);
+INSERT INTO `catalog_category_entity_int` VALUES (505,9,934,0,145,1);
+INSERT INTO `catalog_category_entity_int` VALUES (506,9,119,0,146,1);
+INSERT INTO `catalog_category_entity_int` VALUES (507,9,934,0,146,1);
+INSERT INTO `catalog_category_entity_int` VALUES (508,9,119,0,147,1);
+INSERT INTO `catalog_category_entity_int` VALUES (509,9,934,0,147,1);
+INSERT INTO `catalog_category_entity_int` VALUES (510,9,119,0,148,1);
+INSERT INTO `catalog_category_entity_int` VALUES (511,9,934,0,148,1);
+INSERT INTO `catalog_category_entity_int` VALUES (512,9,119,0,149,1);
+INSERT INTO `catalog_category_entity_int` VALUES (513,9,934,0,149,1);
+INSERT INTO `catalog_category_entity_int` VALUES (514,9,119,0,150,1);
+INSERT INTO `catalog_category_entity_int` VALUES (515,9,934,0,150,1);
+INSERT INTO `catalog_category_entity_int` VALUES (516,9,119,0,151,1);
+INSERT INTO `catalog_category_entity_int` VALUES (517,9,934,0,151,1);
+INSERT INTO `catalog_category_entity_int` VALUES (518,9,119,0,152,1);
+INSERT INTO `catalog_category_entity_int` VALUES (519,9,934,0,152,1);
+INSERT INTO `catalog_category_entity_int` VALUES (520,9,119,0,153,1);
+INSERT INTO `catalog_category_entity_int` VALUES (521,9,934,0,153,1);
+INSERT INTO `catalog_category_entity_int` VALUES (522,9,119,0,154,1);
+INSERT INTO `catalog_category_entity_int` VALUES (523,9,934,0,154,1);
 /*!40000 ALTER TABLE `catalog_category_entity_int` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1031,7 +1247,7 @@ CREATE TABLE `catalog_category_entity_text` (
   CONSTRAINT `FK_CATALOG_CATEGORY_ENTITY_TEXT_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_TEXT_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_TEXT_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=221 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=370 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Text Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1048,6 +1264,78 @@ INSERT INTO `catalog_category_entity_text` VALUES (148,9,115,0,3,NULL);
 INSERT INTO `catalog_category_entity_text` VALUES (149,9,116,0,3,NULL);
 INSERT INTO `catalog_category_entity_text` VALUES (150,9,530,0,3,NULL);
 INSERT INTO `catalog_category_entity_text` VALUES (151,9,929,0,3,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (298,9,929,0,83,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (299,9,929,0,84,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (300,9,929,0,85,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (301,9,929,0,86,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (302,9,929,0,87,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (303,9,929,0,88,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (304,9,929,0,89,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (305,9,929,0,90,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (306,9,929,0,91,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (307,9,929,0,92,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (308,9,929,0,93,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (309,9,929,0,94,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (310,9,929,0,95,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (311,9,929,0,96,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (312,9,929,0,97,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (313,9,929,0,98,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (314,9,929,0,99,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (315,9,929,0,100,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (316,9,929,0,101,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (317,9,929,0,102,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (318,9,929,0,103,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (319,9,929,0,104,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (320,9,929,0,105,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (321,9,929,0,106,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (322,9,929,0,107,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (323,9,929,0,108,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (324,9,929,0,109,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (325,9,929,0,110,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (326,9,929,0,111,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (327,9,929,0,112,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (328,9,929,0,113,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (329,9,929,0,114,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (330,9,929,0,115,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (331,9,929,0,116,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (332,9,929,0,117,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (333,9,929,0,118,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (334,9,929,0,119,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (335,9,929,0,120,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (336,9,929,0,121,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (337,9,929,0,122,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (338,9,929,0,123,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (339,9,929,0,124,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (340,9,929,0,125,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (341,9,929,0,126,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (342,9,929,0,127,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (343,9,929,0,128,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (344,9,929,0,129,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (345,9,929,0,130,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (346,9,929,0,131,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (347,9,929,0,132,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (348,9,929,0,133,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (349,9,929,0,134,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (350,9,929,0,135,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (351,9,929,0,136,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (352,9,929,0,137,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (353,9,929,0,138,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (354,9,929,0,139,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (355,9,929,0,140,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (356,9,929,0,141,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (357,9,929,0,142,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (358,9,929,0,143,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (359,9,929,0,144,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (360,9,929,0,145,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (361,9,929,0,146,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (362,9,929,0,147,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (363,9,929,0,148,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (364,9,929,0,149,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (365,9,929,0,150,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (366,9,929,0,151,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (367,9,929,0,152,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (368,9,929,0,153,NULL);
+INSERT INTO `catalog_category_entity_text` VALUES (369,9,929,0,154,NULL);
 /*!40000 ALTER TABLE `catalog_category_entity_text` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1073,7 +1361,7 @@ CREATE TABLE `catalog_category_entity_varchar` (
   CONSTRAINT `FK_CATALOG_CATEGORY_ENTITY_VARCHAR_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_VCHR_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_VCHR_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=293 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=664 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1088,6 +1376,222 @@ INSERT INTO `catalog_category_entity_varchar` VALUES (3,9,479,0,3,'root-catalog'
 INSERT INTO `catalog_category_entity_varchar` VALUES (205,9,114,0,3,NULL);
 INSERT INTO `catalog_category_entity_varchar` VALUES (206,9,563,0,3,NULL);
 INSERT INTO `catalog_category_entity_varchar` VALUES (207,9,514,0,3,NULL);
+INSERT INTO `catalog_category_entity_varchar` VALUES (448,9,111,0,83,'LIGHTSPEED_ROOT_CATEGORY');
+INSERT INTO `catalog_category_entity_varchar` VALUES (449,9,930,0,83,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (450,9,479,0,83,'lightspeed-root-category');
+INSERT INTO `catalog_category_entity_varchar` VALUES (451,9,111,0,84,'Supplies');
+INSERT INTO `catalog_category_entity_varchar` VALUES (452,9,930,0,84,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (453,9,479,0,84,'supplies');
+INSERT INTO `catalog_category_entity_varchar` VALUES (454,9,111,0,85,'Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (455,9,930,0,85,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (456,9,479,0,85,'beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (457,9,111,0,86,'Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (458,9,930,0,86,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (459,9,479,0,86,'wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (460,9,111,0,87,'Leather & Chain ');
+INSERT INTO `catalog_category_entity_varchar` VALUES (461,9,930,0,87,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (462,9,479,0,87,'leather-chain');
+INSERT INTO `catalog_category_entity_varchar` VALUES (463,9,111,0,88,'Findings');
+INSERT INTO `catalog_category_entity_varchar` VALUES (464,9,930,0,88,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (465,9,479,0,88,'findings');
+INSERT INTO `catalog_category_entity_varchar` VALUES (466,9,111,0,89,'Seed Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (467,9,930,0,89,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (468,9,479,0,89,'seed-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (469,9,111,0,90,'Bead Strands');
+INSERT INTO `catalog_category_entity_varchar` VALUES (470,9,930,0,90,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (471,9,479,0,90,'bead-strands');
+INSERT INTO `catalog_category_entity_varchar` VALUES (472,9,111,0,91,'Tools');
+INSERT INTO `catalog_category_entity_varchar` VALUES (473,9,930,0,91,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (474,9,479,0,91,'tools');
+INSERT INTO `catalog_category_entity_varchar` VALUES (475,9,111,0,92,'Shop by Brand');
+INSERT INTO `catalog_category_entity_varchar` VALUES (476,9,930,0,92,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (477,9,479,0,92,'shop-by-brand');
+INSERT INTO `catalog_category_entity_varchar` VALUES (478,9,111,0,93,'Pewter');
+INSERT INTO `catalog_category_entity_varchar` VALUES (479,9,930,0,93,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (480,9,479,0,93,'pewter');
+INSERT INTO `catalog_category_entity_varchar` VALUES (481,9,111,0,94,'Pendants & Charms');
+INSERT INTO `catalog_category_entity_varchar` VALUES (482,9,930,0,94,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (483,9,479,0,94,'pendants-charms');
+INSERT INTO `catalog_category_entity_varchar` VALUES (484,9,111,0,95,'Preciosa');
+INSERT INTO `catalog_category_entity_varchar` VALUES (485,9,930,0,95,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (486,9,479,0,95,'preciosa');
+INSERT INTO `catalog_category_entity_varchar` VALUES (487,9,111,0,96,'Buttons');
+INSERT INTO `catalog_category_entity_varchar` VALUES (488,9,930,0,96,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (489,9,479,0,96,'buttons');
+INSERT INTO `catalog_category_entity_varchar` VALUES (490,9,111,0,97,'Adhesives');
+INSERT INTO `catalog_category_entity_varchar` VALUES (491,9,930,0,97,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (492,9,479,0,97,'adhesives');
+INSERT INTO `catalog_category_entity_varchar` VALUES (493,9,111,0,98,'Beading Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (494,9,930,0,98,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (495,9,479,0,98,'beading-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (496,9,111,0,99,'Books & Dvds');
+INSERT INTO `catalog_category_entity_varchar` VALUES (497,9,930,0,99,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (498,9,479,0,99,'books-dvds');
+INSERT INTO `catalog_category_entity_varchar` VALUES (499,9,111,0,100,'C-Lon');
+INSERT INTO `catalog_category_entity_varchar` VALUES (500,9,930,0,100,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (501,9,479,0,100,'c-lon');
+INSERT INTO `catalog_category_entity_varchar` VALUES (502,9,111,0,101,'Chinese Knotting Cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (503,9,930,0,101,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (504,9,479,0,101,'chinese-knotting-cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (505,9,111,0,102,'Fireline');
+INSERT INTO `catalog_category_entity_varchar` VALUES (506,9,930,0,102,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (507,9,479,0,102,'fireline');
+INSERT INTO `catalog_category_entity_varchar` VALUES (508,9,111,0,103,'French Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (509,9,930,0,103,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (510,9,479,0,103,'french-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (511,9,111,0,104,'Griffin Silk');
+INSERT INTO `catalog_category_entity_varchar` VALUES (512,9,930,0,104,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (513,9,479,0,104,'griffin-silk');
+INSERT INTO `catalog_category_entity_varchar` VALUES (514,9,111,0,105,'K/O Thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (515,9,930,0,105,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (516,9,479,0,105,'k-o-thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (517,9,111,0,106,'Kumihimo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (518,9,930,0,106,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (519,9,479,0,106,'kumihimo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (520,9,111,0,107,'Metallic Thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (521,9,930,0,107,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (522,9,479,0,107,'metallic-thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (523,9,111,0,108,'Nymo Thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (524,9,930,0,108,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (525,9,479,0,108,'nymo-thread');
+INSERT INTO `catalog_category_entity_varchar` VALUES (526,9,111,0,109,'Parachute Cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (527,9,930,0,109,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (528,9,479,0,109,'parachute-cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (529,9,111,0,110,'Patina');
+INSERT INTO `catalog_category_entity_varchar` VALUES (530,9,930,0,110,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (531,9,479,0,110,'patina');
+INSERT INTO `catalog_category_entity_varchar` VALUES (532,9,111,0,111,'Pearl Cotton');
+INSERT INTO `catalog_category_entity_varchar` VALUES (533,9,930,0,111,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (534,9,479,0,111,'pearl-cotton');
+INSERT INTO `catalog_category_entity_varchar` VALUES (535,9,111,0,112,'Satin Rat Tail');
+INSERT INTO `catalog_category_entity_varchar` VALUES (536,9,930,0,112,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (537,9,479,0,112,'satin-rat-tail');
+INSERT INTO `catalog_category_entity_varchar` VALUES (538,9,111,0,113,'Silk Ribbon');
+INSERT INTO `catalog_category_entity_varchar` VALUES (539,9,930,0,113,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (540,9,479,0,113,'silk-ribbon');
+INSERT INTO `catalog_category_entity_varchar` VALUES (541,9,111,0,114,'Soutache');
+INSERT INTO `catalog_category_entity_varchar` VALUES (542,9,930,0,114,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (543,9,479,0,114,'soutache');
+INSERT INTO `catalog_category_entity_varchar` VALUES (544,9,111,0,115,'Stretch Cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (545,9,930,0,115,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (546,9,479,0,115,'stretch-cord');
+INSERT INTO `catalog_category_entity_varchar` VALUES (547,9,111,0,116,'Wire Lace');
+INSERT INTO `catalog_category_entity_varchar` VALUES (548,9,930,0,116,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (549,9,479,0,116,'wire-lace');
+INSERT INTO `catalog_category_entity_varchar` VALUES (550,9,111,0,117,'Alphabet Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (551,9,930,0,117,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (552,9,479,0,117,'alphabet-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (553,9,111,0,118,'Metal');
+INSERT INTO `catalog_category_entity_varchar` VALUES (554,9,930,0,118,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (555,9,479,0,118,'metal');
+INSERT INTO `catalog_category_entity_varchar` VALUES (556,9,111,0,119,'Mirage Mood Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (557,9,930,0,119,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (558,9,479,0,119,'mirage-mood-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (559,9,111,0,120,'Aluminum Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (560,9,930,0,120,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (561,9,479,0,120,'aluminum-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (562,9,111,0,121,'Artistic Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (563,9,930,0,121,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (564,9,479,0,121,'artistic-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (565,9,111,0,122,'Craft Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (566,9,930,0,122,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (567,9,479,0,122,'craft-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (568,9,111,0,123,'Memory Wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (569,9,930,0,123,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (570,9,479,0,123,'memory-wire');
+INSERT INTO `catalog_category_entity_varchar` VALUES (571,9,111,0,124,'Chain');
+INSERT INTO `catalog_category_entity_varchar` VALUES (572,9,930,0,124,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (573,9,479,0,124,'chain');
+INSERT INTO `catalog_category_entity_varchar` VALUES (574,9,111,0,125,'Crystal Chain');
+INSERT INTO `catalog_category_entity_varchar` VALUES (575,9,930,0,125,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (576,9,479,0,125,'crystal-chain');
+INSERT INTO `catalog_category_entity_varchar` VALUES (577,9,111,0,126,'Sterling Silver');
+INSERT INTO `catalog_category_entity_varchar` VALUES (578,9,930,0,126,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (579,9,479,0,126,'sterling-silver');
+INSERT INTO `catalog_category_entity_varchar` VALUES (580,9,111,0,127,'Crimp Tube');
+INSERT INTO `catalog_category_entity_varchar` VALUES (581,9,930,0,127,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (582,9,479,0,127,'crimp-tube');
+INSERT INTO `catalog_category_entity_varchar` VALUES (583,9,111,0,128,'Earring Components');
+INSERT INTO `catalog_category_entity_varchar` VALUES (584,9,930,0,128,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (585,9,479,0,128,'earring-components');
+INSERT INTO `catalog_category_entity_varchar` VALUES (586,9,111,0,129,'Fancy Clasp');
+INSERT INTO `catalog_category_entity_varchar` VALUES (587,9,930,0,129,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (588,9,479,0,129,'fancy-clasp');
+INSERT INTO `catalog_category_entity_varchar` VALUES (589,9,111,0,130,'Hill Tribe Sterling');
+INSERT INTO `catalog_category_entity_varchar` VALUES (590,9,930,0,130,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (591,9,479,0,130,'hill-tribe-sterling');
+INSERT INTO `catalog_category_entity_varchar` VALUES (592,9,111,0,131,'Pewter');
+INSERT INTO `catalog_category_entity_varchar` VALUES (593,9,930,0,131,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (594,9,479,0,131,'pewter');
+INSERT INTO `catalog_category_entity_varchar` VALUES (595,9,111,0,132,'Specialty Toggles');
+INSERT INTO `catalog_category_entity_varchar` VALUES (596,9,930,0,132,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (597,9,479,0,132,'specialty-toggles');
+INSERT INTO `catalog_category_entity_varchar` VALUES (598,9,111,0,133,'Sterling Silver');
+INSERT INTO `catalog_category_entity_varchar` VALUES (599,9,930,0,133,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (600,9,479,0,133,'sterling-silver');
+INSERT INTO `catalog_category_entity_varchar` VALUES (601,9,111,0,134,'Vermeil');
+INSERT INTO `catalog_category_entity_varchar` VALUES (602,9,930,0,134,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (603,9,479,0,134,'vermeil');
+INSERT INTO `catalog_category_entity_varchar` VALUES (604,9,111,0,135,'Cube');
+INSERT INTO `catalog_category_entity_varchar` VALUES (605,9,930,0,135,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (606,9,479,0,135,'cube');
+INSERT INTO `catalog_category_entity_varchar` VALUES (607,9,111,0,136,'Long Drop');
+INSERT INTO `catalog_category_entity_varchar` VALUES (608,9,930,0,136,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (609,9,479,0,136,'long-drop');
+INSERT INTO `catalog_category_entity_varchar` VALUES (610,9,111,0,137,'Magatama');
+INSERT INTO `catalog_category_entity_varchar` VALUES (611,9,930,0,137,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (612,9,479,0,137,'magatama');
+INSERT INTO `catalog_category_entity_varchar` VALUES (613,9,111,0,138,'Miyuki');
+INSERT INTO `catalog_category_entity_varchar` VALUES (614,9,930,0,138,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (615,9,479,0,138,'miyuki');
+INSERT INTO `catalog_category_entity_varchar` VALUES (616,9,111,0,139,'Peanut');
+INSERT INTO `catalog_category_entity_varchar` VALUES (617,9,930,0,139,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (618,9,479,0,139,'peanut');
+INSERT INTO `catalog_category_entity_varchar` VALUES (619,9,111,0,140,'Rizo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (620,9,930,0,140,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (621,9,479,0,140,'rizo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (622,9,111,0,141,'Rulla');
+INSERT INTO `catalog_category_entity_varchar` VALUES (623,9,930,0,141,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (624,9,479,0,141,'rulla');
+INSERT INTO `catalog_category_entity_varchar` VALUES (625,9,111,0,142,'Superduo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (626,9,930,0,142,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (627,9,479,0,142,'superduo');
+INSERT INTO `catalog_category_entity_varchar` VALUES (628,9,111,0,143,'Superuno');
+INSERT INTO `catalog_category_entity_varchar` VALUES (629,9,930,0,143,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (630,9,479,0,143,'superuno');
+INSERT INTO `catalog_category_entity_varchar` VALUES (631,9,111,0,144,'Tila');
+INSERT INTO `catalog_category_entity_varchar` VALUES (632,9,930,0,144,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (633,9,479,0,144,'tila');
+INSERT INTO `catalog_category_entity_varchar` VALUES (634,9,111,0,145,'Tila 1/2 Cut');
+INSERT INTO `catalog_category_entity_varchar` VALUES (635,9,930,0,145,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (636,9,479,0,145,'tila-1-2-cut');
+INSERT INTO `catalog_category_entity_varchar` VALUES (637,9,111,0,146,'Triangle');
+INSERT INTO `catalog_category_entity_varchar` VALUES (638,9,930,0,146,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (639,9,479,0,146,'triangle');
+INSERT INTO `catalog_category_entity_varchar` VALUES (640,9,111,0,147,'Twin Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (641,9,930,0,147,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (642,9,479,0,147,'twin-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (643,9,111,0,148,'High End Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (644,9,930,0,148,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (645,9,479,0,148,'high-end-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (646,9,111,0,149,'Neon Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (647,9,930,0,149,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (648,9,479,0,149,'neon-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (649,9,111,0,150,'Vintage Beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (650,9,930,0,150,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (651,9,479,0,150,'vintage-beads');
+INSERT INTO `catalog_category_entity_varchar` VALUES (652,9,111,0,151,'Needles');
+INSERT INTO `catalog_category_entity_varchar` VALUES (653,9,930,0,151,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (654,9,479,0,151,'needles');
+INSERT INTO `catalog_category_entity_varchar` VALUES (655,9,111,0,152,'Vintaj');
+INSERT INTO `catalog_category_entity_varchar` VALUES (656,9,930,0,152,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (657,9,479,0,152,'vintaj');
+INSERT INTO `catalog_category_entity_varchar` VALUES (658,9,111,0,153,'Nunn Designs');
+INSERT INTO `catalog_category_entity_varchar` VALUES (659,9,930,0,153,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (660,9,479,0,153,'nunn-designs');
+INSERT INTO `catalog_category_entity_varchar` VALUES (661,9,111,0,154,'Patricia Healey');
+INSERT INTO `catalog_category_entity_varchar` VALUES (662,9,930,0,154,'None');
+INSERT INTO `catalog_category_entity_varchar` VALUES (663,9,479,0,154,'patricia-healey');
 /*!40000 ALTER TABLE `catalog_category_entity_varchar` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1214,8 +1718,6 @@ CREATE TABLE `catalog_category_flat_store_2` (
 
 LOCK TABLES `catalog_category_flat_store_2` WRITE;
 /*!40000 ALTER TABLE `catalog_category_flat_store_2` DISABLE KEYS */;
-INSERT INTO `catalog_category_flat_store_2` VALUES (1,0,'2007-07-20 11:46:08','2007-08-07 02:50:15','1',1,0,6,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `catalog_category_flat_store_2` VALUES (3,1,'2007-08-22 08:54:41','2012-10-03 21:05:06','1/3',3,1,5,2,'3,18,4,5,16,17,19,24,10,22,23,13,8,12,26,25,15,20',NULL,'18,10,13,20',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'PRODUCTS',NULL,NULL,1,1,0,NULL,NULL,NULL,NULL,'Root Catalog',NULL,'',NULL,'root-catalog',NULL);
 /*!40000 ALTER TABLE `catalog_category_flat_store_2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1278,8 +1780,6 @@ CREATE TABLE `catalog_category_flat_store_3` (
 
 LOCK TABLES `catalog_category_flat_store_3` WRITE;
 /*!40000 ALTER TABLE `catalog_category_flat_store_3` DISABLE KEYS */;
-INSERT INTO `catalog_category_flat_store_3` VALUES (1,0,'2007-07-20 11:46:08','2007-08-07 02:50:15','1',1,0,6,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO `catalog_category_flat_store_3` VALUES (3,1,'2007-08-22 08:54:41','2012-10-03 21:05:06','1/3',3,1,5,3,'3,18,4,5,16,17,19,24,10,22,23,13,8,12,26,25,15,20',NULL,'18,10,13,20',0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'PRODUCTS',NULL,NULL,1,1,0,NULL,NULL,NULL,NULL,'Root Catalog',NULL,'',NULL,'root-catalog',NULL);
 /*!40000 ALTER TABLE `catalog_category_flat_store_3` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1635,6 +2135,8 @@ INSERT INTO `catalog_eav_attribute` VALUES (952,NULL,1,0,0,0,0,0,0,0,0,1,0,0,'do
 INSERT INTO `catalog_eav_attribute` VALUES (953,NULL,0,1,0,0,0,0,0,0,0,0,0,1,NULL,0,0,0,0);
 INSERT INTO `catalog_eav_attribute` VALUES (960,NULL,2,1,0,0,0,0,0,0,0,0,0,1,'simple,configurable,virtual,bundle,downloadable',0,0,0,0);
 INSERT INTO `catalog_eav_attribute` VALUES (961,NULL,1,1,0,0,0,0,0,0,0,0,0,1,NULL,0,0,0,0);
+INSERT INTO `catalog_eav_attribute` VALUES (962,NULL,1,1,0,0,0,0,0,0,0,0,0,1,NULL,0,0,0,0);
+INSERT INTO `catalog_eav_attribute` VALUES (963,NULL,1,1,0,0,0,0,0,0,0,0,0,1,NULL,0,0,0,0);
 /*!40000 ALTER TABLE `catalog_eav_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2590,242 +3092,6 @@ CREATE TABLE `catalog_product_flat_1` (
 LOCK TABLES `catalog_product_flat_1` WRITE;
 /*!40000 ALTER TABLE `catalog_product_flat_1` DISABLE KEYS */;
 /*!40000 ALTER TABLE `catalog_product_flat_1` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `catalog_product_flat_2`
---
-
-DROP TABLE IF EXISTS `catalog_product_flat_2`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `catalog_product_flat_2` (
-  `entity_id` int(10) unsigned NOT NULL COMMENT 'Entity Id',
-  `attribute_set_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Attribute Set Id',
-  `type_id` varchar(32) NOT NULL DEFAULT 'simple' COMMENT 'Type Id',
-  `activation_information` text COMMENT 'Activation Information',
-  `color` int(11) DEFAULT NULL COMMENT 'Color',
-  `color_value` varchar(255) DEFAULT NULL COMMENT 'Color Value',
-  `computer_manufacturers` int(11) DEFAULT NULL COMMENT 'Computer Manufacturers',
-  `computer_manufacturers_value` varchar(255) DEFAULT NULL COMMENT 'Computer Manufacturers Value',
-  `contrast_ratio` int(11) DEFAULT NULL COMMENT 'Contrast Ratio',
-  `contrast_ratio_value` varchar(255) DEFAULT NULL COMMENT 'Contrast Ratio Value',
-  `cost` decimal(12,4) DEFAULT NULL COMMENT 'Cost',
-  `country_orgin` text COMMENT 'Country Orgin',
-  `cpu_speed` int(11) DEFAULT NULL COMMENT 'Cpu Speed',
-  `cpu_speed_value` varchar(255) DEFAULT NULL COMMENT 'Cpu Speed Value',
-  `created_at` timestamp NULL DEFAULT NULL COMMENT 'Created At',
-  `custom_design_from` datetime DEFAULT NULL COMMENT 'Custom Design From',
-  `custom_design_to` datetime DEFAULT NULL COMMENT 'Custom Design To',
-  `custom_layout_update` text COMMENT 'Custom Layout Update',
-  `description` text COMMENT 'Description',
-  `dimension` text COMMENT 'Dimension',
-  `enable_googlecheckout` smallint(6) DEFAULT NULL COMMENT 'Enable Googlecheckout',
-  `finish` text COMMENT 'Finish',
-  `gallery` varchar(255) DEFAULT NULL COMMENT 'Gallery',
-  `gender` int(11) DEFAULT NULL COMMENT 'Gender',
-  `gender_value` varchar(255) DEFAULT NULL COMMENT 'Gender Value',
-  `gift_message_available` smallint(6) DEFAULT NULL COMMENT 'Gift Message Available',
-  `harddrive_speed` varchar(255) DEFAULT NULL COMMENT 'Harddrive Speed',
-  `hardrive` text COMMENT 'Hardrive',
-  `has_options` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Has Options',
-  `image` varchar(255) DEFAULT NULL COMMENT 'Image',
-  `image_label` varchar(255) DEFAULT NULL COMMENT 'Image Label',
-  `in_depth` text COMMENT 'In Depth',
-  `is_recurring` smallint(6) DEFAULT NULL COMMENT 'Is Recurring',
-  `links_exist` int(11) DEFAULT NULL COMMENT 'Links Exist',
-  `links_purchased_separately` int(11) DEFAULT NULL COMMENT 'Links Purchased Separately',
-  `links_title` varchar(255) DEFAULT NULL COMMENT 'Links Title',
-  `manufacturer` int(11) DEFAULT NULL COMMENT 'Manufacturer',
-  `manufacturer_value` varchar(255) DEFAULT NULL COMMENT 'Manufacturer Value',
-  `max_resolution` varchar(255) DEFAULT NULL COMMENT 'Max Resolution',
-  `media_gallery` varchar(255) DEFAULT NULL COMMENT 'Media Gallery',
-  `megapixels` int(11) DEFAULT NULL COMMENT 'Megapixels',
-  `megapixels_value` varchar(255) DEFAULT NULL COMMENT 'Megapixels Value',
-  `memory` text COMMENT 'Memory',
-  `meta_description` varchar(255) DEFAULT NULL COMMENT 'Meta Description',
-  `meta_keyword` text COMMENT 'Meta Keyword',
-  `meta_title` varchar(255) DEFAULT NULL COMMENT 'Meta Title',
-  `minimal_price` decimal(12,4) DEFAULT NULL COMMENT 'Minimal Price',
-  `model` text COMMENT 'Model',
-  `msrp` decimal(12,4) DEFAULT NULL COMMENT 'Msrp',
-  `msrp_display_actual_price_type` varchar(255) DEFAULT NULL COMMENT 'Msrp Display Actual Price Type',
-  `msrp_enabled` smallint(6) DEFAULT NULL COMMENT 'Msrp Enabled',
-  `name` varchar(255) DEFAULT NULL COMMENT 'Name',
-  `news_from_date` datetime DEFAULT NULL COMMENT 'News From Date',
-  `news_to_date` datetime DEFAULT NULL COMMENT 'News To Date',
-  `old_id` int(11) DEFAULT NULL COMMENT 'Old Id',
-  `price` decimal(12,4) DEFAULT NULL COMMENT 'Price',
-  `price_type` int(11) DEFAULT NULL COMMENT 'Price Type',
-  `price_view` int(11) DEFAULT NULL COMMENT 'Price View',
-  `processor` text COMMENT 'Processor',
-  `ram_size` varchar(255) DEFAULT NULL COMMENT 'Ram Size',
-  `recurring_profile` text COMMENT 'Recurring Profile',
-  `required_options` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Required Options',
-  `response_time` varchar(255) DEFAULT NULL COMMENT 'Response Time',
-  `room` int(11) DEFAULT NULL COMMENT 'Room',
-  `room_value` varchar(255) DEFAULT NULL COMMENT 'Room Value',
-  `samples_title` varchar(255) DEFAULT NULL COMMENT 'Samples Title',
-  `screensize` text COMMENT 'Screensize',
-  `shape` text COMMENT 'Shape',
-  `shipment_type` int(11) DEFAULT NULL COMMENT 'Shipment Type',
-  `shirt_size` int(11) DEFAULT NULL COMMENT 'Shirt Size',
-  `shirt_size_value` varchar(255) DEFAULT NULL COMMENT 'Shirt Size Value',
-  `shoe_size` int(11) DEFAULT NULL COMMENT 'Shoe Size',
-  `shoe_size_value` varchar(255) DEFAULT NULL COMMENT 'Shoe Size Value',
-  `shoe_type` int(11) DEFAULT NULL COMMENT 'Shoe Type',
-  `shoe_type_value` varchar(255) DEFAULT NULL COMMENT 'Shoe Type Value',
-  `short_description` text COMMENT 'Short Description',
-  `sku` varchar(64) DEFAULT NULL COMMENT 'Sku',
-  `sku_type` int(11) DEFAULT NULL COMMENT 'Sku Type',
-  `small_image` varchar(255) DEFAULT NULL COMMENT 'Small Image',
-  `small_image_label` varchar(255) DEFAULT NULL COMMENT 'Small Image Label',
-  `special_from_date` datetime DEFAULT NULL COMMENT 'Special From Date',
-  `special_price` decimal(12,4) DEFAULT NULL COMMENT 'Special Price',
-  `special_to_date` datetime DEFAULT NULL COMMENT 'Special To Date',
-  `tax_class_id` int(10) unsigned DEFAULT NULL COMMENT 'Tax Class Id',
-  `thumbnail` varchar(255) DEFAULT NULL COMMENT 'Thumbnail',
-  `thumbnail_label` varchar(255) DEFAULT NULL COMMENT 'Thumbnail Label',
-  `updated_at` timestamp NULL DEFAULT NULL COMMENT 'Updated At',
-  `url_key` varchar(255) DEFAULT NULL COMMENT 'Url Key',
-  `url_path` varchar(255) DEFAULT NULL COMMENT 'Url Path',
-  `visibility` smallint(5) unsigned DEFAULT NULL COMMENT 'Visibility',
-  `weight` decimal(12,4) DEFAULT NULL COMMENT 'Weight',
-  `weight_type` int(11) DEFAULT NULL COMMENT 'Weight Type',
-  PRIMARY KEY (`entity_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_2_TYPE_ID` (`type_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_2_ATTRIBUTE_SET_ID` (`attribute_set_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_2_NAME` (`name`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_2_PRICE` (`price`),
-  CONSTRAINT `FK_CAT_PRD_FLAT_2_ENTT_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Flat (Store 2)';
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `catalog_product_flat_2`
---
-
-LOCK TABLES `catalog_product_flat_2` WRITE;
-/*!40000 ALTER TABLE `catalog_product_flat_2` DISABLE KEYS */;
-/*!40000 ALTER TABLE `catalog_product_flat_2` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `catalog_product_flat_3`
---
-
-DROP TABLE IF EXISTS `catalog_product_flat_3`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `catalog_product_flat_3` (
-  `entity_id` int(10) unsigned NOT NULL COMMENT 'Entity Id',
-  `attribute_set_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Attribute Set Id',
-  `type_id` varchar(32) NOT NULL DEFAULT 'simple' COMMENT 'Type Id',
-  `activation_information` text COMMENT 'Activation Information',
-  `color` int(11) DEFAULT NULL COMMENT 'Color',
-  `color_value` varchar(255) DEFAULT NULL COMMENT 'Color Value',
-  `computer_manufacturers` int(11) DEFAULT NULL COMMENT 'Computer Manufacturers',
-  `computer_manufacturers_value` varchar(255) DEFAULT NULL COMMENT 'Computer Manufacturers Value',
-  `contrast_ratio` int(11) DEFAULT NULL COMMENT 'Contrast Ratio',
-  `contrast_ratio_value` varchar(255) DEFAULT NULL COMMENT 'Contrast Ratio Value',
-  `cost` decimal(12,4) DEFAULT NULL COMMENT 'Cost',
-  `country_orgin` text COMMENT 'Country Orgin',
-  `cpu_speed` int(11) DEFAULT NULL COMMENT 'Cpu Speed',
-  `cpu_speed_value` varchar(255) DEFAULT NULL COMMENT 'Cpu Speed Value',
-  `created_at` timestamp NULL DEFAULT NULL COMMENT 'Created At',
-  `custom_design_from` datetime DEFAULT NULL COMMENT 'Custom Design From',
-  `custom_design_to` datetime DEFAULT NULL COMMENT 'Custom Design To',
-  `custom_layout_update` text COMMENT 'Custom Layout Update',
-  `description` text COMMENT 'Description',
-  `dimension` text COMMENT 'Dimension',
-  `enable_googlecheckout` smallint(6) DEFAULT NULL COMMENT 'Enable Googlecheckout',
-  `finish` text COMMENT 'Finish',
-  `gallery` varchar(255) DEFAULT NULL COMMENT 'Gallery',
-  `gender` int(11) DEFAULT NULL COMMENT 'Gender',
-  `gender_value` varchar(255) DEFAULT NULL COMMENT 'Gender Value',
-  `gift_message_available` smallint(6) DEFAULT NULL COMMENT 'Gift Message Available',
-  `harddrive_speed` varchar(255) DEFAULT NULL COMMENT 'Harddrive Speed',
-  `hardrive` text COMMENT 'Hardrive',
-  `has_options` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Has Options',
-  `image` varchar(255) DEFAULT NULL COMMENT 'Image',
-  `image_label` varchar(255) DEFAULT NULL COMMENT 'Image Label',
-  `in_depth` text COMMENT 'In Depth',
-  `is_recurring` smallint(6) DEFAULT NULL COMMENT 'Is Recurring',
-  `links_exist` int(11) DEFAULT NULL COMMENT 'Links Exist',
-  `links_purchased_separately` int(11) DEFAULT NULL COMMENT 'Links Purchased Separately',
-  `links_title` varchar(255) DEFAULT NULL COMMENT 'Links Title',
-  `manufacturer` int(11) DEFAULT NULL COMMENT 'Manufacturer',
-  `manufacturer_value` varchar(255) DEFAULT NULL COMMENT 'Manufacturer Value',
-  `max_resolution` varchar(255) DEFAULT NULL COMMENT 'Max Resolution',
-  `media_gallery` varchar(255) DEFAULT NULL COMMENT 'Media Gallery',
-  `megapixels` int(11) DEFAULT NULL COMMENT 'Megapixels',
-  `megapixels_value` varchar(255) DEFAULT NULL COMMENT 'Megapixels Value',
-  `memory` text COMMENT 'Memory',
-  `meta_description` varchar(255) DEFAULT NULL COMMENT 'Meta Description',
-  `meta_keyword` text COMMENT 'Meta Keyword',
-  `meta_title` varchar(255) DEFAULT NULL COMMENT 'Meta Title',
-  `minimal_price` decimal(12,4) DEFAULT NULL COMMENT 'Minimal Price',
-  `model` text COMMENT 'Model',
-  `msrp` decimal(12,4) DEFAULT NULL COMMENT 'Msrp',
-  `msrp_display_actual_price_type` varchar(255) DEFAULT NULL COMMENT 'Msrp Display Actual Price Type',
-  `msrp_enabled` smallint(6) DEFAULT NULL COMMENT 'Msrp Enabled',
-  `name` varchar(255) DEFAULT NULL COMMENT 'Name',
-  `news_from_date` datetime DEFAULT NULL COMMENT 'News From Date',
-  `news_to_date` datetime DEFAULT NULL COMMENT 'News To Date',
-  `old_id` int(11) DEFAULT NULL COMMENT 'Old Id',
-  `price` decimal(12,4) DEFAULT NULL COMMENT 'Price',
-  `price_type` int(11) DEFAULT NULL COMMENT 'Price Type',
-  `price_view` int(11) DEFAULT NULL COMMENT 'Price View',
-  `processor` text COMMENT 'Processor',
-  `ram_size` varchar(255) DEFAULT NULL COMMENT 'Ram Size',
-  `recurring_profile` text COMMENT 'Recurring Profile',
-  `required_options` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Required Options',
-  `response_time` varchar(255) DEFAULT NULL COMMENT 'Response Time',
-  `room` int(11) DEFAULT NULL COMMENT 'Room',
-  `room_value` varchar(255) DEFAULT NULL COMMENT 'Room Value',
-  `samples_title` varchar(255) DEFAULT NULL COMMENT 'Samples Title',
-  `screensize` text COMMENT 'Screensize',
-  `shape` text COMMENT 'Shape',
-  `shipment_type` int(11) DEFAULT NULL COMMENT 'Shipment Type',
-  `shirt_size` int(11) DEFAULT NULL COMMENT 'Shirt Size',
-  `shirt_size_value` varchar(255) DEFAULT NULL COMMENT 'Shirt Size Value',
-  `shoe_size` int(11) DEFAULT NULL COMMENT 'Shoe Size',
-  `shoe_size_value` varchar(255) DEFAULT NULL COMMENT 'Shoe Size Value',
-  `shoe_type` int(11) DEFAULT NULL COMMENT 'Shoe Type',
-  `shoe_type_value` varchar(255) DEFAULT NULL COMMENT 'Shoe Type Value',
-  `short_description` text COMMENT 'Short Description',
-  `sku` varchar(64) DEFAULT NULL COMMENT 'Sku',
-  `sku_type` int(11) DEFAULT NULL COMMENT 'Sku Type',
-  `small_image` varchar(255) DEFAULT NULL COMMENT 'Small Image',
-  `small_image_label` varchar(255) DEFAULT NULL COMMENT 'Small Image Label',
-  `special_from_date` datetime DEFAULT NULL COMMENT 'Special From Date',
-  `special_price` decimal(12,4) DEFAULT NULL COMMENT 'Special Price',
-  `special_to_date` datetime DEFAULT NULL COMMENT 'Special To Date',
-  `tax_class_id` int(10) unsigned DEFAULT NULL COMMENT 'Tax Class Id',
-  `thumbnail` varchar(255) DEFAULT NULL COMMENT 'Thumbnail',
-  `thumbnail_label` varchar(255) DEFAULT NULL COMMENT 'Thumbnail Label',
-  `updated_at` timestamp NULL DEFAULT NULL COMMENT 'Updated At',
-  `url_key` varchar(255) DEFAULT NULL COMMENT 'Url Key',
-  `url_path` varchar(255) DEFAULT NULL COMMENT 'Url Path',
-  `visibility` smallint(5) unsigned DEFAULT NULL COMMENT 'Visibility',
-  `weight` decimal(12,4) DEFAULT NULL COMMENT 'Weight',
-  `weight_type` int(11) DEFAULT NULL COMMENT 'Weight Type',
-  PRIMARY KEY (`entity_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_3_TYPE_ID` (`type_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_3_ATTRIBUTE_SET_ID` (`attribute_set_id`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_3_NAME` (`name`),
-  KEY `IDX_CATALOG_PRODUCT_FLAT_3_PRICE` (`price`),
-  CONSTRAINT `FK_CAT_PRD_FLAT_3_ENTT_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Flat (Store 3)';
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `catalog_product_flat_3`
---
-
-LOCK TABLES `catalog_product_flat_3` WRITE;
-/*!40000 ALTER TABLE `catalog_product_flat_3` DISABLE KEYS */;
-/*!40000 ALTER TABLE `catalog_product_flat_3` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -5513,7 +5779,6 @@ INSERT INTO `catalogsearch_query` VALUES (13,'shirt',5,444,'','',1,1,1,0,'2008-0
 INSERT INTO `catalogsearch_query` VALUES (14,'computer',10,2032,'','',1,1,1,0,'2008-08-05 17:30:46');
 INSERT INTO `catalogsearch_query` VALUES (15,'samsung',3,381,'','',1,1,1,0,'2008-08-05 07:00:38');
 INSERT INTO `catalogsearch_query` VALUES (16,'ipod',1,435,'','',1,1,1,0,'2008-08-05 07:10:35');
-INSERT INTO `catalogsearch_query` VALUES (17,'Mac',2,381,'','',3,1,1,0,'2008-08-05 17:29:06');
 INSERT INTO `catalogsearch_query` VALUES (18,'rebel',1,280,'','',1,1,1,0,'2008-08-06 00:38:22');
 INSERT INTO `catalogsearch_query` VALUES (19,'camera',13,1322,'','',1,1,1,0,'2008-08-05 13:38:13');
 INSERT INTO `catalogsearch_query` VALUES (20,'Anashria Womens Premier Leather Sandal',1,332,'','',1,1,1,0,'2008-08-05 21:21:08');
@@ -7233,8 +7498,6 @@ LOCK TABLES `core_store` WRITE;
 /*!40000 ALTER TABLE `core_store` DISABLE KEYS */;
 INSERT INTO `core_store` VALUES (0,'admin',0,0,'Admin',0,1);
 INSERT INTO `core_store` VALUES (1,'default',1,1,'English',0,1);
-INSERT INTO `core_store` VALUES (2,'german',1,1,'German',0,1);
-INSERT INTO `core_store` VALUES (3,'french',1,1,'French',0,1);
 /*!40000 ALTER TABLE `core_store` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7264,7 +7527,7 @@ CREATE TABLE `core_store_group` (
 LOCK TABLES `core_store_group` WRITE;
 /*!40000 ALTER TABLE `core_store_group` DISABLE KEYS */;
 INSERT INTO `core_store_group` VALUES (0,0,'Default',0,0);
-INSERT INTO `core_store_group` VALUES (1,1,'Main Store',3,1);
+INSERT INTO `core_store_group` VALUES (1,1,'Main Store',83,1);
 /*!40000 ALTER TABLE `core_store_group` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7377,347 +7640,131 @@ CREATE TABLE `core_url_rewrite` (
 
 LOCK TABLES `core_url_rewrite` WRITE;
 /*!40000 ALTER TABLE `core_url_rewrite` DISABLE KEYS */;
-INSERT INTO `core_url_rewrite` VALUES (1826,1,35,NULL,'category/35','apparel-accessories.html','catalog/category/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (1869,3,35,NULL,'category/35','apparel-accessories.html','catalog/category/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (1912,2,35,NULL,'category/35','apparel-accessories.html','catalog/category/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (1955,1,36,NULL,'category/36','toys.html','catalog/category/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (1998,3,36,NULL,'category/36','toys.html','catalog/category/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2041,2,36,NULL,'category/36','toys.html','catalog/category/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2216,1,38,NULL,'category/38','flowers.html','catalog/category/view/id/38',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2259,3,38,NULL,'category/38','flowers.html','catalog/category/view/id/38',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2302,2,38,NULL,'category/38','flowers.html','catalog/category/view/id/38',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2345,1,39,NULL,'category/39','hitech.html','catalog/category/view/id/39',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2388,3,39,NULL,'category/39','hitech.html','catalog/category/view/id/39',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (2431,2,39,NULL,'category/39','hitech.html','catalog/category/view/id/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3312,1,NULL,1,'product/1','ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3313,3,NULL,1,'product/1','ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3314,2,NULL,1,'product/1','ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3320,1,39,1,'product/1/39','hitech/ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1/category/39',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3328,3,39,1,'product/1/39','hitech/ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1/category/39',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3336,2,39,1,'product/1/39','hitech/ut-enim-ad-minim-veniam-quis-nostrud-exercitation.html','catalog/product/view/id/1/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3339,1,NULL,2,'product/2','nostrud-exercitation-ut.html','catalog/product/view/id/2',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3344,1,39,2,'product/2/39','hitech/nostrud-exercitation-ut.html','catalog/product/view/id/2/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3347,3,NULL,2,'product/2','nostrud-exercitation-ut.html','catalog/product/view/id/2',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3352,3,39,2,'product/2/39','hitech/nostrud-exercitation-ut.html','catalog/product/view/id/2/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3355,2,NULL,2,'product/2','nostrud-exercitation-ut.html','catalog/product/view/id/2',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3360,2,39,2,'product/2/39','hitech/nostrud-exercitation-ut.html','catalog/product/view/id/2/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3363,1,NULL,3,'product/3','exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3368,1,39,3,'product/3/39','hitech/exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3371,3,NULL,3,'product/3','exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3376,3,39,3,'product/3/39','hitech/exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3379,2,NULL,3,'product/3','exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3384,2,39,3,'product/3/39','hitech/exercitation-a-nostrud-ut-enim-ad-minim-veniam-quis.html','catalog/product/view/id/3/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3387,1,NULL,4,'product/4','enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3392,1,39,4,'product/4/39','hitech/enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3395,3,NULL,4,'product/4','enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3400,3,39,4,'product/4/39','hitech/enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3403,2,NULL,4,'product/4','enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3408,2,39,4,'product/4/39','hitech/enim-exercitation-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/4/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3411,1,NULL,5,'product/5','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3416,1,39,5,'product/5/39','hitech/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3419,3,NULL,5,'product/5','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3424,3,39,5,'product/5/39','hitech/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3427,2,NULL,5,'product/5','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3432,2,39,5,'product/5/39','hitech/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/5/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3435,1,NULL,6,'product/6','minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3440,1,39,6,'product/6/39','hitech/minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3443,3,NULL,6,'product/6','minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3448,3,39,6,'product/6/39','hitech/minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3451,2,NULL,6,'product/6','minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3456,2,39,6,'product/6/39','hitech/minim-veniam-quis-nostrud-exercitation-ut-enim-ad.html','catalog/product/view/id/6/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3459,1,NULL,7,'product/7','exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3464,1,39,7,'product/7/39','hitech/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3467,3,NULL,7,'product/7','exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3472,3,39,7,'product/7/39','hitech/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3475,2,NULL,7,'product/7','exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3480,2,39,7,'product/7/39','hitech/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3483,1,NULL,8,'product/8','veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3488,1,39,8,'product/8/39','hitech/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3491,3,NULL,8,'product/8','veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3496,3,39,8,'product/8/39','hitech/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3499,2,NULL,8,'product/8','veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3504,2,39,8,'product/8/39','hitech/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3507,1,NULL,9,'product/9','quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3512,1,39,9,'product/9/39','hitech/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3515,3,NULL,9,'product/9','quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3520,3,39,9,'product/9/39','hitech/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3523,2,NULL,9,'product/9','quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3528,2,39,9,'product/9/39','hitech/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3531,1,NULL,10,'product/10','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3536,1,39,10,'product/10/39','hitech/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3539,3,NULL,10,'product/10','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3544,3,39,10,'product/10/39','hitech/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3547,2,NULL,10,'product/10','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3552,2,39,10,'product/10/39','hitech/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3555,1,NULL,11,'product/11','laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3560,1,39,11,'product/11/39','hitech/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3563,3,NULL,11,'product/11','laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3568,3,39,11,'product/11/39','hitech/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3571,2,NULL,11,'product/11','laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3576,2,39,11,'product/11/39','hitech/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3579,1,NULL,12,'product/12','sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3584,1,39,12,'product/12/39','hitech/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3587,3,NULL,12,'product/12','sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3592,3,39,12,'product/12/39','hitech/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/39',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3595,2,NULL,12,'product/12','sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3600,2,39,12,'product/12/39','hitech/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/39',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3603,1,35,13,'product/13/35','apparel-accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3607,1,NULL,13,'product/13','aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3608,3,35,13,'product/13/35','apparel-accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3612,3,NULL,13,'product/13','aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3613,2,35,13,'product/13/35','apparel-accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3617,2,NULL,13,'product/13','aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3618,1,NULL,14,'product/14','dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3622,3,NULL,14,'product/14','dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3626,2,NULL,14,'product/14','dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3630,1,NULL,15,'product/15','labore-et-usmod.html','catalog/product/view/id/15',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3631,1,35,15,'product/15/35','apparel-accessories/labore-et-usmod.html','catalog/product/view/id/15/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3635,3,NULL,15,'product/15','labore-et-usmod.html','catalog/product/view/id/15',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3636,3,35,15,'product/15/35','apparel-accessories/labore-et-usmod.html','catalog/product/view/id/15/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3640,2,NULL,15,'product/15','labore-et-usmod.html','catalog/product/view/id/15',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3641,2,35,15,'product/15/35','apparel-accessories/labore-et-usmod.html','catalog/product/view/id/15/category/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3646,1,35,14,'product/14/35','apparel-accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3651,3,35,14,'product/14/35','apparel-accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3656,2,35,14,'product/14/35','apparel-accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3657,1,NULL,16,'product/16','duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3658,1,35,16,'product/16/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3662,3,NULL,16,'product/16','duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3663,3,35,16,'product/16/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3667,2,NULL,16,'product/16','duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3668,2,35,16,'product/16/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3672,1,NULL,17,'product/17','consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3673,1,35,17,'product/17/35','apparel-accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3677,3,NULL,17,'product/17','consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3678,3,35,17,'product/17/35','apparel-accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3682,2,NULL,17,'product/17','consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3683,2,35,17,'product/17/35','apparel-accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3687,1,NULL,18,'product/18','sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3688,1,35,18,'product/18/35','apparel-accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3692,3,NULL,18,'product/18','sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3693,3,35,18,'product/18/35','apparel-accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3697,2,NULL,18,'product/18','sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3698,2,35,18,'product/18/35','apparel-accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3702,1,NULL,19,'product/19','ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3703,1,35,19,'product/19/35','apparel-accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3707,3,NULL,19,'product/19','ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3708,3,35,19,'product/19/35','apparel-accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3712,2,NULL,19,'product/19','ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3713,2,35,19,'product/19/35','apparel-accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3717,1,NULL,20,'product/20','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html','catalog/product/view/id/20',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3718,1,35,20,'product/20/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3722,3,NULL,20,'product/20','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html','catalog/product/view/id/20',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3723,3,35,20,'product/20/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3727,2,NULL,20,'product/20','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html','catalog/product/view/id/20',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3728,2,35,20,'product/20/35','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3732,1,NULL,21,'product/21','sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3733,1,35,21,'product/21/35','apparel-accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3737,3,NULL,21,'product/21','sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3738,3,35,21,'product/21/35','apparel-accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3742,2,NULL,21,'product/21','sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3743,2,35,21,'product/21/35','apparel-accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/35',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3750,1,NULL,22,'product/22','at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3751,1,38,22,'product/22/38','flowers/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3752,3,NULL,22,'product/22','at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3753,3,38,22,'product/22/38','flowers/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3754,2,NULL,22,'product/22','at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3755,2,38,22,'product/22/38','flowers/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3756,1,NULL,23,'product/23','similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3757,1,38,23,'product/23/38','flowers/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3758,3,NULL,23,'product/23','similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3759,3,38,23,'product/23/38','flowers/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3760,2,NULL,23,'product/23','similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3761,2,38,23,'product/23/38','flowers/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3762,1,NULL,24,'product/24','temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3763,1,38,24,'product/24/38','flowers/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3764,3,NULL,24,'product/24','temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3765,3,38,24,'product/24/38','flowers/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3766,2,NULL,24,'product/24','temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3767,2,38,24,'product/24/38','flowers/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3768,1,NULL,25,'product/25','itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3769,1,38,25,'product/25/38','flowers/itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3770,3,NULL,25,'product/25','itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3771,3,38,25,'product/25/38','flowers/itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3772,2,NULL,25,'product/25','itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3773,2,38,25,'product/25/38','flowers/itaque-earum-rerum-hic-tenetur-a-sapiente.html','catalog/product/view/id/25/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3774,1,NULL,26,'product/26','consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3775,1,38,26,'product/26/38','flowers/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3776,3,NULL,26,'product/26','consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3777,3,38,26,'product/26/38','flowers/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3778,2,NULL,26,'product/26','consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3779,2,38,26,'product/26/38','flowers/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3780,1,NULL,27,'product/27','excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3781,1,38,27,'product/27/38','flowers/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3782,3,NULL,27,'product/27','excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3783,3,38,27,'product/27/38','flowers/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3784,2,NULL,27,'product/27','excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3785,2,38,27,'product/27/38','flowers/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3786,1,NULL,28,'product/28','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3787,1,38,28,'product/28/38','flowers/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3788,3,NULL,28,'product/28','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3789,3,38,28,'product/28/38','flowers/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3790,2,NULL,28,'product/28','ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3791,2,38,28,'product/28/38','flowers/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3792,1,NULL,29,'product/29','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html','catalog/product/view/id/29',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3793,1,38,29,'product/29/38','flowers/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3794,3,NULL,29,'product/29','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html','catalog/product/view/id/29',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3795,3,38,29,'product/29/38','flowers/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3796,2,NULL,29,'product/29','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html','catalog/product/view/id/29',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3797,2,38,29,'product/29/38','flowers/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3798,1,NULL,30,'product/30','neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3799,1,38,30,'product/30/38','flowers/neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3800,3,NULL,30,'product/30','neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3801,3,38,30,'product/30/38','flowers/neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3802,2,NULL,30,'product/30','neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3803,2,38,30,'product/30/38','flowers/neque-porro-quisquam-est-qui-dolorem-ipsum-quia.html','catalog/product/view/id/30/category/38',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3807,1,NULL,31,'product/31','nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3808,1,36,31,'product/31/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3809,3,NULL,31,'product/31','nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3810,3,36,31,'product/31/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3811,2,NULL,31,'product/31','nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3812,2,36,31,'product/31/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3813,1,NULL,32,'product/32','neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3814,1,36,32,'product/32/36','toys/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3815,3,NULL,32,'product/32','neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3816,3,36,32,'product/32/36','toys/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3817,2,NULL,32,'product/32','neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3818,2,36,32,'product/32/36','toys/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3819,1,NULL,33,'product/33','nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3820,1,36,33,'product/33/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3821,3,NULL,33,'product/33','nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3822,3,36,33,'product/33/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3823,2,NULL,33,'product/33','nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3824,2,36,33,'product/33/36','toys/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3825,1,NULL,34,'product/34','cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3826,1,36,34,'product/34/36','toys/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3827,3,NULL,34,'product/34','cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3828,3,36,34,'product/34/36','toys/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3829,2,NULL,34,'product/34','cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3830,2,36,34,'product/34/36','toys/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3831,1,NULL,35,'product/35','tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3832,1,36,35,'product/35/36','toys/tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3833,3,NULL,35,'product/35','tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3834,3,36,35,'product/35/36','toys/tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3835,2,NULL,35,'product/35','tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3836,2,36,35,'product/35/36','toys/tenetur-a-sapiente-itaque-earum-rerum-hic.html','catalog/product/view/id/35/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3837,1,NULL,36,'product/36','sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3838,1,36,36,'product/36/36','toys/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3839,3,NULL,36,'product/36','sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3840,3,36,36,'product/36/36','toys/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/36',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3841,2,NULL,36,'product/36','sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3842,2,36,36,'product/36/36','toys/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/36',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3843,1,42,NULL,'category/42','accessories.html','catalog/category/view/id/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3845,1,42,7,'product/7/42','accessories/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3847,1,42,8,'product/8/42','accessories/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3849,1,42,9,'product/9/42','accessories/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3851,1,42,10,'product/10/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3853,1,42,11,'product/11/42','accessories/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3855,1,42,12,'product/12/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3857,1,42,13,'product/13/42','accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3859,1,42,14,'product/14/42','accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3861,1,42,15,'product/15/42','accessories/labore-et-usmod.html','catalog/product/view/id/15/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3863,1,42,16,'product/16/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3865,1,42,17,'product/17/42','accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3867,1,42,18,'product/18/42','accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3869,1,42,19,'product/19/42','accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3871,1,NULL,20,'94632300_1350553104','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (3872,1,42,20,'product/20/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3874,1,42,21,'product/21/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3876,1,42,22,'product/22/42','accessories/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3878,1,42,23,'product/23/42','accessories/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3880,1,42,24,'product/24/42','accessories/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3882,1,42,26,'product/26/42','accessories/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3884,1,42,27,'product/27/42','accessories/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3886,1,42,28,'product/28/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3888,1,NULL,29,'99238600_1350553104','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-29.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (3889,1,42,29,'product/29/42','accessories/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3891,1,42,31,'product/31/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3893,1,42,32,'product/32/42','accessories/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3895,1,42,33,'product/33/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3897,1,42,34,'product/34/42','accessories/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3899,1,42,36,'product/36/42','accessories/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3900,3,42,NULL,'category/42','accessories.html','catalog/category/view/id/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3902,3,42,7,'product/7/42','accessories/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3904,3,42,8,'product/8/42','accessories/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3906,3,42,9,'product/9/42','accessories/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3908,3,42,10,'product/10/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3910,3,42,11,'product/11/42','accessories/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3912,3,42,12,'product/12/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3914,3,42,13,'product/13/42','accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3916,3,42,14,'product/14/42','accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3918,3,42,15,'product/15/42','accessories/labore-et-usmod.html','catalog/product/view/id/15/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3920,3,42,16,'product/16/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3922,3,42,17,'product/17/42','accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3924,3,42,18,'product/18/42','accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3926,3,42,19,'product/19/42','accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3928,3,NULL,20,'12593700_1350553105','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (3929,3,42,20,'product/20/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3931,3,42,21,'product/21/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3933,3,42,22,'product/22/42','accessories/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3935,3,42,23,'product/23/42','accessories/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3937,3,42,24,'product/24/42','accessories/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3939,3,42,26,'product/26/42','accessories/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3941,3,42,27,'product/27/42','accessories/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3943,3,42,28,'product/28/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3945,3,NULL,29,'16741700_1350553105','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-29.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (3946,3,42,29,'product/29/42','accessories/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3948,3,42,31,'product/31/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3950,3,42,32,'product/32/42','accessories/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3952,3,42,33,'product/33/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3954,3,42,34,'product/34/42','accessories/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3956,3,42,36,'product/36/42','accessories/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3957,2,42,NULL,'category/42','accessories.html','catalog/category/view/id/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3959,2,42,7,'product/7/42','accessories/exercitation-enim-a-nostrud-ut-ad-minim-veniam-quis.html','catalog/product/view/id/7/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3961,2,42,8,'product/8/42','accessories/veniam-quis-enim-exercitation-a-nostrud-ut-ad-minim.html','catalog/product/view/id/8/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3963,2,42,9,'product/9/42','accessories/quis-nostrud-exercitation-ut-enim-ad-minim-veniam.html','catalog/product/view/id/9/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3965,2,42,10,'product/10/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/10/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3967,2,42,11,'product/11/42','accessories/laboris-consequat-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/11/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3969,2,42,12,'product/12/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna.html','catalog/product/view/id/12/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3971,2,42,13,'product/13/42','accessories/aiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua.html','catalog/product/view/id/13/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3973,2,42,14,'product/14/42','accessories/dolore-magna-aliqua-aiusmod-tempor-incididun.html','catalog/product/view/id/14/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3975,2,42,15,'product/15/42','accessories/labore-et-usmod.html','catalog/product/view/id/15/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3977,2,42,16,'product/16/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate.html','catalog/product/view/id/16/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3979,2,42,17,'product/17/42','accessories/consectetur-adipisicing-elit-sed-do-eiusmod-tempor.html','catalog/product/view/id/17/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3981,2,42,18,'product/18/42','accessories/sed-ut-perspiciatis-unde-omnis-iste-natus.html','catalog/product/view/id/18/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3983,2,42,19,'product/19/42','accessories/ut-enim-ad-exercitation-a-nostrud-minim.html','catalog/product/view/id/19/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (3985,2,NULL,20,'29459700_1350553105','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (3986,2,42,20,'product/20/42','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','catalog/product/view/id/20/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3988,2,42,21,'product/21/42','accessories/sed-do-eiusmod-tempor-incididunt-ut-labore-et.html','catalog/product/view/id/21/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3990,2,42,22,'product/22/42','accessories/at-vero-eos-et-accusamus-et-iusto-odio.html','catalog/product/view/id/22/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3992,2,42,23,'product/23/42','accessories/similique-sunt-in-culpa-qui-officia-deserunt.html','catalog/product/view/id/23/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3994,2,42,24,'product/24/42','accessories/temporibus-autem-quibusdam-et-aut-officiis.html','catalog/product/view/id/24/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3996,2,42,26,'product/26/42','accessories/consequatur-aut-perferendis-doloribus-asperiores.html','catalog/product/view/id/26/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (3998,2,42,27,'product/27/42','accessories/excepteur-sint-occaecat-cupidatat-non-proident.html','catalog/product/view/id/27/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4000,2,42,28,'product/28/42','accessories/ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo.html','catalog/product/view/id/28/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (4002,2,NULL,29,'34269900_1350553105','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-29.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4003,2,42,29,'product/29/42','accessories/laboris-nisi-ut-aliquip-ex-ea-commodo-consequat.html','catalog/product/view/id/29/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4005,2,42,31,'product/31/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas-sit.html','catalog/product/view/id/31/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4007,2,42,32,'product/32/42','accessories/neque-porro-quisquam-est-qui-dolorem-ipsum.html','catalog/product/view/id/32/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4009,2,42,33,'product/33/42','accessories/nemo-enim-ipsam-voluptatem-quia-voluptas.html','catalog/product/view/id/33/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4011,2,42,34,'product/34/42','accessories/cum-soluta-nobis-est-eligendi-optio-cumque.html','catalog/product/view/id/34/category/42',1,NULL,NULL);
-INSERT INTO `core_url_rewrite` VALUES (4013,2,42,36,'product/36/42','accessories/sunt-in-culpa-qui-officia-deserunt-mollit.html','catalog/product/view/id/36/category/42',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (4071,1,NULL,20,'26616600_1352427688','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4073,1,35,20,'28087700_1352427688','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4075,1,42,20,'29269900_1352427688','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4100,1,NULL,29,'38657000_1352427688','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-30.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4179,3,NULL,20,'76488900_1352427688','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4181,3,35,20,'78179100_1352427688','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4183,3,42,20,'79662900_1352427688','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4208,3,NULL,29,'87548400_1352427688','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-30.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4287,2,NULL,20,'15539500_1352427689','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4289,2,35,20,'16412700_1352427689','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4291,2,42,20,'17274300_1352427689','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-20.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4316,2,NULL,29,'24533300_1352427689','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-30.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4395,1,NULL,20,'50586800_1353472687','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4397,1,35,20,'52201200_1353472687','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4399,1,42,20,'53612300_1353472687','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4424,1,NULL,29,'62712500_1353472687','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-31.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4503,3,NULL,20,'03889800_1353472688','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4505,3,35,20,'05630100_1353472688','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4507,3,42,20,'07392000_1353472688','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4532,3,NULL,29,'15772700_1353472688','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-31.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4611,2,NULL,20,'45182700_1353472688','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4613,2,35,20,'46349800_1353472688','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4615,2,42,20,'47450900_1353472688','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-21.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4640,2,NULL,29,'55638300_1353472688','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-31.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4641,0,NULL,NULL,'venusblog/category/5','ves-blog/Venustheme.html','venusblog/category/view/id/5',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (4642,0,NULL,NULL,'venusblog/category/8','ves-blog/Test.html','venusblog/category/view/id/8',1,NULL,NULL);
@@ -7727,32 +7774,17 @@ INSERT INTO `core_url_rewrite` VALUES (4645,0,NULL,NULL,'venusblog/post/8','ves-
 INSERT INTO `core_url_rewrite` VALUES (4646,0,NULL,NULL,'venusblog/post/9','ves-blog/j3.html','venusblog/post/view/id/9',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (4647,0,NULL,NULL,'venusblog/post/10','ves-blog/j4.html','venusblog/post/view/id/10',1,NULL,NULL);
 INSERT INTO `core_url_rewrite` VALUES (4705,1,NULL,20,'39586800_1359169993','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4707,1,35,20,'40492500_1359169993','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4709,1,42,20,'41434000_1359169993','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4734,1,NULL,29,'46629600_1359169993','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-32.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4813,3,NULL,20,'73911200_1359169993','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4815,3,35,20,'75073200_1359169993','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4817,3,42,20,'75880000_1359169993','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4842,3,NULL,29,'80617100_1359169993','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-32.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4921,2,NULL,20,'99146100_1359169993','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html','duis-aute-irure-dolor-in-reprehenderit-in-voluptate-24.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4923,2,35,20,'01800900_1359169994','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','apparel-accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4925,2,42,20,'02504300_1359169994','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-22.html','accessories/duis-aute-irure-dolor-in-reprehenderit-in-voluptate-23.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4950,2,NULL,29,'06780100_1359169994','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-32.html','laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-33.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4952,1,NULL,15,'82956400_1369620923','labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4954,1,35,15,'87953900_1369620923','apparel-accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','apparel-accessories/labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4956,1,42,15,'89367700_1369620923','accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','accessories/labore-et-usmod.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4958,3,NULL,15,'92642700_1369620923','labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4960,3,35,15,'93452100_1369620923','apparel-accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','apparel-accessories/labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4962,3,42,15,'00117000_1369620924','accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','accessories/labore-et-usmod.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4964,2,NULL,15,'01818400_1369620924','labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4966,2,35,15,'02506900_1369620924','apparel-accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','apparel-accessories/labore-et-usmod.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4968,2,42,15,'03101200_1369620924','accessories/labore-et-usmod-tempor-incididunt-ut-dolore-magna-aliqua.html','accessories/labore-et-usmod.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4970,1,NULL,2,'22527400_1369623080','nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','nostrud-exercitation-ut.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4972,1,39,2,'23401900_1369623080','hitech/nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','hitech/nostrud-exercitation-ut.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4974,3,NULL,2,'24918900_1369623080','nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','nostrud-exercitation-ut.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4976,3,39,2,'25513400_1369623080','hitech/nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','hitech/nostrud-exercitation-ut.html',0,'RP',NULL);
 INSERT INTO `core_url_rewrite` VALUES (4978,2,NULL,2,'27521300_1369623080','nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','nostrud-exercitation-ut.html',0,'RP',NULL);
-INSERT INTO `core_url_rewrite` VALUES (4980,2,39,2,'28254100_1369623080','hitech/nostrud-exercitation-ut-enim-ad-minim-veniam-quis.html','hitech/nostrud-exercitation-ut.html',0,'RP',NULL);
 /*!40000 ALTER TABLE `core_url_rewrite` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -10268,7 +10300,7 @@ CREATE TABLE `eav_attribute` (
   PRIMARY KEY (`attribute_id`),
   UNIQUE KEY `UNQ_EAV_ATTRIBUTE_ENTITY_TYPE_ID_ATTRIBUTE_CODE` (`entity_type_id`,`attribute_code`),
   KEY `IDX_EAV_ATTRIBUTE_ENTITY_TYPE_ID` (`entity_type_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=962 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute';
+) ENGINE=InnoDB AUTO_INCREMENT=964 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11070,6 +11102,8 @@ INSERT INTO `eav_attribute` VALUES (958,2,'vat_request_date',NULL,NULL,'varchar'
 INSERT INTO `eav_attribute` VALUES (959,2,'vat_request_success',NULL,NULL,'int',NULL,NULL,'text','VAT number validation request success',NULL,NULL,0,0,NULL,0,NULL);
 INSERT INTO `eav_attribute` VALUES (960,10,'group_price',NULL,'catalog/product_attribute_backend_groupprice','decimal',NULL,NULL,'text','Group Price',NULL,NULL,0,0,NULL,0,NULL);
 INSERT INTO `eav_attribute` VALUES (961,10,'featured',NULL,NULL,'int',NULL,NULL,'select','Featured',NULL,'eav/entity_attribute_source_boolean',0,0,NULL,0,NULL);
+INSERT INTO `eav_attribute` VALUES (962,10,'LIGHTSPEED_PRODUCT_COLOR',NULL,'eav/entity_attribute_backend_array','int',NULL,NULL,'select','Color',NULL,NULL,1,1,NULL,0,NULL);
+INSERT INTO `eav_attribute` VALUES (963,10,'LIGHTSPEED_PRODUCT_SIZE',NULL,'eav/entity_attribute_backend_array','int',NULL,NULL,'select','Size',NULL,NULL,1,1,NULL,0,NULL);
 /*!40000 ALTER TABLE `eav_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11089,7 +11123,7 @@ CREATE TABLE `eav_attribute_group` (
   PRIMARY KEY (`attribute_group_id`),
   UNIQUE KEY `UNQ_EAV_ATTRIBUTE_GROUP_ATTRIBUTE_SET_ID_ATTRIBUTE_GROUP_NAME` (`attribute_set_id`,`attribute_group_name`),
   KEY `IDX_EAV_ATTRIBUTE_GROUP_ATTRIBUTE_SET_ID_SORT_ORDER` (`attribute_set_id`,`sort_order`)
-) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Group';
+) ENGINE=InnoDB AUTO_INCREMENT=205 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Group';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11247,6 +11281,15 @@ INSERT INTO `eav_attribute_group` VALUES (192,45,'Gift Options',9,0);
 INSERT INTO `eav_attribute_group` VALUES (193,41,'Gift Options',9,0);
 INSERT INTO `eav_attribute_group` VALUES (194,40,'Gift Options',51,0);
 INSERT INTO `eav_attribute_group` VALUES (195,59,'Gift Options',8,0);
+INSERT INTO `eav_attribute_group` VALUES (196,63,'Gift Options',8,0);
+INSERT INTO `eav_attribute_group` VALUES (197,63,'Recurring Profile',7,0);
+INSERT INTO `eav_attribute_group` VALUES (198,63,'Design',6,0);
+INSERT INTO `eav_attribute_group` VALUES (199,63,'Description',5,0);
+INSERT INTO `eav_attribute_group` VALUES (200,63,'Images',4,0);
+INSERT INTO `eav_attribute_group` VALUES (201,63,'Meta Information',3,0);
+INSERT INTO `eav_attribute_group` VALUES (202,63,'Prices',2,0);
+INSERT INTO `eav_attribute_group` VALUES (203,63,'General',1,1);
+INSERT INTO `eav_attribute_group` VALUES (204,63,'LIGHTSPEED_ATTRIBUTES',9,0);
 /*!40000 ALTER TABLE `eav_attribute_group` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11585,7 +11628,7 @@ CREATE TABLE `eav_attribute_set` (
   PRIMARY KEY (`attribute_set_id`),
   UNIQUE KEY `UNQ_EAV_ATTRIBUTE_SET_ENTITY_TYPE_ID_ATTRIBUTE_SET_NAME` (`entity_type_id`,`attribute_set_name`),
   KEY `IDX_EAV_ATTRIBUTE_SET_ENTITY_TYPE_ID_SORT_ORDER` (`entity_type_id`,`sort_order`)
-) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Set';
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8 COMMENT='Eav Attribute Set';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11637,6 +11680,7 @@ INSERT INTO `eav_attribute_set` VALUES (59,10,'Warranties',0);
 INSERT INTO `eav_attribute_set` VALUES (60,10,'CPU',0);
 INSERT INTO `eav_attribute_set` VALUES (61,10,'Monitors',0);
 INSERT INTO `eav_attribute_set` VALUES (62,10,'Hard Drive',0);
+INSERT INTO `eav_attribute_set` VALUES (63,10,'LIGHTSPEED_PRODUCT_ATTRIBUTE_SET',0);
 /*!40000 ALTER TABLE `eav_attribute_set` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -11692,7 +11736,7 @@ CREATE TABLE `eav_entity_attribute` (
   UNIQUE KEY `UNQ_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_GROUP_ID_ATTRIBUTE_ID` (`attribute_group_id`,`attribute_id`),
   KEY `IDX_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_SET_ID_SORT_ORDER` (`attribute_set_id`,`sort_order`),
   KEY `IDX_EAV_ENTITY_ATTRIBUTE_ATTRIBUTE_ID` (`attribute_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4748 DEFAULT CHARSET=utf8 COMMENT='Eav Entity Attributes';
+) ENGINE=InnoDB AUTO_INCREMENT=4874 DEFAULT CHARSET=utf8 COMMENT='Eav Entity Attributes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -13387,6 +13431,70 @@ INSERT INTO `eav_entity_attribute` VALUES (4744,10,45,80,961,34);
 INSERT INTO `eav_entity_attribute` VALUES (4745,10,41,59,961,35);
 INSERT INTO `eav_entity_attribute` VALUES (4746,10,40,55,961,77);
 INSERT INTO `eav_entity_attribute` VALUES (4747,10,59,142,961,41);
+INSERT INTO `eav_entity_attribute` VALUES (4749,10,63,196,562,18);
+INSERT INTO `eav_entity_attribute` VALUES (4751,10,63,197,935,1);
+INSERT INTO `eav_entity_attribute` VALUES (4753,10,63,197,936,2);
+INSERT INTO `eav_entity_attribute` VALUES (4755,10,63,198,571,1);
+INSERT INTO `eav_entity_attribute` VALUES (4757,10,63,198,572,2);
+INSERT INTO `eav_entity_attribute` VALUES (4759,10,63,198,573,3);
+INSERT INTO `eav_entity_attribute` VALUES (4761,10,63,198,531,16);
+INSERT INTO `eav_entity_attribute` VALUES (4763,10,63,198,836,17);
+INSERT INTO `eav_entity_attribute` VALUES (4765,10,63,198,931,18);
+INSERT INTO `eav_entity_attribute` VALUES (4767,10,63,199,97,1);
+INSERT INTO `eav_entity_attribute` VALUES (4769,10,63,199,506,2);
+INSERT INTO `eav_entity_attribute` VALUES (4771,10,63,200,493,1);
+INSERT INTO `eav_entity_attribute` VALUES (4773,10,63,200,109,2);
+INSERT INTO `eav_entity_attribute` VALUES (4775,10,63,200,271,3);
+INSERT INTO `eav_entity_attribute` VALUES (4777,10,63,200,106,4);
+INSERT INTO `eav_entity_attribute` VALUES (4779,10,63,200,703,5);
+INSERT INTO `eav_entity_attribute` VALUES (4781,10,63,201,103,1);
+INSERT INTO `eav_entity_attribute` VALUES (4783,10,63,201,104,2);
+INSERT INTO `eav_entity_attribute` VALUES (4785,10,63,201,105,3);
+INSERT INTO `eav_entity_attribute` VALUES (4787,10,63,202,99,1);
+INSERT INTO `eav_entity_attribute` VALUES (4789,10,63,202,503,1);
+INSERT INTO `eav_entity_attribute` VALUES (4791,10,63,202,960,2);
+INSERT INTO `eav_entity_attribute` VALUES (4793,10,63,202,100,3);
+INSERT INTO `eav_entity_attribute` VALUES (4795,10,63,202,270,4);
+INSERT INTO `eav_entity_attribute` VALUES (4797,10,63,202,567,5);
+INSERT INTO `eav_entity_attribute` VALUES (4799,10,63,202,568,6);
+INSERT INTO `eav_entity_attribute` VALUES (4801,10,63,202,569,7);
+INSERT INTO `eav_entity_attribute` VALUES (4803,10,63,202,862,8);
+INSERT INTO `eav_entity_attribute` VALUES (4805,10,63,202,903,35);
+INSERT INTO `eav_entity_attribute` VALUES (4807,10,63,202,941,36);
+INSERT INTO `eav_entity_attribute` VALUES (4809,10,63,202,942,37);
+INSERT INTO `eav_entity_attribute` VALUES (4811,10,63,202,943,38);
+INSERT INTO `eav_entity_attribute` VALUES (4813,10,63,203,96,1);
+INSERT INTO `eav_entity_attribute` VALUES (4815,10,63,203,98,2);
+INSERT INTO `eav_entity_attribute` VALUES (4817,10,63,203,101,3);
+INSERT INTO `eav_entity_attribute` VALUES (4819,10,63,203,273,6);
+INSERT INTO `eav_entity_attribute` VALUES (4821,10,63,203,274,7);
+INSERT INTO `eav_entity_attribute` VALUES (4823,10,63,203,481,9);
+INSERT INTO `eav_entity_attribute` VALUES (4825,10,63,203,526,10);
+INSERT INTO `eav_entity_attribute` VALUES (4827,10,63,203,110,15);
+INSERT INTO `eav_entity_attribute` VALUES (4829,10,63,203,102,19);
+INSERT INTO `eav_entity_attribute` VALUES (4831,10,63,203,272,20);
+INSERT INTO `eav_entity_attribute` VALUES (4833,10,63,203,570,21);
+INSERT INTO `eav_entity_attribute` VALUES (4835,10,63,203,704,22);
+INSERT INTO `eav_entity_attribute` VALUES (4837,10,63,203,705,23);
+INSERT INTO `eav_entity_attribute` VALUES (4839,10,63,203,837,25);
+INSERT INTO `eav_entity_attribute` VALUES (4841,10,63,203,838,26);
+INSERT INTO `eav_entity_attribute` VALUES (4843,10,63,203,859,27);
+INSERT INTO `eav_entity_attribute` VALUES (4845,10,63,203,860,28);
+INSERT INTO `eav_entity_attribute` VALUES (4847,10,63,203,861,29);
+INSERT INTO `eav_entity_attribute` VALUES (4849,10,63,203,863,30);
+INSERT INTO `eav_entity_attribute` VALUES (4851,10,63,203,879,31);
+INSERT INTO `eav_entity_attribute` VALUES (4853,10,63,203,880,32);
+INSERT INTO `eav_entity_attribute` VALUES (4855,10,63,203,881,33);
+INSERT INTO `eav_entity_attribute` VALUES (4857,10,63,203,904,34);
+INSERT INTO `eav_entity_attribute` VALUES (4859,10,63,203,905,35);
+INSERT INTO `eav_entity_attribute` VALUES (4861,10,63,203,906,36);
+INSERT INTO `eav_entity_attribute` VALUES (4863,10,63,203,932,37);
+INSERT INTO `eav_entity_attribute` VALUES (4865,10,63,203,933,38);
+INSERT INTO `eav_entity_attribute` VALUES (4867,10,63,203,940,39);
+INSERT INTO `eav_entity_attribute` VALUES (4869,10,63,203,952,40);
+INSERT INTO `eav_entity_attribute` VALUES (4871,10,63,203,961,41);
+INSERT INTO `eav_entity_attribute` VALUES (4872,10,63,204,962,1);
+INSERT INTO `eav_entity_attribute` VALUES (4873,10,63,204,963,2);
 /*!40000 ALTER TABLE `eav_entity_attribute` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -14008,7 +14116,7 @@ CREATE TABLE `index_event` (
   `new_data` mediumtext COMMENT 'New Data',
   PRIMARY KEY (`event_id`),
   UNIQUE KEY `UNQ_INDEX_EVENT_TYPE_ENTITY_ENTITY_PK` (`type`,`entity`,`entity_pk`)
-) ENGINE=InnoDB AUTO_INCREMENT=286 DEFAULT CHARSET=utf8 COMMENT='Index Event';
+) ENGINE=InnoDB AUTO_INCREMENT=401 DEFAULT CHARSET=utf8 COMMENT='Index Event';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -14302,6 +14410,121 @@ INSERT INTO `index_event` VALUES (282,'delete','catalog_product',21,'2014-06-19 
 INSERT INTO `index_event` VALUES (283,'delete','catalog_product',22,'2014-06-19 02:56:15',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:1;s:34:\"catalog_product_price_match_result\";b:1;s:24:\"catalog_url_match_result\";b:0;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:0;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
 INSERT INTO `index_event` VALUES (284,'delete','catalog_product',23,'2014-06-19 02:56:16',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:1;s:34:\"catalog_product_price_match_result\";b:1;s:24:\"catalog_url_match_result\";b:0;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:0;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
 INSERT INTO `index_event` VALUES (285,'delete','catalog_product',24,'2014-06-19 02:56:18',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:1;s:34:\"catalog_product_price_match_result\";b:1;s:24:\"catalog_url_match_result\";b:0;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:0;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (286,'save','catalog_category',43,'2014-06-19 03:20:12',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (287,'save','catalog_category',44,'2014-06-19 03:20:16',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (288,'save','catalog_category',45,'2014-06-19 03:20:17',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (289,'save','catalog_category',46,'2014-06-19 03:20:21',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (290,'save','catalog_category',47,'2014-06-19 03:20:23',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (291,'save','catalog_category',48,'2014-06-19 03:20:25',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (292,'save','catalog_category',49,'2014-06-19 03:20:27',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (293,'save','catalog_category',50,'2014-06-19 03:20:28',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (294,'save','catalog_category',51,'2014-06-19 03:20:30',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (295,'save','catalog_category',52,'2014-06-19 03:20:33',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (296,'save','catalog_category',53,'2014-06-19 03:20:35',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (297,'save','catalog_category',54,'2014-06-19 03:20:39',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (298,'save','catalog_category',55,'2014-06-19 03:20:41',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (299,'save','catalog_category',56,'2014-06-19 03:20:44',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (300,'save','catalog_category',57,'2014-06-19 03:20:46',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (301,'save','catalog_category',58,'2014-06-19 03:20:49',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (302,'save','catalog_category',59,'2014-06-19 03:20:51',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (303,'save','catalog_category',60,'2014-06-19 03:20:54',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (304,'save','catalog_category',61,'2014-06-19 03:20:56',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (305,'save','catalog_category',62,'2014-06-19 03:20:58',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (306,'save','catalog_category',63,'2014-06-19 03:21:00',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (307,'save','catalog_category',64,'2014-06-19 03:21:02',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (308,'save','catalog_category',65,'2014-06-19 03:21:04',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (309,'save','catalog_category',66,'2014-06-19 03:21:07',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (310,'save','catalog_category',67,'2014-06-19 03:21:09',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (311,'save','catalog_category',68,'2014-06-19 03:21:11',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (312,'save','catalog_category',69,'2014-06-19 03:21:12',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (313,'save','catalog_category',70,'2014-06-19 03:21:16',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (314,'save','catalog_category',71,'2014-06-19 03:21:17',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (315,'save','catalog_category',72,'2014-06-19 03:21:19',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (316,'save','catalog_category',73,'2014-06-19 03:21:21',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (317,'save','catalog_category',74,'2014-06-19 03:21:24',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (318,'save','catalog_category',75,'2014-06-19 03:21:26',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (319,'save','catalog_category',76,'2014-06-19 03:21:27',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (320,'save','catalog_category',77,'2014-06-19 03:21:30',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (321,'save','catalog_category',78,'2014-06-19 03:21:31',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (322,'save','store_group',1,'2014-06-19 03:21:33',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:0;}');
+INSERT INTO `index_event` VALUES (323,'save','catalog_category',79,'2014-06-19 03:21:36',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (324,'save','catalog_category',80,'2014-06-19 03:21:40',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (325,'save','catalog_category',81,'2014-06-19 03:21:42',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (326,'save','catalog_category',82,'2014-06-19 03:21:45',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (327,'delete','core_store',3,'2014-06-19 03:24:14',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:0;s:33:\"catalog_product_flat_match_result\";b:1;s:37:\"catalog_category_product_match_result\";b:0;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (328,'delete','core_store',2,'2014-06-19 03:24:34',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:0;s:33:\"catalog_product_flat_match_result\";b:1;s:37:\"catalog_category_product_match_result\";b:0;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (329,'save','catalog_category',83,'2014-06-19 03:29:53',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (330,'save','catalog_category',84,'2014-06-19 03:29:56',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (331,'save','catalog_category',85,'2014-06-19 03:29:59',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (332,'save','catalog_category',86,'2014-06-19 03:30:01',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (333,'save','catalog_category',87,'2014-06-19 03:30:07',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (334,'save','catalog_category',88,'2014-06-19 03:30:09',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (335,'save','catalog_category',89,'2014-06-19 03:30:14',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (336,'save','catalog_category',90,'2014-06-19 03:30:17',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (337,'save','catalog_category',91,'2014-06-19 03:30:20',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (338,'save','catalog_category',92,'2014-06-19 03:30:22',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (339,'save','catalog_category',93,'2014-06-19 03:30:25',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (340,'save','catalog_category',94,'2014-06-19 03:30:27',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (341,'save','catalog_category',95,'2014-06-19 03:30:30',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (342,'save','catalog_category',96,'2014-06-19 03:30:32',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (343,'save','catalog_category',97,'2014-06-19 03:30:33',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (344,'save','catalog_category',98,'2014-06-19 03:30:36',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (345,'save','catalog_category',99,'2014-06-19 03:30:38',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (346,'save','catalog_category',100,'2014-06-19 03:30:40',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (347,'save','catalog_category',101,'2014-06-19 03:30:41',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (348,'save','catalog_category',102,'2014-06-19 03:30:45',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (349,'save','catalog_category',103,'2014-06-19 03:30:47',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (350,'save','catalog_category',104,'2014-06-19 03:30:48',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (351,'save','catalog_category',105,'2014-06-19 03:30:52',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (352,'save','catalog_category',106,'2014-06-19 03:30:53',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (353,'save','catalog_category',107,'2014-06-19 03:30:56',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (354,'save','catalog_category',108,'2014-06-19 03:30:58',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (355,'save','catalog_category',109,'2014-06-19 03:31:01',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (356,'save','catalog_category',110,'2014-06-19 03:31:03',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (357,'save','catalog_category',111,'2014-06-19 03:31:05',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (358,'save','catalog_category',112,'2014-06-19 03:31:07',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (359,'save','catalog_category',113,'2014-06-19 03:31:09',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (360,'save','catalog_category',114,'2014-06-19 03:31:11',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (361,'save','catalog_category',115,'2014-06-19 03:31:13',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (362,'save','catalog_category',116,'2014-06-19 03:31:16',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (363,'save','catalog_category',117,'2014-06-19 03:31:18',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (364,'save','catalog_category',118,'2014-06-19 03:31:19',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (365,'save','catalog_category',119,'2014-06-19 03:31:21',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (366,'save','catalog_category',120,'2014-06-19 03:31:23',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (367,'save','catalog_category',121,'2014-06-19 03:31:25',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (368,'save','catalog_category',122,'2014-06-19 03:31:27',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (369,'save','catalog_category',123,'2014-06-19 03:31:29',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (370,'save','catalog_category',124,'2014-06-19 03:31:31',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (371,'save','catalog_category',125,'2014-06-19 03:31:33',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (372,'save','catalog_category',126,'2014-06-19 03:31:34',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (373,'save','catalog_category',127,'2014-06-19 03:31:38',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (374,'save','catalog_category',128,'2014-06-19 03:31:39',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (375,'save','catalog_category',129,'2014-06-19 03:31:42',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (376,'save','catalog_category',130,'2014-06-19 03:31:44',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (377,'save','catalog_category',131,'2014-06-19 03:31:46',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (378,'save','catalog_category',132,'2014-06-19 03:31:48',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (379,'save','catalog_category',133,'2014-06-19 03:31:51',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (380,'save','catalog_category',134,'2014-06-19 03:31:52',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (381,'save','catalog_category',135,'2014-06-19 03:31:55',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (382,'save','catalog_category',136,'2014-06-19 03:31:57',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (383,'save','catalog_category',137,'2014-06-19 03:31:59',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (384,'save','catalog_category',138,'2014-06-19 03:32:03',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (385,'save','catalog_category',139,'2014-06-19 03:32:04',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (386,'save','catalog_category',140,'2014-06-19 03:32:06',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (387,'save','catalog_category',141,'2014-06-19 03:32:08',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (388,'save','catalog_category',142,'2014-06-19 03:32:10',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (389,'save','catalog_category',143,'2014-06-19 03:32:12',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (390,'save','catalog_category',144,'2014-06-19 03:32:14',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (391,'save','catalog_category',145,'2014-06-19 03:32:17',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (392,'save','catalog_category',146,'2014-06-19 03:32:19',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (393,'save','catalog_category',147,'2014-06-19 03:32:21',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (394,'save','catalog_category',148,'2014-06-19 03:32:23',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (395,'save','catalog_category',149,'2014-06-19 03:32:25',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (396,'save','catalog_category',150,'2014-06-19 03:32:27',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (397,'save','catalog_category',151,'2014-06-19 03:32:28',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (398,'save','catalog_category',152,'2014-06-19 03:32:30',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (399,'save','catalog_category',153,'2014-06-19 03:32:33',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
+INSERT INTO `index_event` VALUES (400,'save','catalog_category',154,'2014-06-19 03:32:35',NULL,'a:6:{s:35:\"cataloginventory_stock_match_result\";b:0;s:34:\"catalog_product_price_match_result\";b:0;s:24:\"catalog_url_match_result\";b:1;s:33:\"catalog_product_flat_match_result\";b:0;s:37:\"catalog_category_product_match_result\";b:1;s:35:\"catalogsearch_fulltext_match_result\";b:1;}');
 /*!40000 ALTER TABLE `index_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -14332,11 +14555,11 @@ LOCK TABLES `index_process` WRITE;
 /*!40000 ALTER TABLE `index_process` DISABLE KEYS */;
 INSERT INTO `index_process` VALUES (1,'catalog_product_attribute','pending','2014-06-19 02:56:31','2014-06-19 02:56:31','real_time');
 INSERT INTO `index_process` VALUES (2,'catalog_product_price','pending','2014-06-19 02:56:31','2014-06-19 02:56:31','real_time');
-INSERT INTO `index_process` VALUES (3,'catalog_url','pending','2013-05-26 19:52:52','2013-05-26 19:52:52','real_time');
-INSERT INTO `index_process` VALUES (4,'catalog_product_flat','pending','2013-05-26 19:52:52','2013-05-26 19:52:52','real_time');
+INSERT INTO `index_process` VALUES (3,'catalog_url','require_reindex','2014-06-19 03:37:05','2014-06-19 03:37:05','real_time');
+INSERT INTO `index_process` VALUES (4,'catalog_product_flat','pending','2014-06-19 03:24:35','2014-06-19 03:24:36','real_time');
 INSERT INTO `index_process` VALUES (5,'catalog_category_flat','pending','2013-01-25 20:13:24','2013-01-25 20:13:24','real_time');
-INSERT INTO `index_process` VALUES (6,'catalog_category_product','pending','2013-05-26 19:52:52','2013-05-26 19:52:52','real_time');
-INSERT INTO `index_process` VALUES (7,'catalogsearch_fulltext','pending','2014-06-19 02:56:31','2014-06-19 02:56:31','real_time');
+INSERT INTO `index_process` VALUES (6,'catalog_category_product','require_reindex','2014-06-19 03:37:05','2014-06-19 03:37:05','real_time');
+INSERT INTO `index_process` VALUES (7,'catalogsearch_fulltext','require_reindex','2014-06-19 03:32:35','2014-06-19 03:32:35','real_time');
 INSERT INTO `index_process` VALUES (8,'cataloginventory_stock','pending','2014-06-19 02:56:31','2014-06-19 02:56:31','real_time');
 INSERT INTO `index_process` VALUES (9,'tag_summary','pending','2014-06-19 02:56:31','2014-06-19 02:56:31','real_time');
 /*!40000 ALTER TABLE `index_process` ENABLE KEYS */;
@@ -17136,6 +17359,14 @@ INSERT INTO `log_url` VALUES (8983,194,'2013-05-26 21:00:29');
 INSERT INTO `log_url` VALUES (8984,194,'2013-05-26 21:00:32');
 INSERT INTO `log_url` VALUES (8985,194,'2013-05-26 21:01:38');
 INSERT INTO `log_url` VALUES (8986,195,'2014-06-19 02:50:50');
+INSERT INTO `log_url` VALUES (8987,195,'2014-06-19 03:26:37');
+INSERT INTO `log_url` VALUES (8988,195,'2014-06-19 03:27:09');
+INSERT INTO `log_url` VALUES (8989,195,'2014-06-19 03:27:09');
+INSERT INTO `log_url` VALUES (8990,195,'2014-06-19 03:27:09');
+INSERT INTO `log_url` VALUES (8991,195,'2014-06-19 03:27:19');
+INSERT INTO `log_url` VALUES (8992,195,'2014-06-19 03:27:19');
+INSERT INTO `log_url` VALUES (8993,195,'2014-06-19 03:27:19');
+INSERT INTO `log_url` VALUES (8994,195,'2014-06-19 03:27:22');
 /*!40000 ALTER TABLE `log_url` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -17151,7 +17382,7 @@ CREATE TABLE `log_url_info` (
   `url` varchar(255) NOT NULL DEFAULT '' COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8987 DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
+) ENGINE=InnoDB AUTO_INCREMENT=8995 DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -17161,6 +17392,14 @@ CREATE TABLE `log_url_info` (
 LOCK TABLES `log_url_info` WRITE;
 /*!40000 ALTER TABLE `log_url_info` DISABLE KEYS */;
 INSERT INTO `log_url_info` VALUES (8986,'http://72.167.252.235/panachebeadco_new/store/index.php/','http://72.167.252.235/panachebeadco_new/store/index.php/install/wizard/end/');
+INSERT INTO `log_url_info` VALUES (8987,'http://72.167.252.235/panachebeadco_new/store/',NULL);
+INSERT INTO `log_url_info` VALUES (8988,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/','http://72.167.252.235/panachebeadco_new/store/');
+INSERT INTO `log_url_info` VALUES (8989,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/','http://72.167.252.235/panachebeadco_new/store/');
+INSERT INTO `log_url_info` VALUES (8990,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/','http://72.167.252.235/panachebeadco_new/store/');
+INSERT INTO `log_url_info` VALUES (8991,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/ves-blog','http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/');
+INSERT INTO `log_url_info` VALUES (8992,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/ves-blog','http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/');
+INSERT INTO `log_url_info` VALUES (8993,'http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/ves-blog','http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/');
+INSERT INTO `log_url_info` VALUES (8994,'http://72.167.252.235/panachebeadco_new/store/index.php/','http://72.167.252.235/panachebeadco_new/store/index.php/catalog/category/view/ves-blog');
 /*!40000 ALTER TABLE `log_url_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -17220,7 +17459,7 @@ INSERT INTO `log_visitor` VALUES (191,'p1rjum2hpli2rb9qskjhpbqoa4','2013-05-26 1
 INSERT INTO `log_visitor` VALUES (192,'ltma1e6769g52kiabgv0d4ne22','2013-05-26 19:53:40','2013-05-26 20:47:59',8967,1);
 INSERT INTO `log_visitor` VALUES (193,'p1rjum2hpli2rb9qskjhpbqoa4','2013-05-26 19:54:36','2013-05-26 20:57:51',8977,1);
 INSERT INTO `log_visitor` VALUES (194,'gorjrpvcopi2qbe2qtj5p7ar67','2013-05-26 20:59:51','2013-05-26 21:01:38',8985,1);
-INSERT INTO `log_visitor` VALUES (195,'8b8mivv7k6v38t1thtnigdjvl1','2014-06-19 02:50:41','2014-06-19 02:50:50',8986,1);
+INSERT INTO `log_visitor` VALUES (195,'8b8mivv7k6v38t1thtnigdjvl1','2014-06-19 02:50:41','2014-06-19 03:27:22',8994,1);
 /*!40000 ALTER TABLE `log_visitor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -23579,4 +23818,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-18 19:12:15
+-- Dump completed on 2014-06-18 19:37:48
