@@ -39,7 +39,6 @@ if (defined('COMPILER_INCLUDE_PATH')) {
     /**
      * Set include path
      */
-    $paths = array();
     $paths[] = BP . DS . 'app' . DS . 'code' . DS . 'local';
     $paths[] = BP . DS . 'app' . DS . 'code' . DS . 'community';
     $paths[] = BP . DS . 'app' . DS . 'code' . DS . 'core';
@@ -169,9 +168,9 @@ final class Mage
     {
         return array(
             'major'     => '1',
-            'minor'     => '9',
+            'minor'     => '7',
             'revision'  => '0',
-            'patch'     => '1',
+            'patch'     => '2',
             'stability' => '',
             'number'    => '',
         );
@@ -696,7 +695,7 @@ final class Mage
             }
             try {
                 self::dispatchEvent('mage_run_exception', array('exception' => $e));
-                if (!headers_sent() && self::isInstalled()) {
+                if (!headers_sent()) {
                     header('Location:' . self::getUrl('install'));
                 } else {
                     self::printException($e);

@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <lof translate="label" module="lof_slider">
+            <label>Land Of Coder</label>
+            <sort_order>210</sort_order>
+        </lof>
+    </tabs>
+	<sections>
+        <lof_slider>
+            <label>Lof Slider</label>
+            <tab>lof</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+			
+            	<lof_slider translate="label">
+					
+                    <label>General Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>     
+							<last_update translate="label">
+							<label>Current Update Time</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>lof_slider/system_config_form_field_notification</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</last_update> 
+                    	<show translate="label" module="core">
+							<label>Enabled</label>
+							<sort_order>10</sort_order>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show>	
+						
+						<title translate="label">
+                            <label>Module Title </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <comment>Empty for hide</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title> 
+						<thumbnail translate="label">
+                            <label>Display Thumbnail</label>
+							<sort_order>18</sort_order>							
+                            <frontend_type>select</frontend_type>							
+                            <source_model>adminhtml/system_config_source_yesno</source_model>  
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>							
+                        </thumbnail>	
+						<moduleWidth translate="label">
+                            <label>Module Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </moduleWidth>						
+						<moduleHeight translate="label">
+                            <label>Module Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </moduleHeight>
+						
+						
+						
+						<spacer_source translate="label">
+							<label>Select Source Data</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>lof_slider/system_config_form_field_spacer</frontend_model>
+							<sort_order>209</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</spacer_source> 
+						
+						<source translate="label">
+                            <label>From Source</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_slider/system_config_source_listSource</source_model>
+                            <sort_order>210</sort_order>
+                            <comment>Choose Source to render image and content in the slideshow</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </source> 
+						
+					</fields>
+				</lof_slider>
+				<!-- IMAGE_SOURCE_SETTING -->
+				<image_source_setting>
+					<label>Image Source Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<folder translate="label">
+                            <label>Images Folder </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <comment>Path to images folder. Eg: media/lofslider</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </folder> 
+					
+         
+                        <description translate="label">
+                            <label>Description for each Item</label>
+                            <frontend_type>textarea</frontend_type>
+                            <cols>50</cols>
+                            <rows>20</rows>
+                            <comment>the description for each item</comment>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </description> 
+					</fields>
+				</image_source_setting>
+				<!-- PRODUCT_SOURCE_SETTING_END -->
+				
+				<!-- IMAGE_SOURCE_SETTING -->
+				<catalog_source_setting>
+					<label>Catalog - Products Source Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+					 <catsid translate="label">
+                            <label>Categories ID: </label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>lof_slider/system_config_source_ListCategories</source_model>
+                            <comment>Eg: 22,23. Empty for all categories.</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catsid> 
+						
+						<sourceProductsMode translate="label">
+                            <label>Show Products From: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_slider/system_config_source_listType</source_model>                         
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sourceProductsMode>
+                        
+						<quanlity translate="label">
+							<label># Qty of products</label>
+							<sort_order>40</sort_order>
+							<frontend_type>text</frontend_type>
+							<backend_model>lof_slider/system_config_backend_slider_checkQty</backend_model>
+							<comment>0 for show all</comment>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</quanlity>		
+					</fields>
+				</catalog_source_setting>
+				<!-- PRODUCT_SOURCE_SETTING_END -->
+				<file_source_setting>
+					<label>Image Group Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						
+		 
+						<imagecategory translate="label">
+                            <label>Images group </label>
+                            <frontend_type>select</frontend_type>
+							 <source_model>lof_slider/system_config_source_listImagegroup</source_model>
+                            <sort_order>15</sort_order>
+                            <comment>Group of images</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </imagecategory> 
+												
+									 
+					</fields>
+				</file_source_setting>
+				<main_slider>
+					<label>Main Slider Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <startItem translate="label">
+                            <label>Start Item </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </startItem> 
+
+						<control translate="label">
+                            <label>Control buttons </label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <comment>Show control button?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </control>
+						
+					 	<showdesc translate="label">
+                            <label>Show Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_slider/system_config_source_listTypeShowDesc</source_model>
+                            <sort_order>51</sort_order>
+                            <comment>Show/hide description?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showdesc>  
+		
+					</fields>
+				</main_slider>
+			 
+				<thumbnail>
+					<label>Navigator - Thumbnail Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 				
+					<navigationAlignment translate="label">
+                            <label>Navigator Position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_slider/system_config_source_listNavigationAlignment</source_model>
+                            <sort_order>10</sort_order>         
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </navigationAlignment> 
+												
+                        <thumbWidth translate="label">
+                            <label>Thumbnail Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <comment>Set Width of Thumbnail </comment>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thumbWidth>
+                        <thumbHeight translate="label">
+                            <label>Thumbnail Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>140</sort_order>
+                        	  <comment>Set Width of Thumbnail </comment>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thumbHeight>
+        
+						
+                        <showItem translate="label">
+                            <label>Number of thumbnails</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <comment>Number of displayed thumbnail items (If Navigation is Thumbnails). Enter number.</comment>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showItem>
+			 
+					</fields> 
+                </thumbnail>
+				
+                <animation>
+					<label>Animation Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                                                     
+						<autoplay translate="label">
+                            <label>Auto play </label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>180</sort_order>
+                            <comment>If yes, the slideshow will auto switch based on time interval?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </autoplay>  
+						<duration translate="label">
+                            <label>Duration</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <comment>Main image animation duration (ms). Enter number.</comment>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </duration> 
+                        <animation translate="label">
+                            <label>Effect</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_slider/system_config_source_listAnimationType</source_model>
+                            <sort_order>105</sort_order>
+                            <comment>Animation effect you want to display</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </animation>
+                        <interval translate="label">
+                            <label>Interval</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>190</sort_order>
+                            <comment>Time (in seconds) for next play/run</comment>
+							<backend_model>lof_slider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </interval>
+                    </fields>
+            	</animation>
+         		  <advanded_parameter>
+					<label>Information - Support</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6001</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 
+						<module_information translate="label">
+							<label>Set Module Visable On Pages, Position</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>lof_slider/system_config_form_field_information</frontend_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</module_information>                        
+					</fields>
+				</advanded_parameter>	
+            </groups>
+        </lof_slider>
+    </sections>    
+</config>

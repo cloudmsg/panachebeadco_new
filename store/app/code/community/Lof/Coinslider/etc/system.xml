@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <lof translate="label" module="lof_coinslider">
+            <label>Land Of Coder</label>
+            <sort_order>210</sort_order>
+        </lof>
+    </tabs>
+	<sections>
+        <lof_coinslider>
+            <label>Lof  Coinslider</label>
+            <tab>lof</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<lof_coinslider translate="label">
+                    <label>General Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 
+						<last_update translate="label">
+							<label>Current Item Update</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>lof_coinslider/system_config_form_field_notification</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</last_update> 
+                    	<show translate="label" module="core">
+							<label>Enabled</label>
+							<sort_order>10</sort_order>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show>	
+						<title translate="label">
+                            <label>Module Title </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <comment>Empty for hide</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title> 
+												
+						<spacer_source translate="label">
+							<label>Select Source Data</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>lof_coinslider/system_config_form_field_spacer</frontend_model>
+							<sort_order>45</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</spacer_source> 
+						<source translate="label">
+                            <label>From Source</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_coinslider/system_config_source_listSource</source_model>
+                            <sort_order>46</sort_order>
+                            <comment>Choose Source to render image and content in the slideshow</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </source>
+						</fields>
+				</lof_coinslider>
+				<image_source_setting>
+					<label>Image Source Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<folder translate="label">
+                            <label>Images Folder </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <comment>Path to images folder. Eg: media/lof_coinslider</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </folder>
+						<readmoretext translate="label">
+                            <label>Readmore Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <comment>Text to display in Readmore button</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </readmoretext> 
+                        <description translate="label">
+                            <label>Description for each Item</label>
+                            <frontend_type>textarea</frontend_type>
+                            <cols>50</cols>
+                            <rows>20</rows>
+                            <comment>the description for each item</comment>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </description>
+					</fields>
+			</image_source_setting>
+			<file_source_setting>
+					<label>Image Group Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<imagecategory translate="label">
+                            <label>Images group </label>
+                            <frontend_type>select</frontend_type>
+							 <source_model>lof_coinslider/system_config_source_listImagegroup</source_model>
+                            <sort_order>15</sort_order>
+                            <comment>Group of images</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </imagecategory>
+					</fields>
+			</file_source_setting>
+			<catalog_source_setting>
+					<label>Product Source Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>							
+						<catsid translate="label">
+                            <label>Categories ID: </label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>lof_coinslider/system_config_source_ListCategories</source_model>
+                            <comment>Eg: 22,23. Empty for all categories.</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catsid> 
+						
+						<sourceProductsMode translate="label">
+                            <label>Show Products From: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_coinslider/system_config_source_listType</source_model>                         
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sourceProductsMode>
+                        
+						<quanlity translate="label">
+							<label># Qty of products</label>
+							<sort_order>40</sort_order>
+							<frontend_type>text</frontend_type>
+							<backend_model>lof_coinslider/system_config_backend_slider_checkQty</backend_model>
+							<comment>0 for show all</comment>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</quanlity>					 
+					</fields>
+				</catalog_source_setting>
+				<main_slider>
+					<label>Main Slider Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        
+                        <mainWidth translate="label">
+                            <label>Main Item width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+							<backend_model>lof_coinslider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mainWidth>  
+                        <mainHeight translate="label">
+                            <label>Main Item height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+							<backend_model>lof_coinslider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mainHeight>  
+						
+						
+						
+					</fields>
+				</main_slider>
+				<navigation>
+					<label>Navigation Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                                                
+                       	<control translate="label">
+                            <label>Control buttons </label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <comment>Show control button?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </control>
+						<directionNavHide translate="label">
+                            <label>Direction Navigation Auto Hide</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <comment>Whether to enable direction navigation</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </directionNavHide>
+												
+					</fields> 
+				</navigation>
+                <animation>
+					<label>Animation Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<interval translate="label">
+                            <label>Interval</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <comment>Set period of time to allow the module playing.</comment>
+							<backend_model>lof_coinslider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </interval>
+						<duration translate="label">
+                            <label>Duration</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <comment>Main image animation duration (ms). Enter number.</comment>
+							<backend_model>lof_coinslider/system_config_backend_slider_checkvalue</backend_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </duration> 
+                        <effect translate="label">
+                            <label>Effect</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_coinslider/system_config_source_listAnimationType</source_model>
+                            <sort_order>105</sort_order>
+                            <comment>Animation effect you want to display</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </effect>                       				 
+                    </fields>
+            	</animation>
+				 <advanced_setting>
+					<label>Advanced Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>7010</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<showdesc translate="label">
+                            <label>Show Description</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>lof_coinslider/system_config_source_listTypeShowDesc</source_model>
+                            <sort_order>100</sort_order>
+                            <comment>Show/hide description?</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showdesc> 
+						
+						
+					</fields>
+				</advanced_setting>
+            </groups>
+        </lof_coinslider>
+    </sections>    
+</config>

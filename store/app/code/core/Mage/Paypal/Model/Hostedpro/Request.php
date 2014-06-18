@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Paypal
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -136,7 +136,7 @@ class Mage_Paypal_Model_Hostedpro_Request extends Varien_Object
 
             'template'              => 'templateD',
             'showBillingAddress'    => 'false',
-            'showShippingAddress'   => 'true',
+            'showShippingAddress'   => 'false',
             'showBillingEmail'      => 'false',
             'showBillingPhone'      => 'false',
             'showCustomerName'      => 'false',
@@ -156,18 +156,17 @@ class Mage_Paypal_Model_Hostedpro_Request extends Varien_Object
     protected function _getOrderData(Mage_Sales_Model_Order $order)
     {
         $request = array(
-            'subtotal'      => $this->_formatPrice($order->getBaseSubtotal()),
+            'subtotal'      => $this->_formatPrice(
+                $this->_formatPrice($order->getPayment()->getBaseAmountAuthorized()) -
+                $this->_formatPrice($order->getBaseTaxAmount()) -
+                $this->_formatPrice($order->getBaseShippingAmount())
+            ),
             'tax'           => $this->_formatPrice($order->getBaseTaxAmount()),
             'shipping'      => $this->_formatPrice($order->getBaseShippingAmount()),
             'invoice'       => $order->getIncrementId(),
-            'address_override' => 'true',
+            'address_override' => 'false',
             'currency_code'    => $order->getBaseCurrencyCode(),
-            'buyer_email'      => $order->getCustomerEmail(),
-            'discount'         => $this->_formatPrice(
-                $order->getBaseGiftCardsAmount()
-                + abs($order->getBaseDiscountAmount())
-                + $order->getBaseCustomerBalanceAmount()
-            ),
+            'buyer_email'      => $order->getCustomerEmail()
         );
 
         // append to request billing address data
@@ -195,7 +194,7 @@ class Mage_Paypal_Model_Hostedpro_Request extends Varien_Object
             'first_name'=> $address->getFirstname(),
             'last_name' => $address->getLastname(),
             'city'      => $address->getCity(),
-            'state'     => $address->getRegionCode() ? $address->getRegionCode() : $address->getCity(),
+            'state'     => $address->getRegion(),
             'zip'       => $address->getPostcode(),
             'country'   => $address->getCountry(),
         );
@@ -222,7 +221,7 @@ class Mage_Paypal_Model_Hostedpro_Request extends Varien_Object
             'billing_first_name'=> $address->getFirstname(),
             'billing_last_name' => $address->getLastname(),
             'billing_city'      => $address->getCity(),
-            'billing_state'     => $address->getRegionCode() ? $address->getRegionCode() : $address->getCity(),
+            'billing_state'     => $address->getRegion(),
             'billing_zip'       => $address->getPostcode(),
             'billing_country'   => $address->getCountry(),
         );

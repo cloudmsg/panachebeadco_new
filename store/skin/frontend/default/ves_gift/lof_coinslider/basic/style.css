@@ -1,0 +1,181 @@
+.lof-coinslider-basic .lof-inner{
+	padding:0!important;
+	margin:0!important;
+	overflow:hidden;
+}
+.lof-coinslider-basic p.lof-title, .lof-coinslider-basic p.lof-info{ clear:both; float:left; font-size:100%!important}
+/* The Nivo Slider styles */
+.lof-coinslider-basic .nivoSlider {
+	position:relative;
+	min-height:220px;
+	margin:0px;
+	background:#efe9d1 url("images/loading.gif") no-repeat 50% 50%;
+}
+.lof-coinslider-basic .lof-content-wrrapper{ position:relative; overflow:hidden;	display:none;}
+.lof-coinslider-basic .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+.lof-coinslider-basic .nivoSlider a {
+	border: 0 none;
+    opacity: .5;
+}
+.lof-coinslider-basic .nivoSlider a:hover {
+    opacity: .8;
+}
+
+.lof-coinslider-basic .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.lof-coinslider-basic .nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.lof-coinslider-basic .nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+.lof-coinslider-basic .nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.lof-coinslider-basic .des {
+	position:absolute;
+	right:0;
+	bottom:0;
+	background-color: rgba(0, 0, 0, 0.35);
+	color:#fff;
+	width:96%;
+	z-index:89;
+	text-align:justify;
+	padding:2%;
+}
+
+.lof-coinslider-basic .lof-box-title, .lof-coinslider-basic .lof-box-title a{
+	color: #d4020b;
+	text-align:justify;
+}
+
+.lof-coinslider-basic .nivo-caption .lof-extrainfo a {
+	background:none repeat scroll 0 0 #C01F25;
+	font-size:86%;
+	font-weight:bold;
+	margin:0;
+	padding:0 3px 2px 3px;
+	text-decoration:none;
+	text-transform:uppercase;	
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.lof-coinslider-basic .nivo-directionNav a {
+    background-color: rgba(216, 216, 216, 0.85);
+    cursor: pointer;
+    height: 46px;
+    position: absolute;
+    text-indent: -9999em;
+    top: 38%;
+    width: 34px;
+    z-index: 99;
+	
+
+}
+.lof-coinslider-basic .nivo-prevNav {
+	background: url(images/bg-nav.png) no-repeat scroll -3px 3px transparent; left: 0;
+	
+}
+.lof-coinslider-basic .nivo-nextNav {
+	background: url(images/bg-nav.png) no-repeat scroll -42px 3px transparent; right: 0;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.lof-coinslider-basic .nivo-controlNav a {
+	background:url(images/bg-bullets.png) no-repeat 0 center;
+	cursor: pointer;
+    display: block;
+    float: left;
+    height: 14px;
+    margin: 0 3px 0 0;
+    position: relative;
+    text-indent: 9999em;
+    width: 14px;
+    z-index: 99;
+	overflow:hidden;
+}
+.lof-coinslider-basic .nivo-controlNav{ position:absolute; top:2%; left:3%;}
+.lof-coinslider-basic .nivo-controlNav a:hover{ background-position:0 0px;}
+.lof-coinslider-basic .nivo-controlNav a.active {background-position:0 -86px;}
+
+.lof-coinslider-basic .lof-title, .lof-coinslider-basic .lof-title a{
+
+}
+.lof-coinslider-basic .lof-table{
+	display:  table;	
+}
+
+.lof-coinslider-basic .lof-cell{
+	float:left;/*fix for  buggy browsers*/
+	display:  table-cell;	
+}
+
+.lof-coinslider-basic .lof-row  {
+	display:  table-row;
+	width:auto;
+
+}
+
+.lof-coinslider-basic .lof-bottom-left{
+	background:url(images/bg-left-right.png) no-repeat 0 0;	
+	width: 72px;
+	height: 29px;
+}
+.lof-coinslider-basic .lof-bottom-middle{
+	background:url(images/bg-middle.png) repeat-x 0 0;	
+	height: 29px;	
+}
+.lof-coinslider-basic .lof-bottom-right{
+	background:url(images/bg-left-right.png) no-repeat -72px 0;	
+	width: 72px;
+	height: 29px;
+}
+
+/** CSS 3 **/
+.lof-coinslider-basic .lof-css3 .nivoSlider{	
+	-moz-box-shadow:0px 0px 10px #333;
+	-webkit-box-shadow:0px 0px 10px #333;
+	box-shadow:0px 0px 10px #333;
+}
+.lof-coinslider-basic  .lof-css3 .nivo-caption {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.lof-price{
+	color:#FF0000;
+	font-size:12px;
+	font-weight:bold;
+}
+.nivo-caption{ z-index:9999;}
+#ves-slideshow .des a { display:block; opacity:1; }
+#ves-slideshow .des a span{ font-size:20px; color:#fff;}
+#ves-slideshow .des .lof-info{ clear:both;}

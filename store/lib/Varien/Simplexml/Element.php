@@ -327,11 +327,7 @@ class Varien_Simplexml_Element extends SimpleXMLElement
         }
         $value = (string)$value;
 
-        $value = str_replace(
-            array('&', '"', "'", '<', '>'),
-            array('&amp;', '&quot;', '&apos;', '&lt;', '&gt;'),
-            $value
-        );
+        $value = str_replace(array('&', '"', "'", '<', '>'), array('&amp;', '&quot;', '&apos;', '&lt;', '&gt;'), $value);
 
         return $value;
     }
@@ -416,7 +412,7 @@ class Varien_Simplexml_Element extends SimpleXMLElement
             // handle string node
             if (isset($this->$sourceName)) {
                 // if target already has children return without regard
-                if ($this->$sourceName->hasChildren()) {
+                if ($this->$sourceName->children()) {
                     return $this;
                 }
                 if ($overwrite) {

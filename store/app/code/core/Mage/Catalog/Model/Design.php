@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Catalog
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -61,8 +61,7 @@ class Mage_Catalog_Model_Design extends Mage_Core_Model_Abstract
             return $this;
         }
 
-        // If Flat Data enabled then use it but only on frontend
-        if (Mage::helper('catalog/category_flat')->isAvailable() && !Mage::app()->getStore()->isAdmin()) {
+        if (Mage::helper('catalog/category_flat')->isEnabled()) {
             $this->_applyDesign($object, $calledFrom);
         } else {
             $this->_inheritDesign($object, $calledFrom);

@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_CatalogSearch
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -31,14 +31,7 @@
  */
 class Mage_CatalogSearch_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    /**
-     * Query variable name
-     */
     const QUERY_VAR_NAME = 'q';
-
-    /*
-     * Maximum query length
-     */
     const MAX_QUERY_LEN  = 200;
 
     /**
@@ -173,7 +166,7 @@ class Mage_CatalogSearch_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return $this->_getUrl('catalogsearch/result', array(
             '_query' => array(self::QUERY_VAR_NAME => $query),
-            '_secure' => $this->_getApp()->getFrontController()->getRequest()->isSecure()
+            '_secure' => Mage::app()->getFrontController()->getRequest()->isSecure()
         ));
     }
 
@@ -185,18 +178,8 @@ class Mage_CatalogSearch_Helper_Data extends Mage_Core_Helper_Abstract
     public function getSuggestUrl()
     {
         return $this->_getUrl('catalogsearch/ajax/suggest', array(
-            '_secure' => $this->_getApp()->getStore()->isCurrentlySecure()
+            '_secure' => Mage::app()->getFrontController()->getRequest()->isSecure()
         ));
-    }
-
-    /**
-     * Get App
-     *
-     * @return Mage_Core_Model_App
-     */
-    protected function _getApp()
-    {
-        return Mage::app();
     }
 
     /**

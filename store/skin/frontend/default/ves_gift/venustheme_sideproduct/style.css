@@ -1,0 +1,63 @@
+.vesclear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.vesclear {
+	display: inline-block;
+}
+ 
+html[xmlns] .vesclear {
+	display: block;
+}
+ 
+* html .vesclear {
+	height: 1%;
+}
+
+.ves-sideproduct {position:relative}
+.ves-sideproduct li{float:left}
+.ves-sideproduct  .sideproduct-desc{display:none;}
+
+.ves-sideproduct li { padding:7px; position:relative  }
+.ves-sideproduct li > .vesclear{
+    border-top: 1px dotted #DAD7D6;
+    padding: 12px 0 0;}
+.ves-sideproduct li .active {  }
+.ves-sideproduct li img{float:left; border:2px solid #e2e2e2;margin-right:7px;background:#fff;}
+.ves-sideproduct li h4{font-weight:normal; font-size:100%}
+.ves-sideproduct li h4 a,
+.ves-sideproduct .product-name a{
+    color: #575757;
+    display: block;
+    font-size: 12px;
+    height: 16px;
+    overflow: hidden;
+	font-weight:bold;
+	line-height:16px;
+}
+.ves-sideproduct img{  max-width:100%}
+.ves-sideproduct .product-meta{overflow:hidden}
+	
+.ves-sideproduct .prev,
+.ves-sideproduct .next{ display:block; height:22px; width:22px; overflow:hidden;text-indent:-999em; position:absolute; top:30%;z-index:4; background:url(next-prev.png) no-repeat; }
+.ves-sideproduct .prev{left:0;background-position:0 0}
+.ves-sideproduct .next{right:0;background-position:-22px 0}
+ 
+ .dir-vertical .sideproduct-main{float:left;}
+ .dir-vertical .ves-sideproduct {float:left}
+ 
+ 
+.ves-sideproduct .price-box .price, .ves-sideproduct .special-price .price 
+,.ves-sideproduct .special-price .price-label {
+	float:left;
+	padding: 0 5px 0 0;
+ }
+.ves-sideproduct .old-price .price-label,.ves-sideproduct .button-actions,
+.ves-sideproduct .special-price .price-label,.ves-sideproduct .add-to-cart label,
+.ves-sideproduct .minimal-price-link .label{display:none !important;}
+.ves-sideproduct .old-price .price,.ves-sideproduct .price{font-size:18px;}

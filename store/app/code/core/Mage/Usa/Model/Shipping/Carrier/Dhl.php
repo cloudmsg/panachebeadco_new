@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Usa
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -33,7 +33,7 @@
  * @author      Magento Core Team <core@magentocommerce.com>
  */
 class Mage_Usa_Model_Shipping_Carrier_Dhl
-    extends Mage_Usa_Model_Shipping_Carrier_Dhl_Abstract
+    extends Mage_Usa_Model_Shipping_Carrier_Abstract
     implements Mage_Shipping_Model_Carrier_Interface
 {
 
@@ -425,6 +425,34 @@ class Mage_Usa_Model_Shipping_Carrier_Dhl
     }
 
     /**
+     * Get shipping date
+     *
+     * @param bool $domestic
+     * @return string
+     */
+    protected function _getShipDate($domestic = true)
+    {
+        if ($domestic) {
+            $days = explode(',', $this->getConfigData('shipment_days'));
+        } else {
+            $days = explode(',', $this->getConfigData('intl_shipment_days'));
+        }
+
+        if (!$days) {
+            return date('Y-m-d');
+        }
+
+        $i = 0;
+        $weekday = date('w');
+        while (!in_array($weekday, $days) && $i < 10) {
+            $i++;
+            $weekday = date('w', strtotime("+$i day"));
+        }
+
+        return date('Y-m-d', strtotime("+$i day"));
+    }
+
+    /**
      * Get xml quotes
      *
      * @return Mage_Core_Model_Abstract|Varien_Object
@@ -752,6 +780,10 @@ class Mage_Usa_Model_Shipping_Carrier_Dhl
         $priceArr = array();
         $errorTitle = 'Unable to retrieve quotes';
 
+        $tr = get_html_translation_table(HTML_ENTITIES);
+        unset($tr['<'], $tr['>'], $tr['"']);
+        $response = str_replace(array_keys($tr), array_values($tr), $response);
+
         if (strlen(trim($response)) > 0) {
             if (strpos(trim($response), '<?xml') === 0) {
                 $xml = simplexml_load_string($response);
@@ -1000,9 +1032,10 @@ class Mage_Usa_Model_Shipping_Carrier_Dhl
     }
 
     /**
-     * Send request for trackings
+     * Send request for tracking
      *
-     * @param array $trackings
+     * @param array $tracking
+     * @return null
      */
     protected function _getXMLTracking($trackings)
     {

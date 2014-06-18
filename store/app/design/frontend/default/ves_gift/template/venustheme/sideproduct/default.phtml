@@ -1,0 +1,81 @@
+<?php $rad = rand();?>
+<?php 
+	$style = "";
+	if( $this->getConfig("moduleHeight") !="auto" ){
+		$style .=";height:".(int) $this->getConfig("moduleHeight")."px";
+	}
+	if( $this->getConfig("moduleWidth") !="auto" ){
+		$style .=";width:".(int) $this->getConfig("moduleWidth")."px";
+	}
+
+if( !empty($items)  ): 	
+?><?php $_helper = $this->helper('catalog/output'); ?>
+<div class="ves-sideproduct block" style="position:relative;">
+	<?php if( $this->getConfig("title") ) : ?>
+		<div class="block-title">
+			<strong><span><?php echo $this->getConfig("title");?></span></strong>
+		</div>
+	<?php endif; ?>
+	<div class="slideproduct-wrapper <?php if( $this->getConfig("isvertical",0) ):?>dir-vertical<?php endif; ?>">
+		<ul>
+		<?php $k=0; foreach( $items as $_product ): 							
+			$class = ''; $k++;
+			if( $k==1 ){
+				$class = 'class="first"';
+			}elseif($k%$itemsrow==0){
+				$class = 'class="last"';
+			}			 
+		?>
+			<li>
+				<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>">
+					<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(60,74) ?>" width="60" height="74" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" />
+				</a>
+				<div class="product-meta">
+				<?php if( $this->getConfig('show_title',1) ) : ?>
+					<h2 class="product-name">
+						<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
+					</h2>
+					<?php endif; ?>
+					<?php if ( $this->getConfig('show_des') ): ?>
+					<div class="desc">
+						<?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
+					</div>
+					<?php endif; ?>
+					<?php if ( $this->getConfig('review',1) ): ?>
+						<div class="review"><?php echo $this->getReviewsSummaryHtml($_product, 'short') ?></div>
+					<?php endif; ?>
+					<?php if($this->getConfig('show_price',1)): ?>
+						<div class="item-price">
+						<?php echo $this->getPriceHtml($_product, true) ?>
+						</div>
+					<?php endif; ?>
+		
+	
+				</div>
+			</li>
+		<?php endforeach;?>
+		</ul>
+			<?php if( count($items) > (int)$this->getConfig("itemvisiable",3) ) : ?>
+			<a class="prev"><span>Prev</span></a>
+			<a class="next"><span>Next</span></a>
+			<?php endif; ?>
+
+	</div>
+</div>
+
+
+<?php if(  count($items)  > 1 ) :?> 
+<script type="text/javascript">	
+	jQuery(".slideproduct-wrapper").jCarouselLite({
+		btnNext: ".ves-sideproduct .next",
+		btnPrev: ".ves-sideproduct .prev",
+		auto:<?php echo $this->getConfig("play","0");?>,
+		speed:<?php echo $this->getConfig("speed",800);?>,
+		hoverPause:true,
+		visible: <?php echo (int)$this->getConfig("itemvisiable",3); ?>,
+		vertical:<?php echo $this->getConfig("isvertical",0);?>
+	});
+</script>
+
+<?php endif; ?>
+<?php endif; ?>

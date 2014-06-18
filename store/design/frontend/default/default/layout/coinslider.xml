@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+	<!--
+        <reference name="head">	
+        	<action method="addCss"><stylesheet>lof/coinslider/css/slider.css</stylesheet></action>
+        	<action method="addJs"><script>lof_coinslider/jquery.js</script></action>
+            <action method="addJs"><script>lof_coinslider/jquery.easing.js</script></action>            
+            <action method="addJs"><script>lof_coinslider/script.js</script></action>
+        </reference>
+		-->
+    </default>
+<!--
+    <cms_index_index>
+      <reference name="topsl">		
+			<block type="lof_coinslider/list" name="slider" >
+				<action method="set">
+					<params>
+						show =
+						title = 
+						folder = 
+						startItem = 
+						mainWidth = 
+						mainHeight = 
+						showdesc = 
+						showdescwhen = 
+						readmoretext = 
+						duration = 
+						animation = 
+						effect = 
+						container = 
+						navigation = 
+						thumbWidth = 
+						thumbHeight = 
+						thumbSpace = 
+						showItem = 
+						control = 
+						autoplay = 
+						interval = 
+						thumbOpacity = 
+						descOpacity = 
+						overlapOpacity = 
+						description = 
+						
+					</params>
+				</action>
+			</block>
+      </reference>
+    </cms_index_index>
+-->		
+</layout>

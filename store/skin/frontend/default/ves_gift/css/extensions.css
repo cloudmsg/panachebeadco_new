@@ -1,0 +1,70 @@
+/*==================== tree Menu ======================*/
+/*-- Tree --*/
+.sidebar #ves-dropdown li,
+.sidebar #ves-accordion > li{
+	min-height:32px;
+	line-height:32px;
+	background:url(../images/default/bg-list-menu.png) left bottom repeat-x;
+    border-color: #F4F4F4 #F4F4F4 #CFCFCF;
+    border-style: solid;
+    border-width: 1px;
+	width:100%;
+}
+.sidebar #ves-dropdown li.parent:hover a{
+	background-position:10px -25px;
+	color:#2570BB !important;
+}
+.sidebar #ves-dropdown li:last-child{
+	border-bottom:none;
+	border-radius:0 0 3px 3px;
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+}
+.sidebar #ves-dropdown li a,
+.sidebar #ves-accordion > li > a,
+.block .block-subtitle {
+	line-height:32px;
+	color: #515151;
+    font-size: 13px;
+    padding-left: 29px;
+	text-transform:capitalize;
+	text-shadow:0 1px 1px #FFFFFF;
+}
+
+.ves-categoriesmenu .block-content{
+	padding-bottom:0;
+	border-radius:0 0 4px 4px;
+	-moz-border-radius:0 0 4px 4px;
+	-webkit-border-radius:0 0 4px 4px;
+}
+.sidebar #ves-dropdown li.over a{color:#2570BB;}
+.sidebar #ves-dropdown ul{
+	border:1px solid #CACACA;
+	background:#E8E8E8 !important;
+}
+.sidebar #ves-dropdown ul li a:hover { float:none; padding:auto; background:none;}
+/*-- Accor --*/
+.sidebar #ves-accordion{padding:0;}
+.sidebar #ves-accordion span.head a,.sidebar #ves-accordion span.head a:hover{background-color:transparent;margin-top: 8px;padding:0 10px 0 0;background-position:0 0;
+}
+.sidebar #ves-accordion ul li{background:none;padding-left:13px;}
+.sidebar #ves-accordion ul li.level1 > a{
+	background:url("../images/default/icon-li_cate.png") no-repeat scroll 0px -70px transparent;
+}
+#ves-accordion ul.level0{margin-bottom:5px;}
+.sidebar #ves-accordion ul  li a:hover {color:#2570BB;font-weight:normal;}
+#ves-accordion li:last-child{border-bottom:none;}
+#ves-accordion li:first-child{border-top:none;}
+#ves-accordion ul li a{display:block;width:100%;}
+
+/*****************************************************************************/
+
+/**/
+.lof-slider .lof-navigator-wapper{
+	
+    right: 300 !important;
+   
+}
+.wrap-s-content .old-price{display:none;}
+
+/**************************** Product scroll ****************************/

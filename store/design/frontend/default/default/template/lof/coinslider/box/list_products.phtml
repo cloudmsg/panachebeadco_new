@@ -1,0 +1,149 @@
+<?php 
+/**
+ * $ModDesc
+ * 
+ * @version		$Id: helper.php $Revision
+ * @package		modules
+ * @subpackage	$Subpackage.
+ * @copyright	Copyright (C) May 2010 LandOfCoder.com <@emai:landofcoder@gmail.com>.All rights reserved.
+ * @license		
+ */
+$randid = rand();
+$params = $this->_helper;
+$enable_border_image  = $params->getConfig( $config, 'enableBorderImage',1);
+$randid = rand();
+$mainWidth = $params->getConfig($config, 'mainWidth', 650 );
+$mainHeight = $params->getConfig($config, 'mainHeight', 300 );
+$showdesc = $params->getConfig($config, "showdesc", '1');
+$showcaption = 0;
+if($showdesc <> '0'){
+	$showcaption = 1;
+}
+$caption_opacity = $params->getConfig($config, "captionOpacity", 0.8);
+$caption_bg = $params->getConfig( $config, 'captionBg','C01F25');
+$captionFontcolor = $params->getConfig( $config, 'captionFontcolor','FFFFFF');
+$captionLinkcolor = $params->getConfig( $config, 'captionLinkcolor','FFFFFF');
+$descriptionMaxChars = $params->getConfig( $config, 'maxChars',100);
+
+$interval = $params->getConfig($config, 'interval', 5000 );
+$effect = $params->getConfig($config, 'effect', 'random' );
+$duration = $params->getConfig($config, 'duration', 500 );
+$slices = $params->getConfig($config, 'slices', 15 );
+$startSlide = $params->getConfig($config, 'startSlide', 0 );
+$startItem = $params->getConfig($config, 'startItem', 0 );
+$direction_nav_hide = $params->getConfig($config, 'directionNavHide', 0 );
+$directionNav = $params->getConfig($config, 'direction_nav',1);
+$boxCols = $params->getConfig( $config, 'boxCols',8);
+$boxRows = $params->getConfig( $config, 'boxCols',4);
+
+$navigatorHeight = $params->getConfig($config, 'navItemHeight', 30 );
+$navigatorHeight = (int) $navigatorHeight + 6;
+$navigatorWidth = $params->getConfig($config, 'navItemWidth', 30 );
+$navigatorWidth = (int) $navigatorWidth + 6;
+$shadow =  $params->getConfig($config, 'shadow', 1 );
+
+$moduleHeight =  $params->getConfig($config, 'moduleHeight',  300 );
+$moduleWidth = $params->getConfig($config, 'moduleWidth',  640 ); 
+$enableCSS3 = $params->getConfig($config, 'enable_css3',  1 );
+$css3Class = $enableCSS3 ? ' lof-css3':'';
+$group = $params->getConfig( $config, 'group','content' );
+$themeClass       = $params->getConfig( $config, 'theme' , '');
+$openTarget   = $params->getConfig( $config,'openTarget', '_parent' );
+$theme        =  $params->getConfig( $config, 'theme', 'basic' ); 
+$navigatorPattern = $params->getConfig( $config, 'customLayout', '%IMG %TITLE %DATE' );
+$thumbnailWidth = $params->getConfig( $config, 'thumbnailWidth', 60);
+$thumbnailHeight = $params->getConfig( $config, 'thumbnailHeight', 60);
+$thumbnailMargin=$params->getConfig( $config, 'thumbnailMargin','10px 10px');
+$manualTransitions = $params->getConfig( $config, 'manualTransitions', 1);
+
+// navigator setting 
+$navEnableThumbnail     = $params->getConfig( $config, 'enableThumbnail', 1 );
+$navEnableTitle         = $params->getConfig( $config, 'enableNavtitle', 1 );
+$navEnableDate          = $params->getConfig( $config, 'enableNavdate', 1 );
+$navEnableCate          = $params->getConfig( $config, 'enableNavcate', 1 );
+
+$moreInfor = $params->getConfig($config,"readmoretext","");
+$target = $params->getConfig($config,'openTarget','_parent');
+$target = $target != 'modalbox'
+							? 'target="'.$params->getConfig($config,'openTarget','_parent').'"'
+							: 'rel="'.$params->getConfig($config,'modal_rel','width:800,height:350').'" class="mb"'; 
+$lofString = Mage::helper('lof_coinslider/string');
+?>
+<?php	if( $this->isStaticBlock() ){?>	
+	<link media="all" href="<?php echo $this->getSkinUrl("lof_coinslider/box/style.css"); ?>" type="text/css" rel="stylesheet"/>
+	<?php } ?>
+<?php $randid = rand(); ?>
+<?php if($showdesc == "custom_style"):?>
+<style type="text/css">
+	.lof-coinslider-box .nivo-caption{background:#<?php echo $caption_bg; ?>;color:#<?php echo $captionFontcolor; ?>;
+				}
+	.lof-coinslider-box .nivo-caption a{color:#<?php echo $captionLinkcolor; ?>;}
+</style>
+<?php endif;?>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function ($){
+	jQuery('#lofcs-full3d-<?php echo $randid ;?>').nivoSlider({
+		effect:'<?php echo $effect;?>',
+		animSpeed:<?php echo (int)$duration;?>,
+		pauseTime:<?php echo (int)$interval;?>,
+		slices:<?php echo (int) $slices;?>,
+		startSlide:<?php echo (int) $startSlide;?>,
+		directionNavHide:<?php echo !empty( $direction_nav_hide )?'true':'false';?>,
+		enableCaption :'<?php echo $showcaption;?>',		
+		captionOpacity:'<?php echo $caption_opacity;?>',
+		captionBackground:'<?php echo $caption_bg;?>',
+		group:'<?php echo $group;?>',
+		directionNav:<?php echo !empty($directionNav)?'true':'false';?>,
+		manualAdvance:<?php echo !empty($manualTransitions)?'true':'false';?>,
+		boxCols: <?php echo (int)$boxCols;?>, /* For box animations*/
+        boxRows: <?php echo (int)$boxRows;?>, /* For box animations*/
+		keyboardNav:true,
+		controlNav:true,
+		pauseOnHover:true
+	}); 
+});
+</script>
+
+<?php if($config['title']){?><h2><?php echo $config['title']; ?></h2><?php } ?>
+<div id="lofcoinslide<?php echo $randid; ?>" class="lof-coinslider-box" style="height:<?php echo $moduleHeight;?>; width:<?php echo $moduleWidth;?>">
+<!-- MAIN CONTENT --> 
+ <div class="lof-wrapper <?php echo $css3Class;?>">
+  <?php if($enable_border_image):?>
+  <div class="lof-table" style="width:<?php echo ((int)$mainWidth+44)."px";?>;margin-bottom: -6px;"><div class="lof-row"><div class="lof-cell lof-above-left">&nbsp;</div><div class="lof-cell lof-above-middle" style="width:<?php echo ($mainWidth)."px";?>;">&nbsp;</div><div class="lof-cell lof-above-right">&nbsp;</div></div></div>
+  <?php endif;?>
+  <div id="lofcs-full3d-<?php echo $randid;?>" class="nivoSlider" style="border:none;width:<?php echo (int)$mainWidth; ?>px; height:<?php echo (int)$mainHeight; ?>px; position:relative">    
+					<?php $i=0; foreach( $items as $k => $_product ) :  ?>
+						<div class="lof-content-wrrapper">
+						<?php $desc=""; if( $showcaption) : $desc=' title="#lof-container-'.$i.$randid.'"'; ?>
+						<div id="lof-container-<?php echo $i.$randid;?>" style="display: none;">  		
+						   
+							<p class="lof-title">
+								<a href="<?php echo $_product->getProductUrl();?>" title="<?php echo $_product->getName();?>">
+								 <b><?php echo $_product->getName(); ?></b> 
+								</a>
+							</p>
+							<p class="lof-info">
+								<?php 
+									$description = $_product->getShortDescription();
+									$description = $lofString->substring($description, $descriptionMaxChars);
+									echo $description;
+								?>
+								<br/>
+								<span class="lof-price"><?php  echo $this->__('Price:'); echo " ".Mage::helper('core')->currency($_product->getPrice()); ?></span>
+								</p>
+						</div>
+						<?php endif; ?>
+						<a <?php echo $target;?> href="<?php echo $_product->getProductUrl();?>"  style="width:<?php echo (int)$mainWidth; ?>px; height:<?php echo (int)$mainHeight; ?>px; display:block">       	  
+							<img src="<?php echo $this->buildThumbnail( 'media/catalog/product'.$_product->getImage(), $config['mainWidth'], $config['mainHeight'] );?>" <?php echo $desc;?>  alt="<?php echo $this->htmlEscape($_product->getName()) ?>"/>  		        	
+						</a>					
+					</div>
+					<?php $i++; ?>
+					<?php endforeach; ?>				
+  </div>          	
+  <!-- END MAIN CONTENT -->
+  <?php if($enable_border_image):?>
+  <div class="lof-table lof-bottom-over" style="width:<?php echo ((int)$mainWidth+44)."px";?>;margin-top: -8px;"><div class="lof-row"><div class="lof-cell lof-bottom-left">&nbsp;</div><div class="lof-cell lof-bottom-middle" style="width:<?php echo ($mainWidth)."px";?>;">&nbsp;</div><div class="lof-cell lof-bottom-right">&nbsp;</div></div></div><div class="lof-bottom-bg">&nbsp;</div>
+  <?php endif;?>
+</div>     
+</div>

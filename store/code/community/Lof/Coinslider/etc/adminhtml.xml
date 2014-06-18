@@ -1,0 +1,31 @@
+<?xml version="1.0"?> 
+<config>
+		<acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <lof_coinslider>
+                                            <title>Lof Coinslider</title>
+                                        </lof_coinslider>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+			<modules>
+				<Lof_Coinslider>
+					<files>
+						<default>Lof_Coinslider.csv</default>
+					</files>
+				</Lof_Coinslider>
+			</modules>
+		</translate>
+</config>

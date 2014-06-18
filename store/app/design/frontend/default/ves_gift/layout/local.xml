@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <default>	
+		<reference name="root">			
+			<action method="setTemplate">
+				<template>page/2columns-left.phtml</template>
+				<action method="setIsHandle">
+					<applied>1</applied>
+				</action>
+			</action>		
+		</reference>
+		
+		<!-- Remove callouts and rarely used stuff -->
+        <remove name="right.poll"/>
+        <remove name="right.permanent.callout"/>
+        <remove name="left.permanent.callout"/>
+        <remove name="paypal.partner.right.logo"/>
+		<remove name="left.newsletter"/>
+		
+		<!-- Header -->
+		<reference name="header">
+			<block type="cms/block" name="top-social" as="top-social">
+                <action method="setBlockId"><block_id>top-social</block_id></action>
+            </block>			
+			<block type="directory/currency" name="currency_top" as="currencyTop" template="directory/currency_top.phtml"/>
+			<block type="checkout/cart_sidebar" name="cart_top" as="cartTop" template="checkout/cart/cart-top.phtml"/>			
+		</reference>
+		
+		<!-- Top.links -->
+		<reference name="top.links">
+			<remove name="checkout_cart_link"/>
+			<block type="checkout/links" name="checkout_cart_link_custom">
+				<action method="addCheckoutLink"></action>
+			</block>
+		</reference>	
+	
+		<!-- Left -->
+		<reference name="left">
+			<remove name="currency"/>					
+			<block type="cms/block" name="free-shipping-sidebar" after="-">
+				<action method="setBlockId"><block_id>free-shipping-sidebar</block_id></action>
+			</block> 
+		</reference>
+
+		<!-- Right -->
+		<reference name="right">
+			<remove name="right.poll" />
+			<action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+			<action method="unsetChild"><name>right.reports.product.viewed</name></action>
+			<action method="unsetChild"><name>right.reports.product.compared</name></action>
+			<block type="cms/block" name="free-shipping-right" after="ves.sideproduct">
+				<action method="setBlockId"><block_id>free-shipping-sidebar</block_id></action>
+			</block>
+		</reference>				
+	</default>	
+</layout>

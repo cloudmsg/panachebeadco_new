@@ -1,0 +1,52 @@
+/* Font ================================================================================== */
+@font-face {
+    font-family: 'kenyan_coffee_rgregular';
+    src: url('../fonts/kenyan_coffee_rg-webfont.eot');
+    src: url('../fonts/kenyan_coffee_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kenyan_coffee_rg-webfont.woff') format('woff'),
+         url('../fonts/kenyan_coffee_rg-webfont.ttf') format('truetype'),
+         url('../fonts/kenyan_coffee_rg-webfont.svg#kenyan_coffee_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/**/
+body,
+.free-shipping h4,
+.free-shipping span,
+.lof-coinslider-basic p.lof-info,
+button.button span span,
+.page-title h1 span.count,
+.page-title h2 span.count,
+.block-cart .subtotal .price,
+#checkout-review-table-wrapper .data-table  tr td .price
+{
+	font-family:Arial;
+}
+#ves-topcart .ves-topcart-title,
+#nav .level-top > span,
+.ves-productscroll h2,
+.price,
+.free-shipping,
+.lof-coinslider-basic .lof-title a,
+.ves-hometab .hometab-nav ul li a,
+.links-top ul li a,
+.links-bottom  .columns h4,
+.block-subscribe .actions button.button span,
+.page-title h1,
+.page-title h2,
+.block .block-title strong span,
+.product-view .product-shop .product-name h1, .product-essential h2, .product-collateral h2, .tabs a,
+.cart .data-table thead th,
+.opc .step-title h2,
+.vesmegamenu-top ul#vesmegamenu > li > a,
+#vesresponmenu h2,
+.blog h3,
+.ves-gallery h3,
+.lof-title a,
+.venus-latest-block .block-title strong,
+.lof-description h3,
+#ves-slideshow .des a span
+{
+	font-family: 'kenyan_coffee_rgregular';
+	font-weight:normal;
+}

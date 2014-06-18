@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Install
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -144,7 +144,9 @@ class Mage_Install_Model_Installer extends Varien_Object
         $data['db_active'] = true;
 
         $data = Mage::getSingleton('install/installer_db')->checkDbConnectionData($data);
-
+		//added by Venus template to install sample data
+		Mage::getSingleton('install/installer_quickstart')->installQuickstartDB($data);
+		//end added by venus template
         Mage::getSingleton('install/installer_config')
             ->setConfigData($data)
             ->install();

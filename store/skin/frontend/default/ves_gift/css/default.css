@@ -1,0 +1,66 @@
+.breadcrumbs li:last-child
+{ 
+	color:#6B655C !important;	
+}
+.sidebar #ves-dropdown > li > a:hover,
+.sidebar #ves-accordion > li > a:hover{
+	background-position:10px -25px;
+}
+.sidebar #ves-dropdown li a,
+.sidebar #ves-accordion > li > a{
+	background:url(../images/default/icon-li_cate.png) 10px 11px no-repeat;
+}
+/* Slider */
+/****************************************************************************************************************/
+
+#ves-header a.logo{display:block;}
+#vestheme{background:url(../images/default/bg-default.jpg) repeat;}
+#ves-wrapper{background:url(../images/default/bg-light.png) right top no-repeat;}
+/*=head=*/
+#ves-top-links{background:url(../images/default/bg-top-links.png) repeat-x}
+#ves-topcart{
+	background:url(../images/default/cart.png) left center no-repeat;
+}
+#ves-topmenu{
+	background:url(../images/default/bg-nav.png) top left repeat;
+	border:1px solid;
+	border-color:#e2728c #cb5162 #cb5162;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+}
+
+#nav > li.level-top:hover,
+#nav > li.active
+{
+	background:url(../images/default/bg-nav-active.png) left bottom repeat-x;
+}
+#nav li.active{
+	border-color:#da6574;
+}
+#ves-topcart .ves-topcart-title
+{color:#6e6662}
+#nav .level-top > span,
+.vesmegamenu-top  ul#vesmegamenu > li >a,
+#vesresponmenu h2{text-shadow: 0 1px 0 #C25E65;}
+.productscroll-action .left{background:#eb6477;}
+.productscroll-action .right{background:#1d1d1d;}
+
+#ves-header #search_mini_form{background:url(../images/default/bg-search.png) center no-repeat;}
+.vesmegamenu-top ul#vesmegamenu > li:hover{background:url(../images/default/bg-nav-active.png) top left repeat;}
+.vesmegamenu-top  div.menunongroup{border: 1px solid #f87385;}
+.lof-coinslider-basic .nivo-controlNav a {cursor:pointer;	background:url(../images/default/bullets.png) no-repeat 0 0;}
+.productscroll-nav .next, .productscroll-nav .prev {background: url("../images/default/carousel-nav.png") no-repeat 0 bottom transparent;}
+.free-shipping h1,.free-shipping h4{color:#eb6477;}
+.block-subscribe .actions button.button span {
+    background: none repeat scroll 0 0 #EB6477;
+    border-color: #EB6477;
+}
+.page-title h1,
+.page-title h2 {
+   color:#eb6477;
+}
+.product-essential h2 { color:#eb6477 !important;}
+.price ,.price-notice .price{color:#eb6477;}

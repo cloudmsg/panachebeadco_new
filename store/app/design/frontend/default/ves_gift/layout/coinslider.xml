@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+ 	<cms_index_index translate="label">
+		<reference name="slider">
+			<block type="lof_coinslider/slideshow" name="ves.slideshow" before="ves.productscroll"/>
+		</reference>
+
+		<!--reference name="content">
+			<block type="lof_coinslider/slideshow" name="ves.slideshow" before="-"/>
+		</reference-->
+		
+	</cms_index_index>
+</layout>

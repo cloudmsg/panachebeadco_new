@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+    	<!--reference name="content">
+			<block type="venustheme_tabshome/list" name="ves.tabshome" after="-"/>
+		</reference-->
+    </default>
+	<cms_index_index translate="label">
+		<reference name="content">	
+			<block type="venustheme_tabshome/list" name="ves.tabshome" after="-"/>		
+		</reference>
+	</cms_index_index>
+</layout>

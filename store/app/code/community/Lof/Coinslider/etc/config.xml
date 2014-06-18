@@ -1,0 +1,219 @@
+<?xml version="1.0"?>  
+<config>  
+	<modules>  
+		<Lof_Coinslider>  
+			<version>1.1.0</version>  
+		</Lof_Coinslider>  
+	</modules>  
+	<frontend>
+		<translate>
+			<modules>
+				<Lof_Coinslider>
+					<files>
+						<default>Lof_Coinslider.csv</default>
+					</files>
+				</Lof_Coinslider>
+			</modules>
+		</translate>
+		<layout>
+			<updates>
+				<coinslider>
+					<file>coinslider.xml</file>
+				</coinslider>
+			</updates>
+		</layout>
+	</frontend>	
+	<global>  		     
+		<blocks>
+            <lof_coinslider>
+                <class>Lof_Coinslider_Block</class>
+            </lof_coinslider>
+        </blocks>
+        <models>
+            <lof_coinslider>
+                <class>Lof_Coinslider_Model</class>
+                <resourceModel>lof_coinslider_mysql4</resourceModel>
+            </lof_coinslider>
+            <lof_coinslider_mysql4>
+                <class>Lof_Coinslider_Model_Mysql4</class>
+                <entities>
+                    <banner>
+                        <table>lof_coinslider_banner</table>
+                    </banner>
+                </entities>
+            </lof_coinslider_mysql4>
+        </models>
+        <helpers>
+            <lof_coinslider>
+                <class>Lof_Coinslider_Helper</class>
+            </lof_coinslider>
+        </helpers>
+        <resources>
+            <lof_coinslider_setup>
+                <setup>
+                    <module>Lof_Coinslider</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </lof_coinslider_setup>
+            <lof_coinslider_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </lof_coinslider_write>
+            <lof_coinslider_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </lof_coinslider_read>
+        </resources>
+		<events>
+			<controller_action_layout_generate_blocks_after>
+				<observers>
+					<lof_coinslider_observer>
+						<type>singleton</type>
+						<class>Lof_Coinslider_Model_Observer</class>
+						<method>beforeRender</method>
+					</lof_coinslider_observer>
+				</observers>
+			</controller_action_layout_generate_blocks_after>
+		</events>
+	</global>  
+	<admin>
+        <routers>
+            <coinslider>
+                <use>admin</use>
+                <args>
+                    <module>Lof_Coinslider</module>
+                    <frontName>coinslider</frontName>
+                </args>
+            </coinslider>
+        </routers>
+    </admin>
+	<adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+						<lof_coinslider>
+                            <title>Coin slider</title>
+                            <sort_order>50</sort_order>
+                            <children>
+                                <index>
+                                    <title>Manage Slider</title>
+                                    <sort_order>0</sort_order>
+                                </index>
+                                <new>
+                                    <title>Add Slider</title>
+                                    <sort_order>1</sort_order>
+                                </new>
+                            </children>
+                        </lof_coinslider>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <lof_coinslider>
+                                            <title>Lof Coin Slider</title>
+                                        </lof_coinslider>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+		<menu>
+			 <landofcoder module="lof_coinslider">
+                <title>LandOfCoder</title>
+                <sort_order>53</sort_order>
+				<children>
+				
+				<slider module="lof_coinslider">
+					<title>Coin slider</title>
+					<sort_order>50</sort_order>
+					<children>
+						<coinslider_add module="lof_coinslider">
+							<title>Add Coin Slider</title>
+							<sort_order>0</sort_order>
+							<action>coinslider/adminhtml_banner/add</action>
+						</coinslider_add>
+						<coinslider_index module="lof_coinslider">
+							<title>Manage Coin Slider</title>
+							<sort_order>1</sort_order>
+							<action>coinslider/adminhtml_banner/index</action>
+						</coinslider_index>
+						<configuration translate="title" module="lof_coinslider">
+									<title>Configuration</title>
+									<sort_order>4</sort_order>
+									<action>adminhtml/system_config/edit/section/lof_coinslider</action>
+						</configuration>
+								
+					</children>
+				</slider>
+			 </children>
+            </landofcoder>
+        </menu>
+        <translate>
+			<modules>
+				<Lof_Coinslider>
+					<files>
+						<default>Lof_Coinslider.csv</default>
+					</files>
+				</Lof_Coinslider>
+			</modules>
+		</translate>
+    </adminhtml>	
+		
+	<default>
+        <lof_coinslider>
+            <lof_coinslider>
+                <show>1</show>                
+                <title>Lof Coin Slider</title>                 
+				<source>Catalog</source> 
+				<thumbnailMode>1</thumbnailMode>
+			</lof_coinslider>
+			<image_source_setting>
+				<folder></folder>    
+				<readmoretext>Readmore</readmoretext>
+                <description>[desc img="sl-1.jpg" url="#"]<h3>EndWar Exclusive Theater of War Hands-On </h3><p>Augue neque rutrum elit vitae nec in pretium et faucibus In. Felis non sit Phasellus hac dictumst Pellentesque Proin eu leo Phasellus. Magna eros consequat eu eu dui vel consequat ipsum dolor ipsum. Tempus quis id massa nisl ac.</p>[/desc]</description>
+			</image_source_setting>
+			<file_source_setting>
+				<imagecategory></imagecategory>
+			</file_source_setting>
+			<catalog_source_setting>
+				<catsid></catsid>
+				<sourceProductsMode>latest</sourceProductsMode>
+				<quanlity>10</quanlity>
+			</catalog_source_setting>
+            <main_slider>				
+                <mainHeight>300</mainHeight>
+				<mainWidth>640</mainWidth>
+				
+				<control>1</control>  
+				<!--<overlapOpacity>0.4</overlapOpacity>-->
+            </main_slider>                
+            <navigation>   				
+				<directionNavHide>1</directionNavHide> 
+            </navigation>  
+
+			<animation>
+				<duration>500</duration>                
+                <effect>random</effect>  
+                <autoplay>1</autoplay>                
+                <interval>3000</interval>
+				<boxCols>8</boxCols> 
+				<boxRows>4</boxRows> 
+				<slices>16</slices>
+				<startSlide>0</startSlide>
+				<manualTransitions>0</manualTransitions> 
+			</animation>
+			<advanced_setting>
+				<showdesc>1</showdesc>				
+				<autoRenderthumb>1</autoRenderthumb>			
+			</advanced_setting>
+        </lof_coinslider>
+    </default>
+</config>  

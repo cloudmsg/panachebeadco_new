@@ -1,0 +1,37 @@
+<?php $cols = (int)$this->getConfig( "columns" ); ?>
+<div class="venus-latest-block block">
+	<?php if( $this->getConfig("latestmod_title") ) : ?>
+	<div class="block-title">
+		<strong><?php echo $this->getConfig( "latestmod_title" ); ?></strong>
+	</div>	
+	<?php endif; ?>
+	
+	<div class="block-content cols<?php echo $cols; ?>">
+		<?php if( $this->getConfig("latestmod_desc") ) :?>
+		<div class="block-description">
+			<p><?php echo $this->getConfig("latestmod_desc"); ?></p>
+		</div>
+		<?php endif; ?>
+	
+		<?php $j==0;foreach( $posts as $post ): ?>
+			<div class="post-item <?php if($j == 0){echo 'first';}?> itemcol">
+				<div class="post-image"><a href="<?php echo $post->getURL();?>" title="<?php echo $post->getTitle();?>">
+					<img src="<?php echo $post->getImageURL( "s" );?>" class="post-image" title="<?php echo $post->getTitle();?>"/>
+				</a>
+				</div>
+				<h4><a href="<?php echo $post->getURL();?>" title="<?php echo $post->getTitle();?>"><?php echo $post->getTitle(); ?></a></h4>
+				<div class="latest-description"><?php echo $post->getDescription(); ?></div>
+				<p class="blog-readmore">
+					<a href="<?php echo $post->getURL();?>" title="<?php echo $post->getTitle();?>">
+						<?php echo $this->__("Read more...");?>
+					</a>
+				</p>		
+			</div>
+			
+			<?php if( $j%$cols==0&& $j>0): ?>
+			<div class="vesclear"></div>
+			<?php endif; ?>
+						
+		<?php $j++; endforeach; ?>
+	</div>
+</div>

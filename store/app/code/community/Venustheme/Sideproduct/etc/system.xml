@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <ves translate="label" module="venustheme_sideproduct">
+            <label>Venus Theme</label>
+            <sort_order>211</sort_order>
+        </ves>
+    </tabs>
+	<sections>
+        <venustheme_sideproduct>
+            <label>Ves Sideproduct</label>
+            <tab>ves</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+				<venustheme_sideproduct translate="label">
+                    <label>General Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>     
+						<last_update translate="label">
+							<label>Current Update Time</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>venustheme_sideproduct/system_config_form_field_notification</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</last_update> 
+						
+						<show translate="label" module="core">
+							<label>Enabled</label>
+							<sort_order>10</sort_order>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show>	
+						
+						<title translate="label">
+                            <label>Module Title </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <comment>Empty for hide</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title> 
+						
+						<play translate="label">
+                            <label>Auto Play</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+							<comment>0 : no auto play</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </play>
+						
+						<speed translate="label">
+                            <label>Speed</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </speed>
+						
+						<moduleHeight translate="label">
+                            <label>Module Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </moduleHeight>
+						<moduleWidth translate="label">
+                            <label>Module Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </moduleWidth>
+						 
+						
+						
+						
+						
+					</fields>
+				</venustheme_sideproduct>
+				<navigator>
+					<label>Navigator Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<isvertical translate="label" module="core">
+							<label>Is Vertical</label>
+							<sort_order>10</sort_order>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</isvertical>	
+						<itemvisiable translate="label" module="core">
+							<label>Items Visiable</label>
+							<sort_order>10</sort_order>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</itemvisiable>	
+						
+						<navigatorHeight translate="label" module="core">
+							<label>Navigator Item Height</label>
+							<sort_order>10</sort_order>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigatorHeight>	
+						<navigatorWidth translate="label" module="core">
+							<label>Navigator Item Width</label>
+							<sort_order>10</sort_order>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</navigatorWidth>	
+						
+					</fields>
+				</navigator>
+				 	<!-- Catagory -->
+				<catalog_source_setting>
+					<label>Catalog - Products Source Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<limit_item translate="label">
+							<label># Qty of items</label>
+							<sort_order>40</sort_order>
+							<frontend_type>text</frontend_type>
+							<backend_model>venustheme_sideproduct/system_config_backend_sideproduct_checkQty</backend_model>
+							<comment>0 for show all</comment>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</limit_item>
+						<catsid translate="label">
+                            <label>Categories ID: </label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>venustheme_sideproduct/system_config_source_ListCategories</source_model>
+                            <comment>Eg: 22,23. Empty for all categories.</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </catsid> 
+						
+						<sourceProductsMode translate="label">
+                            <label>Show Products From: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>venustheme_sideproduct/system_config_source_listType</source_model>                         
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sourceProductsMode>
+
+					</fields>
+				</catalog_source_setting>
+				
+				<!-- Information -->
+				<advanded_parameter>
+					<label>Information - Support</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6001</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 
+						<module_information translate="label">
+							<label>Set Module Visable On Pages, Position</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>venustheme_sideproduct/system_config_form_field_information</frontend_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</module_information>                        
+					</fields>
+				</advanded_parameter>	
+            </groups>
+        </venustheme_sideproduct>
+    </sections>    
+</config>

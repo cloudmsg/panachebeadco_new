@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Checkout
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -32,10 +32,9 @@
  * @package     Mage_Checkout
  * @author      Magento Core Team <core@magentocommerce.com>
  */
-class Mage_Checkout_Block_Cart_Sidebar extends Mage_Checkout_Block_Cart_Minicart
+class Mage_Checkout_Block_Cart_Sidebar extends Mage_Checkout_Block_Cart_Abstract
 {
-    const XML_PATH_CHECKOUT_SIDEBAR_COUNT                  = 'checkout/sidebar/count';
-    const XML_PATH_CHECKOUT_MINICART_VISIBLE_ITEMS_COUNT   = 'checkout/cart/minicart_visible_items';
+    const XML_PATH_CHECKOUT_SIDEBAR_COUNT   = 'checkout/sidebar/count';
 
     /**
      * Class constructor
@@ -64,18 +63,41 @@ class Mage_Checkout_Block_Cart_Sidebar extends Mage_Checkout_Block_Cart_Minicart
     /**
      * Get array of last added items
      *
-     * @param null $count
      * @return array
      */
     public function getRecentItems($count = null)
     {
-        if (!$this->getSummaryCount()) {
-            return array();
-        }
         if ($count === null) {
             $count = $this->getItemCount();
         }
-        return array_slice(array_reverse($this->getItems()), 0, $count);
+
+        $items = array();
+        if (!$this->getSummaryCount()) {
+            return $items;
+        }
+
+        $i = 0;
+        $allItems = array_reverse($this->getItems());
+        foreach ($allItems as $item) {
+            /* @var $item Mage_Sales_Model_Quote_Item */
+            if (!$item->getProduct()->isVisibleInSiteVisibility()) {
+                $productId = $item->getProduct()->getId();
+                $products  = Mage::getResourceSingleton('catalog/url')
+                    ->getRewriteByProductStore(array($productId => $item->getStoreId()));
+                if (!isset($products[$productId])) {
+                    continue;
+                }
+                $urlDataObject = new Varien_Object($products[$productId]);
+                $item->getProduct()->setUrlDataObject($urlDataObject);
+            }
+
+            $items[] = $item;
+            if (++$i == $count) {
+                break;
+            }
+        }
+
+        return $items;
     }
 
     /**
@@ -152,6 +174,19 @@ class Mage_Checkout_Block_Cart_Sidebar extends Mage_Checkout_Block_Cart_Minicart
     {
         $quote = $this->getCustomQuote() ? $this->getCustomQuote() : $this->getQuote();
         return $quote->getShippingAddress()->getShippingTaxAmount();
+    }
+
+    /**
+     * Get shopping cart items qty based on configuration (summary qty or items qty)
+     *
+     * @return int | float
+     */
+    public function getSummaryCount()
+    {
+        if ($this->getData('summary_qty')) {
+            return $this->getData('summary_qty');
+        }
+        return Mage::getSingleton('checkout/cart')->getSummaryQty();
     }
 
     /**
@@ -274,37 +309,5 @@ class Mage_Checkout_Block_Cart_Sidebar extends Mage_Checkout_Block_Cart_Minicart
         }
 
         return $this;
-    }
-
-    /**
-     * Retrieve block cache tags
-     *
-     * @return array
-     */
-    public function getCacheTags()
-    {
-        $quoteTags = $this->getQuote()->getCacheIdTags();
-
-        $items = array();
-        /** @var $item Mage_Sales_Model_Quote_Item */
-        foreach ($this->getItems() as $item) {
-            $items[] = $item->getProduct();
-       }
-
-        return array_merge(
-            parent::getCacheTags(),
-            (!$quoteTags)? array() : $quoteTags,
-            $this->getItemsTags($items)
-        );
-    }
-
-    /**
-     * Get form key
-     *
-     * @return string
-     */
-    public function getFormKey()
-    {
-        return Mage::getSingleton('core/session')->getFormKey();
     }
 }

@@ -1,0 +1,90 @@
+.products-list .product-image,
+.sptop-gift-image .gift-image
+{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.gift-image:hover{
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	-ms-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+}
+.map-popup-close{
+	-moz-box-shadow:0 0 3px #999; 
+	-webkit-box-shadow:0 0 3px #999; 
+	box-shadow:0 0 3px #999; 
+	-moz-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	border-radius:2px;
+}
+
+.image-thumb,.products-list .product-image ,
+.product-view .box-up-sell .products-grid .product-image,
+#shopping-cart-table img,
+.cart .crosssell,
+.cart .discount,
+.cart .shipping ,
+.cart .totals,
+.block-cart button.button span span,
+.block-cart .actions a,
+.block-compare button.button span span,
+.blog .blog-content > a,
+.pager .pages li,
+.block .block-title,
+.opc .step-title,
+.block-banner .block-content,
+.block-layered-nav dd li:hover	{
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px
+}
+button.button span span{
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px
+}
+.ves-hometab img,
+.blog ul li img,
+.productscroll-action .list-cart,
+.ves-sideproduct li img,
+.venus-latest-block div.post-image
+{
+	-webkit-transition: all .05s ease;
+	-moz-transition: all .05s ease;
+	transition: all .05s ease;
+}
+
+.page-title ,
+.block-cart .summary-row-1{
+	border-radius:3px 3px 0 0;
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+}
+.block-account .block-content{
+	border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+}
+.block-cart .summary-row{
+	border-radius:0 0 3px 3px;
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+}
+.map-popup{
+	 -moz-box-shadow:0 0 6px #ccc; 
+	 -webkit-box-shadow:0 0 6px #ccc; 
+	 box-shadow:0 0 6px #ccc;
+}
+.top-social ul li a:hover img,.list-productscroll .productscroll-nav a:hover,
+.gallery-wrapper li div:hover
+{
+	opacity:.6;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}

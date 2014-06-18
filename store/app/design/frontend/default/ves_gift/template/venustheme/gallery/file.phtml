@@ -1,0 +1,34 @@
+<?php $rad = rand();?>
+<?php 
+	$style = "";
+	if( $this->getConfig("moduleHeight") !="auto" ){
+		$style .=";height:".(int) $this->getConfig("moduleHeight")."px";
+		
+	}
+	if( $this->getConfig("moduleWidth") !="auto" ){
+		$style .=";width:".(int) $this->getConfig("moduleWidth")."px";
+	}
+?>
+<div class="ves-gallery vesclear" style="position:relative;<?php echo $style;?>">
+	<?php if( $this->getConfig("title","") ): ?>
+	<h3><?php echo $this->__( $this->getConfig("title","") );?></h3>
+	<?php endif; ?>
+	<div class="gallery-wrapper">
+		<ul>
+		<?php foreach( $images as $i => $image) :   ?>
+			<li>
+				<div style="width:<?php  echo $this->getConfig("thumbWidth")?>px; height:<?php echo $this->getConfig("thumbHeight")?>px;" >				
+					<a class="group-file<?php echo $rad?>" href="<?php echo $image->imageURL;?>" title="<?php echo $image->title;?> - <?php echo $image->description; ?>">			
+						<img src="<?php echo $image->thumbnailURL;?>" alt="<?php echo $image->title;?>" />			
+					</a>
+				</div>
+			</li>
+		<?php endforeach;?>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function( $ ){
+	$(".group-file<?php echo $rad?>").colorbox({rel:'group1'});
+});
+</script>

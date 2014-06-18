@@ -1,0 +1,273 @@
+/** css hack**/
+.vesclear:after { content: ".";	display: block;	clear: both;visibility: hidden;	line-height: 0;	height: 0;}
+.vesclear {}
+
+.vesmegamenu-top ul#vesmegamenu  p,
+.vesmegamenu-top ul#vesmegamenu  div,
+.vesmegamenu-top ul#vesmegamenu  h3,
+.vesmegamenu-top ul#vesmegamenu  h2{ color:#909293 }
+
+.vesmegamenu-top ul#vesmegamenu  p{
+	line-height:1.5em;
+	padding:5px 0 0 0;
+}
+.vesmegamenu-top ul#vesmegamenu  h3
+{
+	color: #6E7070;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+/***/
+
+.vesmegamenu-top {
+	font:12px Arial;
+	width: 100%;
+ 
+}
+
+.vesmegamenu-top ul.level0 li.haschild > a.mega  span.menu-title,
+.vesmegamenu-top ul.level0 li.haschild-over > a.mega > span.menu-title {
+}
+
+.vesmegamenu-top span.has-image{
+ 	background-position: left 9px;
+ 
+	background-repeat: no-repeat;
+   display: block;
+   padding-left: 24px;
+   overflow: hidden
+}
+
+.menunongroup li.level0 > div.level1 > .submenu-wrapper{padding:15px 20px;}
+.menunongroup li.level0 > div.level1 > .submenu-wrapper img{width:85%;border:3px solid #e9e4e0;}
+
+.menunongroup li.columns-5 > div.level1 > .submenu-wrapper > .vescolumn{overflow:hidden;}
+.menunongroup li.columns-5 > div.level1 > .submenu-wrapper > .vescolumn{width:20% !important;}
+.menunongroup li.columns-4 > div.level1 > .submenu-wrapper > .vescolumn{width:25% !important;}
+.menunongroup li.columns-3 > div.level1 > .submenu-wrapper > .vescolumn{width:33.3333% !important;}
+.menunongroup li.columns-2 > div.level1 > .submenu-wrapper > .vescolumn{width:50% !important;}
+.vesmegamenu-top .level0 li.first{
+	border-top:0
+}
+.vesmegamenu-top  ul.megamenu{
+	z-index:100;
+	padding: 0;
+	list-style-type: none;
+}
+.vesmegamenu-top  .vescolumn{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	float:left;
+	width:100% !important;
+}
+
+.vesmegamenu-top  ul.leval0{
+ 
+}
+
+.vesmegamenu-top  ul#vesmegamenu{
+}
+
+/*Top level list items*/
+.vesmegamenu-top  ul#vesmegamenu > li{
+	position: relative;
+	display: block;
+	float: left;
+	padding:0 14px;
+}
+.vesmegamenu-top ul#vesmegamenu > li.full{position:static !important;}
+.vesmegamenu-top ul#vesmegamenu > li.full > .menunongroup{
+	width:100% !important;
+	left:0 !important;
+	top:auto !important;
+	z-index:9999;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	-ms-border-radius:4px;
+}
+.vesmegamenu-top ul#vesmegamenu > li.full > .menunongroup .submenu-wrapper .vescolumn .level2{width:100%! important;}
+/*Top level list items*/
+.vesmegamenu-top  ul li{
+	position: relative;
+}
+
+/*Top level menu link items style*/
+ 
+.vesmegamenu-top  ul#vesmegamenu > li >a{
+	display:block;
+}
+.vesmegamenu-top  ul#vesmegamenu   li  a:hover{}
+ 
+/*Top level menu link items style*/
+
+* html .vesmegamenu-top  ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+
+.vesmegamenu-top  ul li a:link, .vesmegamenu-top  ul li a:visited{
+	color: #737E8E;
+}
+	
+/*1st sub level menu*/
+.vesmegamenu-top  div.menunongroup{
+	border-radius:0 0 6px 6px;
+	-moz-border-radius:0 0 6px 6px;
+	-webkit-border-radius:0 0 6px 6px;
+	-ms-border-radius:0 0 6px 6px;
+	-o-border-radius:0 0 6px 6px;
+}
+ 
+/*1st sub level menu*/
+.vesmegamenu-top  ul li ul.menunongroup, .vesmegamenu-top  .lofitem0 > ul{
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.vesmegamenu-top  ul li ul li.mega{
+
+}
+.vesmegamenu-top  ul li ul li h4{
+	color:#888;
+}
+
+.vesmegamenu-top  .ddsmoothmenu >ul> li>div>div> ul >li{
+ 
+}
+ 
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.vesmegamenu-top  ul li ul li ul{
+	top: 0;
+}
+
+/* Sub level menu links style */
+.vesmegamenu-top ul.megamenu a{text-decoration:none;}
+.vesmegamenu-top  ul li ul li a.mega ,
+.vesmegamenu-top ul.megamenu .mega > ul > li{
+    color: #737E8E  ;
+    font-weight: normal;
+    text-transform: none;
+ 	display: block;
+	line-height:26px;	
+	background:url(images/list-memamenu.png) left center no-repeat;
+	padding:0 0 0 10px;
+	text-decoration:none;
+}
+.vesmegamenu-top  ul li ul li a.mega:hover{
+
+}
+.vesmegamenu-top .menu-desc{
+		display:block;
+		text-transform:none;
+		font-size: 10px;
+}
+.vesmegamenu-top .group-title .menu-desc {
+	color: #999;
+	padding-left: 0 !important;
+
+}
+
+/* Holly Hack for IE \*/
+* html .vesmegamenu-top {height: 1%;} /*Holly Hack for IE7 and below*/
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.vesmegamenu-top .downarrowclass{
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+
+.vesmegamenu-top .rightarrowclass{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+.vesmegamenu-top .ddshadow{ /*shadow for NON CSS3 capable browsers*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: silver;
+}
+
+ 
+/** Group Menu **/
+
+.vesmegamenu-top .group-title {
+     overflow: hidden;
+}
+.vesmegamenu-top .group-title .menu-title{
+	font-weight:bold;
+	color:#f3f3f3;
+	text-transform:uppercase
+}
+
+.vesmegamenu-top li.megagroup ul.megamenu{
+ 
+}
+.vesmegamenu-top  ul li div.menunongroup{
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	background-color: #fff;
+}
+/**
+ * responsive menu 
+ */
+ #vesresponmenu{display:none}
+#vesresponmenu h2{margin:10px 18px;text-transform:uppercase;display:block:width:100%;padding-top:11px}
+#vesresponmenu{width:100%;}
+#vesresponmenu  div.responmenu-wrapper{width:100%;position:relative;display:none }
+#vesresponmenu ul ul{ display:none; clear:both; padding-left:20px }
+#vesresponmenu li{  display:block; ;clear:both;position:relative}
+#vesresponmenu li a{
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+#vesresponmenu li.level0{}
+#vesresponmenu li.level0 li a{ background:url(images/right.png)no-repeat left center}
+#vesresponmenu li .btn-action{display:block;
+	background:url(images/arrow-submenu.png) no-repeat center center;
+	 border: 1px solid #fba0b3;
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    left: auto;
+    position: absolute;
+    right: 9px;
+    top: 7px;
+    width: 22px;
+}
+#vesresponmenu li .btn-action:hover,#vesresponmenu li .btn-close{
+	border-color:#f4f4f4;
+}
+#vesresponmenu h2 {
+	line-height: 39px;
+	margin: 0 18px;
+	padding: 0;
+	text-transform:capitalize;
+}
+.menunongroup li.level0 > div.level1 > .submenu-wrapper .level2{padding:0 5px;}
+.menunongroup li.level0 > div.level1 > .submenu-wrapper div.level2{padding:10px;}
+/** RESPONSIVE */
+ @media only screen and (min-width: 320px)  and (max-width: 479px) {
+	#vesresponmenu{display:block}
+	.vesmegamenu-top{display:none}
+	
+ }

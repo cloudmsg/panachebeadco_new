@@ -1,0 +1,31 @@
+<?xml version="1.0"?> 
+<config>
+		<acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <venustheme_sideproduct>
+                                            <title>Ves Sideproduct</title>
+                                        </venustheme_sideproduct>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+			<modules>
+				<Venustheme_Sideproduct>
+					<files>
+						<default>Venustheme_Sideproduct.csv</default>
+					</files>
+				</Venustheme_Sideproduct>
+			</modules>
+		</translate>
+</config>

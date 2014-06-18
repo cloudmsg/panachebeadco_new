@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Core
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -49,60 +49,6 @@ class Mage_Core_Helper_Cookie extends Mage_Core_Helper_Abstract
     const XML_PATH_COOKIE_RESTRICTION_LIFETIME = 'web/cookie/cookie_restriction_lifetime';
 
     /**
-     * Cookie restriction notice cms block identifier
-     */
-    const COOKIE_RESTRICTION_NOTICE_CMS_BLOCK_IDENTIFIER = 'cookie_restriction_notice_block';
-
-    /**
-     * Store instance
-     *
-     * @var Mage_Core_Model_Store
-     */
-    protected $_currentStore;
-
-    /**
-     * Cookie instance
-     *
-     * @var Mage_Core_Model_Cookie
-     */
-    protected $_cookieModel;
-
-    /**
-     * Website instance
-     *
-     * @var Mage_Core_Model_Website
-     */
-    protected $_website;
-
-    /**
-     * Initializes store, cookie and website objects.
-     *
-     * @param array $data
-     * @throws InvalidArgumentException
-     */
-    public function __construct(array $data = array())
-    {
-        $this->_currentStore = isset($data['current_store']) ? $data['current_store'] : Mage::app()->getStore();
-
-        if (!$this->_currentStore instanceof Mage_Core_Model_Store) {
-            throw new InvalidArgumentException('Required store object is invalid');
-        }
-
-        $this->_cookieModel = isset($data['cookie_model'])
-            ? $data['cookie_model'] : Mage::getSingleton('core/cookie');
-
-        if (!$this->_cookieModel instanceof Mage_Core_Model_Cookie) {
-            throw new InvalidArgumentException('Required cookie object is invalid');
-        }
-
-        $this->_website = isset($data['website']) ? $data['website'] : Mage::app()->getWebsite();
-
-        if (!$this->_website instanceof Mage_Core_Model_Website) {
-            throw new InvalidArgumentException('Required website object is invalid');
-        }
-    }
-
-    /**
      * Check if cookie restriction notice should be displayed
      *
      * @return bool
@@ -110,20 +56,20 @@ class Mage_Core_Helper_Cookie extends Mage_Core_Helper_Abstract
     public function isUserNotAllowSaveCookie()
     {
         $acceptedSaveCookiesWebsites = $this->_getAcceptedSaveCookiesWebsites();
-        return $this->_currentStore->getConfig(self::XML_PATH_COOKIE_RESTRICTION) &&
-            empty($acceptedSaveCookiesWebsites[$this->_website->getId()]);
+        return Mage::getStoreConfig(self::XML_PATH_COOKIE_RESTRICTION) &&
+            empty($acceptedSaveCookiesWebsites[Mage::app()->getWebsite()->getId()]);
     }
 
     /**
-     * Return serialized list of accepted save cookie website
+     * Return serialzed list of accepted save cookie website
      *
      * @return string
      */
     public function getAcceptedSaveCookiesWebsiteIds()
     {
         $acceptedSaveCookiesWebsites = $this->_getAcceptedSaveCookiesWebsites();
-        $acceptedSaveCookiesWebsites[$this->_website->getId()] = 1;
-        return json_encode($acceptedSaveCookiesWebsites);
+        $acceptedSaveCookiesWebsites[Mage::app()->getWebsite()->getId()] = 1;
+        return serialize($acceptedSaveCookiesWebsites);
     }
 
     /**
@@ -133,8 +79,8 @@ class Mage_Core_Helper_Cookie extends Mage_Core_Helper_Abstract
      */
     protected function _getAcceptedSaveCookiesWebsites()
     {
-        $serializedList = $this->_cookieModel->get(self::IS_USER_ALLOWED_SAVE_COOKIE);
-        $unSerializedList = json_decode($serializedList, true);
+        $serializedList = Mage::getSingleton('core/cookie')->get(self::IS_USER_ALLOWED_SAVE_COOKIE);
+        $unSerializedList = unserialize($serializedList);
         return is_array($unSerializedList) ? $unSerializedList : array();
     }
 
@@ -145,16 +91,6 @@ class Mage_Core_Helper_Cookie extends Mage_Core_Helper_Abstract
      */
     public function getCookieRestrictionLifetime()
     {
-        return (int)$this->_currentStore->getConfig(self::XML_PATH_COOKIE_RESTRICTION_LIFETIME);
-    }
-
-    /**
-     * Get cookie restriction notice cms block identifier
-     *
-     * @return string
-     */
-    public function getCookieRestrictionNoticeCmsBlockIdentifier()
-    {
-        return self::COOKIE_RESTRICTION_NOTICE_CMS_BLOCK_IDENTIFIER;
+        return (int)Mage::getStoreConfig(self::XML_PATH_COOKIE_RESTRICTION_LIFETIME);
     }
 }

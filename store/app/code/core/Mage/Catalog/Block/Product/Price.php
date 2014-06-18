@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Catalog
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -31,20 +31,9 @@
  * @category   Mage
  * @package    Mage_Catalog
  */
-class Mage_Catalog_Block_Product_Price extends Mage_Catalog_Block_Product_Abstract
+class Mage_Catalog_Block_Product_Price extends Mage_Core_Block_Template
 {
-    /**
-     * Price display type
-     *
-     * @var int
-     */
     protected $_priceDisplayType = null;
-
-    /**
-     * The id suffix
-     *
-     * @var string
-     */
     protected $_idSuffix = '';
 
     /**
@@ -61,33 +50,17 @@ class Mage_Catalog_Block_Product_Price extends Mage_Catalog_Block_Product_Abstra
         return $product;
     }
 
-    /**
-     * Returns the product's minimal price
-     *
-     * @return float
-     */
     public function getDisplayMinimalPrice()
     {
         return $this->_getData('display_minimal_price');
     }
 
-    /**
-     * Sets the id suffix
-     *
-     * @param string $idSuffix
-     * @return Mage_Catalog_Block_Product_Price
-     */
     public function setIdSuffix($idSuffix)
     {
         $this->_idSuffix = $idSuffix;
         return $this;
     }
 
-    /**
-     * Returns the id suffix
-     *
-     * @return string
-     */
     public function getIdSuffix()
     {
         return $this->_idSuffix;
@@ -97,21 +70,14 @@ class Mage_Catalog_Block_Product_Price extends Mage_Catalog_Block_Product_Abstra
      * Get tier prices (formatted)
      *
      * @param Mage_Catalog_Model_Product $product
-     * @param Mage_Catalog_Model_Product $parent
      * @return array
      */
-    public function getTierPrices($product = null, $parent = null)
+    public function getTierPrices($product = null)
     {
         if (is_null($product)) {
             $product = $this->getProduct();
         }
         $prices = $product->getFormatedTierPrice();
-
-        // if our parent is a bundle, then we need to further adjust our tier prices
-        if (isset($parent) && $parent->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_BUNDLE) {
-            /* @var $bundlePriceModel Mage_Bundle_Model_Product_Price */
-            $bundlePriceModel = Mage::getModel('bundle/product_price');
-        }
 
         $res = array();
         if (is_array($prices)) {
@@ -130,14 +96,7 @@ class Mage_Catalog_Block_Product_Price extends Mage_Catalog_Block_Product_Abstra
                 }
 
                 if ($price['price'] < $productPrice) {
-                    // use the original prices to determine the percent savings
                     $price['savePercent'] = ceil(100 - ((100 / $productPrice) * $price['price']));
-
-                    // if applicable, adjust the tier prices
-                    if (isset($bundlePriceModel)) {
-                        $price['price']         = $bundlePriceModel->getLowestPrice($parent, $price['price']);
-                        $price['website_price'] = $bundlePriceModel->getLowestPrice($parent, $price['website_price']);
-                    }
 
                     $tierPrice = Mage::app()->getStore()->convertPrice(
                         Mage::helper('tax')->getPrice($product, $price['website_price'])
@@ -205,28 +164,5 @@ class Mage_Catalog_Block_Product_Price extends Mage_Catalog_Block_Product_Abstra
     {
         $html = $this->hasRealPriceHtml() ? $this->getRealPriceHtml() : $product->getRealPriceHtml();
         return Mage::helper('core')->jsonEncode($html);
-    }
-
-    /**
-     * Retrieve block cache tags
-     *
-     * @return array
-     */
-    public function getCacheTags()
-    {
-        return array_merge(parent::getCacheTags(), $this->getProduct()->getCacheIdTags());
-    }
-
-    /**
-     * Retrieve attribute instance by name, id or config node
-     *
-     * If attribute is not found false is returned
-     *
-     * @param string|integer|Mage_Core_Model_Config_Element $attribute
-     * @return Mage_Eav_Model_Entity_Attribute_Abstract || false
-     */
-    public function getProductAttribute($attribute)
-    {
-        return $this->getProduct()->getResource()->getAttribute($attribute);
     }
 }

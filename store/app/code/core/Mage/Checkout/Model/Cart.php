@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Checkout
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -140,15 +140,21 @@ class Mage_Checkout_Model_Cart extends Varien_Object implements Mage_Checkout_Mo
      */
     public function init()
     {
-        $quote = $this->getQuote()->setCheckoutMethod('');
+        $this->getQuote()->setCheckoutMethod('');
 
+        /**
+         * If user try do checkout, reset shipping and payment data
+         */
         if ($this->getCheckoutSession()->getCheckoutState() !== Mage_Checkout_Model_Session::CHECKOUT_STATE_BEGIN) {
-            $quote->removeAllAddresses()->removePayment();
+            $this->getQuote()
+                ->removeAllAddresses()
+                ->removePayment();
             $this->getCheckoutSession()->resetCheckout();
         }
 
-        if (!$quote->hasItems()) {
-            $quote->getShippingAddress()->setCollectShippingRates(false)
+        if (!$this->getQuote()->hasItems()) {
+            $this->getQuote()->getShippingAddress()
+                ->setCollectShippingRates(false)
                 ->removeAllShippingRates();
         }
 

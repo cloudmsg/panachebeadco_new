@@ -219,7 +219,6 @@ class Varien_Db_Ddl_Table
      * Set comment for table
      *
      * @param string $comment
-     * @return Varien_Db_Ddl_Table
      */
     public function setComment($comment)
     {

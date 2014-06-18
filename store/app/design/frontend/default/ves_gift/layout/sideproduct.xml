@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<default>
+		 <reference name="right">          
+			<block type="venustheme_sideproduct/list" name="ves.sideproduct" after="left_cart_sidebar"/>
+		</reference>
+		<reference name="left">          
+			<block type="venustheme_sideproduct/list" name="ves.sideproduct.left" after="left_cart_sidebar"/>
+		</reference>
+	</default>
+ 	
+</layout>
