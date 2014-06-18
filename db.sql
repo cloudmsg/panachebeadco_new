@@ -137,7 +137,7 @@ CREATE TABLE `admin_user` (
 
 LOCK TABLES `admin_user` WRITE;
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` VALUES (1,'Moez','Jaffer','moezjaffer@gmail.com','panachebeadcoadmin','7edb1b7f2fbbc48d56efedb3df88bef6:gKQlux42xaFObGjj1FvY5R3DjRocTqKt','2014-06-18 23:36:43','2014-06-18 23:36:43',NULL,0,0,1,'N;',NULL,NULL);
+INSERT INTO `admin_user` VALUES (1,'Moez','Jaffer','moezjaffer@gmail.com','panachebeadcoadmin','7edb1b7f2fbbc48d56efedb3df88bef6:gKQlux42xaFObGjj1FvY5R3DjRocTqKt','2014-06-18 23:36:43','2014-06-18 23:36:43','2014-06-18 23:47:29',2,0,1,'a:1:{s:11:\"configState\";a:104:{s:15:\"general_country\";s:1:\"1\";s:14:\"general_region\";s:1:\"1\";s:14:\"general_locale\";s:1:\"1\";s:25:\"general_store_information\";s:1:\"1\";s:15:\"payment_account\";s:1:\"1\";s:31:\"payment_paypal_group_all_in_one\";s:1:\"1\";s:24:\"payment_payflow_advanced\";s:1:\"0\";s:25:\"payment_required_settings\";s:1:\"1\";s:25:\"payment_payments_advanced\";s:1:\"1\";s:15:\"payment_express\";s:1:\"1\";s:30:\"payment_advanced_advertise_bml\";s:1:\"0\";s:38:\"payment_advanced_settings_bml_homepage\";s:1:\"0\";s:42:\"payment_advanced_settings_bml_categorypage\";s:1:\"0\";s:41:\"payment_advanced_settings_bml_productpage\";s:1:\"0\";s:38:\"payment_advanced_settings_bml_checkout\";s:1:\"0\";s:34:\"payment_settings_payments_advanced\";s:1:\"1\";s:43:\"payment_settings_payments_advanced_advanced\";s:1:\"1\";s:25:\"payment_billing_agreement\";s:1:\"0\";s:25:\"payment_settlement_report\";s:1:\"0\";s:16:\"payment_frontend\";s:1:\"0\";s:33:\"payment_settings_express_checkout\";s:1:\"1\";s:42:\"payment_settings_express_checkout_advanced\";s:1:\"0\";s:11:\"payment_wpp\";s:1:\"0\";s:29:\"payment_wpp_required_settings\";s:1:\"1\";s:32:\"payment_wpp_and_express_checkout\";s:1:\"1\";s:25:\"payment_wpp_advertise_bml\";s:1:\"0\";s:33:\"payment_wpp_settings_bml_homepage\";s:1:\"0\";s:37:\"payment_wpp_settings_bml_categorypage\";s:1:\"0\";s:36:\"payment_wpp_settings_bml_productpage\";s:1:\"0\";s:33:\"payment_wpp_settings_bml_checkout\";s:1:\"0\";s:20:\"payment_wpp_settings\";s:1:\"1\";s:29:\"payment_wpp_settings_advanced\";s:1:\"0\";s:29:\"payment_wpp_billing_agreement\";s:1:\"0\";s:29:\"payment_wpp_settlement_report\";s:1:\"0\";s:20:\"payment_wpp_frontend\";s:1:\"0\";s:37:\"payment_wpp_settings_express_checkout\";s:1:\"1\";s:46:\"payment_wpp_settings_express_checkout_advanced\";s:1:\"0\";s:11:\"payment_wps\";s:1:\"0\";s:29:\"payment_wps_required_settings\";s:1:\"1\";s:34:\"payment_settings_payments_standart\";s:1:\"1\";s:43:\"payment_settings_payments_standart_advanced\";s:1:\"0\";s:31:\"payment_paypal_payment_gateways\";s:1:\"0\";s:45:\"payment_paypal_verisign_with_express_checkout\";s:1:\"0\";s:31:\"payment_paypal_payflow_required\";s:1:\"1\";s:35:\"payment_paypal_payflow_api_settings\";s:1:\"1\";s:36:\"payment_paypal_payflow_advertise_bml\";s:1:\"0\";s:44:\"payment_paypal_payflow_settings_bml_homepage\";s:1:\"0\";s:48:\"payment_paypal_payflow_settings_bml_categorypage\";s:1:\"0\";s:47:\"payment_paypal_payflow_settings_bml_productpage\";s:1:\"0\";s:44:\"payment_paypal_payflow_settings_bml_checkout\";s:1:\"0\";s:31:\"payment_settings_paypal_payflow\";s:1:\"1\";s:40:\"payment_settings_paypal_payflow_advanced\";s:1:\"0\";s:40:\"payment_paypal_payflow_settlement_report\";s:1:\"0\";s:31:\"payment_paypal_payflow_frontend\";s:1:\"0\";s:39:\"payment_paypal_payflow_express_checkout\";s:1:\"1\";s:48:\"payment_paypal_payflow_express_checkout_advanced\";s:1:\"0\";s:20:\"payment_payflow_link\";s:1:\"0\";s:29:\"payment_payflow_link_required\";s:1:\"1\";s:33:\"payment_payflow_link_payflow_link\";s:1:\"1\";s:37:\"payment_payflow_link_express_checkout\";s:1:\"1\";s:34:\"payment_payflow_link_advertise_bml\";s:1:\"0\";s:42:\"payment_payflow_link_settings_bml_homepage\";s:1:\"0\";s:46:\"payment_payflow_link_settings_bml_categorypage\";s:1:\"0\";s:45:\"payment_payflow_link_settings_bml_productpage\";s:1:\"0\";s:42:\"payment_payflow_link_settings_bml_checkout\";s:1:\"0\";s:29:\"payment_settings_payflow_link\";s:1:\"1\";s:38:\"payment_settings_payflow_link_advanced\";s:1:\"0\";s:38:\"payment_payflow_link_settlement_report\";s:1:\"0\";s:29:\"payment_payflow_link_frontend\";s:1:\"0\";s:46:\"payment_settings_payflow_link_express_checkout\";s:1:\"1\";s:55:\"payment_settings_payflow_link_express_checkout_advanced\";s:1:\"0\";s:38:\"payment_payflow_link_billing_agreement\";s:1:\"0\";s:42:\"payment_paypal_alternative_payment_methods\";s:1:\"1\";s:24:\"payment_express_checkout\";s:1:\"0\";s:33:\"payment_express_checkout_required\";s:1:\"1\";s:50:\"payment_express_checkout_required_express_checkout\";s:1:\"1\";s:21:\"payment_advertise_bml\";s:1:\"0\";s:29:\"payment_settings_bml_homepage\";s:1:\"0\";s:33:\"payment_settings_bml_categorypage\";s:1:\"0\";s:32:\"payment_settings_bml_productpage\";s:1:\"0\";s:29:\"payment_settings_bml_checkout\";s:1:\"0\";s:19:\"payment_settings_ec\";s:1:\"1\";s:28:\"payment_settings_ec_advanced\";s:1:\"0\";s:42:\"payment_express_checkout_billing_agreement\";s:1:\"0\";s:42:\"payment_express_checkout_settlement_report\";s:1:\"0\";s:33:\"payment_express_checkout_frontend\";s:1:\"0\";s:14:\"payment_ccsave\";s:1:\"1\";s:15:\"payment_checkmo\";s:1:\"1\";s:12:\"payment_free\";s:1:\"1\";s:20:\"payment_banktransfer\";s:1:\"1\";s:22:\"payment_cashondelivery\";s:1:\"1\";s:21:\"payment_purchaseorder\";s:1:\"1\";s:31:\"payment_authorizenet_directpost\";s:1:\"1\";s:20:\"payment_authorizenet\";s:1:\"1\";s:15:\"shipping_origin\";s:1:\"1\";s:15:\"shipping_option\";s:1:\"1\";s:17:\"carriers_flatrate\";s:1:\"0\";s:18:\"carriers_tablerate\";s:1:\"0\";s:21:\"carriers_freeshipping\";s:1:\"0\";s:12:\"carriers_ups\";s:1:\"0\";s:13:\"carriers_usps\";s:1:\"1\";s:14:\"carriers_fedex\";s:1:\"0\";s:12:\"carriers_dhl\";s:1:\"0\";s:15:\"carriers_dhlint\";s:1:\"0\";}}',NULL,NULL);
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -161,7 +161,7 @@ CREATE TABLE `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -170,6 +170,86 @@ CREATE TABLE `adminnotification_inbox` (
 
 LOCK TABLES `adminnotification_inbox` WRITE;
 /*!40000 ALTER TABLE `adminnotification_inbox` DISABLE KEYS */;
+INSERT INTO `adminnotification_inbox` VALUES (1,4,'2008-07-25 09:24:40','Magento 1.1 Production Version Now Available','We are thrilled to announce the availability of the production release of Magento 1.1. Read more about the release in the Magento Blog.','http://www.magentocommerce.com/blog/comments/magento-11-is-here-1/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (2,4,'2008-08-02 09:30:16','Updated iPhone Theme is now available','Updated iPhone theme for Magento 1.1 is now available on Magento Connect and for upgrade through your Magento Connect Manager.','http://www.magentocommerce.com/blog/comments/updated-iphone-theme-for-magento-11-is-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (3,3,'2008-08-02 09:40:27','Magento version 1.1.2 is now available','Magento version 1.1.2 is now available for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-version-112-is-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (4,3,'2008-08-14 01:51:46','Magento version 1.1.3 is now available','Magento version 1.1.3 is now available','http://www.magentocommerce.com/blog/comments/magento-version-113-is-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (5,1,'2008-09-03 05:10:31','Magento Version 1.1.4 Security Update Now Available','Magento 1.1.4 Security Update Now Available. If you are using Magento version 1.1.x, we highly recommend upgrading to this version as soon as possible.','http://www.magentocommerce.com/blog/comments/magento-version-114-security-update/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (6,3,'2008-09-16 06:09:54','Magento version 1.1.5 Now Available','Magento version 1.1.5 Now Available.\n\nThis release includes many bug fixes, a new category manager and a new skin for the default Magento theme.','http://www.magentocommerce.com/blog/comments/magento-version-115-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (7,3,'2008-09-18 04:18:35','Magento version 1.1.6 Now Available','Magento version 1.1.6 Now Available.\n\nThis version includes bug fixes for Magento 1.1.x that are listed in the release notes section.','http://www.magentocommerce.com/blog/comments/magento-version-116-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (8,4,'2008-11-08 09:46:42','Reminder: Change Magento`s default phone numbers and callouts before site launch','Before launching your Magento store, please remember to change Magento`s default phone numbers that appear in email templates, callouts, templates, etc.',NULL,0,1);
+INSERT INTO `adminnotification_inbox` VALUES (9,3,'2008-11-20 11:31:12','Magento version 1.1.7 Now Available','Magento version 1.1.7 Now Available.\n\nThis version includes over 350 issue resolutions for Magento 1.1.x that are listed in the release notes section, and new functionality that includes:\n\n-Google Website Optimizer integration\n-Google Base integration\n-Scheduled DB logs cleaning option','http://www.magentocommerce.com/blog/comments/magento-version-117-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (10,3,'2008-11-27 07:24:50','Magento Version 1.1.8 Now Available','Magento version 1.1.8 now available.\n\nThis version includes some issue resolutions for Magento 1.1.x that are listed in the release notes section.','http://www.magentocommerce.com/blog/comments/magento-version-118-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (11,3,'2008-12-30 17:45:59','Magento version 1.2.0 is now available for download and upgrade','We are extremely happy to announce the availability of Magento version 1.2.0 for download and upgrade.\n\nThis version includes numerous issue resolutions for Magento version 1.1.x and some highly requested new features such as:\n\n    * Support for Downloadable/Digital Products. \n    * Added Layered Navigation to site search result page.\n    * Improved site search to utilize MySQL fulltext search\n    * Added support for fixed-taxes on product level.\n    * Upgraded Zend Framework to the latest stable version 1.7.2','http://www.magentocommerce.com/blog/comments/magento-version-120-is-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (12,2,'2008-12-31 07:59:22','Magento version 1.2.0.1 now available','Magento version 1.2.0.1 now available.This version includes some issue resolutions for Magento 1.2.x that are listed in the release notes section.','http://www.magentocommerce.com/blog/comments/magento-version-1201-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (13,2,'2009-01-13 06:41:49','Magento version 1.2.0.2 now available','Magento version 1.2.0.2 is now available for download and upgrade. This version includes an issue resolutions for Magento version 1.2.0.x as listed in the release notes.','http://www.magentocommerce.com/blog/comments/magento-version-1202-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (14,3,'2009-01-24 10:25:56','Magento version 1.2.0.3 now available','Magento version 1.2.0.3 is now available for download and upgrade. This version includes issue resolutions for Magento version 1.2.0.x as listed in the release notes.','http://www.magentocommerce.com/blog/comments/magento-version-1203-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (15,3,'2009-02-03 07:57:00','Magento version 1.2.1 is now available for download and upgrade','We are happy to announce the availability of Magento version 1.2.1 for download and upgrade.\n\nThis version includes some issue resolutions for Magento version 1.2.x. A full list of items included in this release can be found on the release notes page.','http://www.magentocommerce.com/blog/comments/magento-version-121-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (16,3,'2009-02-24 10:45:47','Magento version 1.2.1.1 now available','Magento version 1.2.1.1 now available.This version includes some issue resolutions for Magento 1.2.x that are listed in the release notes section.','http://www.magentocommerce.com/blog/comments/magento-version-1211-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (17,3,'2009-02-27 11:39:24','CSRF Attack Prevention','We have just posted a blog entry about a hypothetical CSRF attack on a Magento admin panel. Please read the post to find out if your Magento installation is at risk at http://www.magentocommerce.com/blog/comments/csrf-vulnerabilities-in-web-application-and-how-to-avoid-them-in-magento/','http://www.magentocommerce.com/blog/comments/csrf-vulnerabilities-in-web-application-and-how-to-avoid-them-in-magento/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (18,2,'2009-03-04 09:03:58','Magento version 1.2.1.2 now available','Magento version 1.2.1.2 is now available for download and upgrade.\nThis version includes some updates to improve admin security as described in the release notes page.','http://www.magentocommerce.com/blog/comments/magento-version-1212-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (19,3,'2009-03-31 10:22:40','Magento version 1.3.0 now available','Magento version 1.3.0 is now available for download and upgrade. This version includes numerous issue resolutions for Magento version 1.2.x and new features as described on the release notes page.','http://www.magentocommerce.com/blog/comments/magento-version-130-is-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (20,3,'2009-04-18 12:06:02','Magento version 1.3.1 now available','Magento version 1.3.1 is now available for download and upgrade. This version includes some issue resolutions for Magento version 1.3.x and new features such as Checkout By Amazon and Amazon Flexible Payment. To see a full list of updates please check the release notes page.','http://www.magentocommerce.com/blog/comments/magento-version-131-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (21,3,'2009-05-20 06:31:21','Magento version 1.3.1.1 now available','Magento version 1.3.1.1 is now available for download and upgrade. This version includes some issue resolutions for Magento version 1.3.x and a security update for Magento installations that run on multiple domains or sub-domains. If you are running Magento with multiple domains or sub-domains we highly recommend upgrading to this version.','http://www.magentocommerce.com/blog/comments/magento-version-1311-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (22,3,'2009-05-30 06:54:06','Magento version 1.3.2 now available','This version includes some improvements and issue resolutions for version 1.3.x that are listed on the release notes page. also included is a Beta version of the Compile module.','http://www.magentocommerce.com/blog/comments/magento-version-132-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (23,3,'2009-06-02 03:32:52','Magento version 1.3.2.1 now available','Magento version 1.3.2.1 now available for download and upgrade.\n\nThis release solves an issue for users running Magento with PHP 5.2.0, and changes to index.php to support the new Compiler Module.','http://www.magentocommerce.com/blog/comments/magento-version-1321-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (24,3,'2009-07-02 09:21:44','Magento version 1.3.2.2 now available','Magento version 1.3.2.2 is now available for download and upgrade.\n\nThis release includes issue resolution for Magento version 1.3.x. To see a full list of changes please visit the release notes page http://www.magentocommerce.com/download/release_notes.','http://www.magentocommerce.com/blog/comments/magento-version-1322-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (25,3,'2009-07-23 14:48:54','Magento version 1.3.2.3 now available','Magento version 1.3.2.3 is now available for download and upgrade.\n\nThis release includes issue resolution for Magento version 1.3.x. We recommend to upgrade to this version if PayPal payment modules are in use. To see a full list of changes please visit the release notes page http://www.magentocommerce.com/download/release_notes.','http://www.magentocommerce.com/blog/comments/magento-version-1323-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (26,4,'2009-08-29 02:26:28','PayPal is updating Payflow Pro and Website Payments Pro (Payflow Edition) UK.','If you are using Payflow Pro and/or Website Payments Pro (Payflow Edition) UK.  payment methods, you will need to update the URLâ€˜s in your Magento Administrator Panel in order to process transactions after September 1, 2009. Full details are available here: http://www.magentocommerce.com/wiki/paypal_payflow_changes','http://www.magentocommerce.com/wiki/paypal_payflow_changes',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (27,2,'2009-09-24 04:16:49','Magento Version 1.3.2.4 Security Update','Magento Version 1.3.2.4 is now available. This version includes a security updates for Magento 1.3.x that solves possible XSS vulnerability issue on customer registration page and is available through SVN, Download Page and through the Magento Connect Manager.','http://www.magentocommerce.com/blog/comments/magento-version-1324-security-update/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (28,4,'2009-09-25 22:57:54','Magento Preview Version 1.4.0.0-alpha2 is now available','We are happy to announce the availability of Magento Preview Version 1.4.0.0-alpha2 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1400-alpha2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (29,4,'2009-10-07 08:55:40','Magento Preview Version 1.4.0.0-alpha3 is now available','We are happy to announce the availability of Magento Preview Version 1.4.0.0-alpha3 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1400-alpha3-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (30,4,'2009-12-09 09:30:36','Magento Preview Version 1.4.0.0-beta1 is now available','We are happy to announce the availability of Magento Preview Version 1.4.0.0-beta1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1400-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (31,4,'2009-12-31 19:22:12','Magento Preview Version 1.4.0.0-rc1 is now available','We are happy to announce the availability of Magento Preview Version 1.4.0.0-rc1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1400-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (32,4,'2010-02-13 13:39:53','Magento CE Version 1.4.0.0 Stable is now available','We are excited to announce the availability of Magento CE Version 1.4.0.0 Stable for upgrade and download.','http://bit.ly/c53rpK',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (33,3,'2010-02-20 12:39:36','Magento CE Version 1.4.0.1 Stable is now available','Magento CE 1.4.0.1 Stable is now available for upgrade and download.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1401-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (34,4,'2010-04-24 04:09:03','Magento Version CE 1.3.3.0 Stable - Now Available With Support for 3-D Secure','Based on community requests, we are excited to announce the release of Magento CE 1.3.3.0-Stable with support for 3-D Secure. This release is intended for Magento merchants using version 1.3.x, who want to add support for 3-D Secure.','http://www.magentocommerce.com/blog/comments/magento-version-ce-1330-stable-now-available-with-support-for-3-d-secure/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (35,4,'2010-06-01 01:20:21','Announcing the Launch of Magento Mobile','The Magento team is pleased to announce the launch of Magento mobile, a new product that will allow Magento merchants to easily create branded, native mobile storefront applications that are deeply integrated with Magentoâ€™s market-leading eCommerce platform. The product includes a new administrative manager, a native iPhone app that is fully customizable, and a service where Magento manages the submission and maintenance process for the iTunes App Store.\n\nLearn more by visiting the Magento mobile product page and sign-up to be the first to launch a native mobile commerce app, fully integrated with Magento.','http://www.magentocommerce.com/product/mobile',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (36,4,'2010-06-11 04:08:08','Magento CE Version 1.4.1.0 Stable is now available','We are excited to announce the availability of Magento CE Version 1.4.1.0 Stable for upgrade and download. Some of the highlights of this release include: Enhanced PayPal integration (more info to follow), Change of Database structure of the Sales module to no longer use EAV, and much more.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1410-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (37,4,'2010-07-27 05:37:34','Magento CE Version 1.4.1.1 Stable is now available','We are excited to announce the availability of Magento CE Version 1.4.1.1 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1411-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (38,4,'2010-07-28 13:12:12','Magento CE Version 1.4.2.0-beta1 Preview Release Now Available','This release gives a preview of the new Magento Connect Manager.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1420-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (39,4,'2010-07-29 04:15:01','Magento CE Version 1.4.1.1 Patch Available','As some users experienced issues with upgrading to CE 1.4.1.1 through PEAR channels we provided a patch for it that is available on our blog http://www.magentocommerce.com/blog/comments/magento-ce-version-1411-stable-patch/','http://www.magentocommerce.com/blog/comments/magento-ce-version-1411-stable-patch/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (40,4,'2010-10-12 08:13:25','Magento Mobile is now live!','Magento Mobile is now live! Signup today to have your own native iPhone mobile-shopping app in iTunes for the holiday season! Learn more at http://www.magentomobile.com/','http://www.magentomobile.com/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (41,4,'2010-11-09 07:52:06','Magento CE Version 1.4.2.0-RC1 Preview Release Now Available','We are happy to announce the availability of Magento Preview Version 1.4.2.0-RC1 for download.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1420-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (42,4,'2010-12-03 06:33:00','Magento CE Version 1.4.2.0-RC2 Preview Release Now Available','We are happy to announce the availability of Magento Preview Version 1.4.2.0-RC2 for download.','http://www.magentocommerce.com/blog/comments/magento-preview-version-1420-rc2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (43,4,'2010-12-09 08:29:55','Magento CE Version 1.4.2.0 Stable is now available','We are excited to announce the availability of Magento CE Version 1.4.2.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1420-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (44,4,'2010-12-18 09:23:55','Magento Preview Version CE 1.5.0.0-alpha1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-alpha1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-alpha1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (45,4,'2010-12-30 09:51:08','Magento Preview Version CE 1.5.0.0-alpha2 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-alpha2 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-alpha2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (46,4,'2011-01-14 10:35:36','Magento Preview Version CE 1.5.0.0-beta1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-beta1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (47,4,'2011-01-22 07:19:09','Magento Preview Version CE 1.5.0.0-beta2 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-beta2 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-beta2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (48,4,'2011-01-28 07:27:57','Magento Preview Version CE 1.5.0.0-rc1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-rc1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (49,4,'2011-02-04 07:56:33','Magento Preview Version CE 1.5.0.0-rc2 is now available','We are happy to announce the availability of Magento Preview Version CE 1.5.0.0-rc2 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1500-rc2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (50,4,'2011-02-09 05:43:23','Magento CE Version 1.5.0.0 Stable is now available','We are excited to announce the availability of Magento CE Version 1.5.0.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-community-professional-and-enterprise-editions-releases-now-availab/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (51,4,'2011-02-10 09:42:57','Magento CE 1.5.0.1 stable Now Available','We are excited to announce the availability of Magento CE Version 1.5.0.1 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-1501-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (52,4,'2011-03-19 04:15:45','Magento CE 1.5.1.0-beta1 Now Available','We are happy to announce the availability of Magento Preview Version CE 1.5.1.0-beta1 for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1510-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (53,4,'2011-04-01 02:43:02','Magento CE 1.5.1.0-rc1 Now Available','We are happy to announce the availability of Magento Preview Version CE 1.5.1.0-rc1 for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1510-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (54,4,'2011-04-27 03:21:07','Magento CE 1.5.1.0-stable Now Available','We are excited to announce the availability of Magento CE Version 1.5.1.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1510-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (55,4,'2011-05-27 03:33:23','Magento Preview Version CE 1.6.0.0-alpha1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.0.0-alpha1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1600-alpha1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (56,4,'2011-06-16 02:12:08','Magento Preview Version CE 1.6.0.0-beta1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.0.0-beta1for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1600-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (57,4,'2011-07-01 03:03:58','Magento Preview Version CE 1.6.0.0-rc1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.0.0-rc1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1600-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (58,4,'2011-07-12 03:07:39','Magento Preview Version CE 1.6.0.0-rc2 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.0.0-rc2 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1600-rc2-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (59,4,'2011-08-20 01:58:31','Magento CE 1.6.0.0-stable Now Available','We are excited to announce the availability of Magento CE Version 1.6.0.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1600-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (60,4,'2011-09-17 09:31:26','Magento Preview Version CE 1.6.1.0-beta1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.1.0-beta1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1610-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (61,4,'2011-09-29 23:44:10','Magento Preview Version CE 1.6.1.0-rc1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.6.1.0-rc1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1610-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (62,4,'2011-10-20 01:50:05','Magento CE 1.6.1.0-stable Now Available','We are excited to announce the availability of Magento CE Version 1.6.1.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1610-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (63,4,'2011-12-31 03:39:35','Magento Preview Version CE 1.7.0.0-alpha1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.7.0.0-alpha1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1700-alpha1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (64,4,'2012-01-12 03:24:20','Magento CE 1.6.2.0-stable Now Available','We are excited to announce the availability of Magento CE Version 1.6.2.0 Stable for download and upgrade.','http://www.magentocommerce.com/blog/comments/magento-ce-version-1620-stable-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (65,4,'2012-03-03 05:54:12','Magento Preview Version CE 1.7.0.0-beta1 is now available','We are happy to announce the availability of Magento Preview Version CE 1.7.0.0-beta1 for download.\nAs this is a preview version it is NOT recommended in any way to be used in a production environment.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1700-beta1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (66,4,'2012-04-23 18:02:40','Magento Community Preview Version CE 1.7.0.0-RC1 has been released!','Learn more about the exciting new features and updates in this release and how you can take it for a test drive. As this is a preview version, we need to stress that it\'s likely unstable and that we DON\'T recommend that you use it in any production environment just yet.','http://www.magentocommerce.com/blog/comments/magento-preview-version-ce-1700-rc1-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (67,4,'2012-05-11 13:46:54','Magento Community 1.7 and Magento Enterprise 1.12 now available!','Learn more about the exciting new features and updates in these releases.','http://www.magentocommerce.com/blog/comments/magento-enterprise-112-and-community-17-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (68,4,'2012-06-20 22:54:07','Magento Community Edition 1.7.0.1 now available! ','We have just released an updated version of Magento Community Edition, version 1.7.0.1. This update delivers new, minor functionality and fixes for some potential security vulnerabilities.','http://www.magentocommerce.com/blog/comments/magento-community-edition-1701-released/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (69,4,'2012-07-05 23:21:43','Important Security Update - Zend Platform Vulnerability','We have recently learned of a serious vulnerability in the Zend platform on which Magento is built. Learn more and access a patch that addresses this issue. ','http://www.magentocommerce.com/blog/comments/important-security-update-zend-platform-vulnerability/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (70,4,'2012-11-20 01:27:42','Wrap up more holiday sales with financing','Give your customers up to 6 months financing. You get paid right away with Bill Me Later, a PayPal service. It’s a great way to extend financing in time for the holidays. Learn More.','http://www.magentocommerce.com/paypal/billmelater?utm_source=CEMessaging&utm_medium=copy&utm_content=sixmonths&utm_campaign=BML',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (71,4,'2012-12-07 16:22:30','Increase Your Sales With PayPal','Magento merchants using PayPal Express Checkout can help increase their sales on average 18%. It is one simple thing you can do right now to help boost your sales. Learn more.','http://www.magentocommerce.com/add-paypal?utm_source=CEModule&utm_medium=copy&utm_content=18&utm_campaign=choosepaypal',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (72,4,'2013-01-16 03:02:07','Imagine 2013 Registration is Now Open!','Join 1500 merchants, partners, developers and enthusiasts from 35+ countries around the world for Magento’s premier global conference! Collaborate, learn, network and get inspired by the future of eCommerce. Tickets will sell out fast! April 8th – 10th in Las Vegas.','https://registration.imagineecommerce.com/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (73,4,'2013-02-12 22:53:42','Get More eCommerce Power with Magento Enterprise','Limited time offer: Get a free, customized evaluation of your Community Edition site from a Magento Solution Partner. This evaluation gives you a clear look at the numerous benefits you can achieve by upgrading to Enterprise Edition. ','http://www.magentocommerce.com/community-to-enterprise?utm_source=CEMM&utm_medium=copy&utm_campaign=CE2EE',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (74,2,'2013-09-27 21:28:13','Magento Community Edition 1.8.0.0 - now available for download!','Get tax, security, performance, and many other improvements. \n\nLearn more at http://www.magentocommerce.com/blog/comments/magento-community-edition-one-eight-now-available/ ','http://www.magentocommerce.com/blog/comments/magento-community-edition-one-eight-now-available/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (75,4,'2013-12-11 20:35:06','Magento Community Edition 1.8.1.0 is here!','This new version offers significant tax calculation, product quality, and security enhancements. Be sure to carefully review the upgrade instructions before starting. More information is available at http://www.magentocommerce.com/blog/comments/magento-community-edition-1810-is-here/','http://www.magentocommerce.com/blog/comments/magento-community-edition-1810-is-here/',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (76,4,'2013-12-13 04:24:39','Important Magento Community Edition Patch','A security patch is available for Magento Community Edition 1.4.0.0 through 1.7.0.2; the issue has been fixed in Magento Community Edition 1.8.0.0 and later. It resolves a vulnerability discovered through our quarterly penetration testing process and has not been reported by merchants. We encourage all merchants to apply the patch in their next regularly scheduled maintenance cycle. The patch is available at http://www.magentocommerce.com/download in the Magento Community Edition Patches section.','http://www.magentocommerce.com/download',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (77,4,'2014-01-21 23:34:48','PHP 5.4 Patch Now Available','Magento is advancing its platform and making development more efficient by adding support for PHP 5.4. Patches are available for download at www.magentocommerce.com/download and you can learn more about this update in our blog post at http://www.magentocommerce.com/blog/comments/magento-now-supports-php-54 .','http://www.magentocommerce.com/blog/comments/magento-now-supports-php-54',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (78,4,'2014-02-20 22:51:46','Discover Card Validation Patch Available','A patch that resolves an issue with validating Discover credit cards is now available for download at http://www.magentocommerce.com/download. More information on the patch is available in the Magento Knowledge Base at http://www.magentocommerce.com/knowledge-base/entry/discover-card-validation','http://www.magentocommerce.com/knowledge-base/entry/discover-card-validation ',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (79,4,'2014-03-04 20:12:26','Learn How to Quickly Increase Sales on Your Site','Adding the PayPal Express Checkout button to your checkout page can help increase sales 18% on average. It’s fast and easy and you can do it right now to boost sales. Express Checkout is already seamlessly integrated into Community Edition.','http://magento.com/paypal/CE_Express_Checkout_NA?utm_source=messagemodule&utm_medium=message&utm_campaign=Ceexpresscheckout',0,1);
+INSERT INTO `adminnotification_inbox` VALUES (80,4,'2014-05-13 20:46:11','Magento Community Edition 1.9 is now available!','It accelerates your entry into the mobile commerce space by slashing the time and cost of getting a mobile device-friendly responsive site.  And a new Bill Me Later payment option helps boost your sales. Visit http://magento.com/blog/magento-news/magento-enables-responsive-sites-half-time to learn more.','http://magento.com/blog/magento-news/magento-enables-responsive-sites-half-time',0,1);
 /*!40000 ALTER TABLE `adminnotification_inbox` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -325,7 +405,7 @@ CREATE TABLE `api_role` (
   PRIMARY KEY (`role_id`),
   KEY `IDX_API_ROLE_PARENT_ID_SORT_ORDER` (`parent_id`,`sort_order`),
   KEY `IDX_API_ROLE_TREE_LEVEL` (`tree_level`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Api ACL Roles';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Api ACL Roles';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -334,6 +414,8 @@ CREATE TABLE `api_role` (
 
 LOCK TABLES `api_role` WRITE;
 /*!40000 ALTER TABLE `api_role` DISABLE KEYS */;
+INSERT INTO `api_role` VALUES (1,0,1,0,'G',0,'lightspeed');
+INSERT INTO `api_role` VALUES (2,1,1,0,'U',1,'Light');
 /*!40000 ALTER TABLE `api_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -356,7 +438,7 @@ CREATE TABLE `api_rule` (
   KEY `IDX_API_RULE_RESOURCE_ID_ROLE_ID` (`resource_id`,`role_id`),
   KEY `IDX_API_RULE_ROLE_ID_RESOURCE_ID` (`role_id`,`resource_id`),
   CONSTRAINT `FK_API_RULE_ROLE_ID_API_ROLE_ROLE_ID` FOREIGN KEY (`role_id`) REFERENCES `api_role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Api ACL Rules';
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8 COMMENT='Api ACL Rules';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -365,6 +447,150 @@ CREATE TABLE `api_rule` (
 
 LOCK TABLES `api_rule` WRITE;
 /*!40000 ALTER TABLE `api_rule` DISABLE KEYS */;
+INSERT INTO `api_rule` VALUES (148,1,'core',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (149,1,'core/store',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (150,1,'core/store/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (151,1,'core/store/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (152,1,'core/magento',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (153,1,'core/magento/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (154,1,'directory',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (155,1,'directory/country',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (156,1,'directory/region',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (157,1,'customer',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (158,1,'customer/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (159,1,'customer/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (160,1,'customer/delete',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (161,1,'customer/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (162,1,'customer/address',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (163,1,'customer/address/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (164,1,'customer/address/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (165,1,'customer/address/delete',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (166,1,'customer/address/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (167,1,'catalog',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (168,1,'catalog/category',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (169,1,'catalog/category/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (170,1,'catalog/category/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (171,1,'catalog/category/move',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (172,1,'catalog/category/delete',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (173,1,'catalog/category/tree',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (174,1,'catalog/category/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (175,1,'catalog/category/attributes',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (176,1,'catalog/category/product',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (177,1,'catalog/category/product/assign',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (178,1,'catalog/category/product/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (179,1,'catalog/category/product/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (180,1,'catalog/product',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (181,1,'catalog/product/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (182,1,'catalog/product/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (183,1,'catalog/product/delete',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (184,1,'catalog/product/update_tier_price',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (185,1,'catalog/product/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (186,1,'catalog/product/listOfAdditionalAttributes',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (187,1,'catalog/product/attributes',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (188,1,'catalog/product/attribute',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (189,1,'catalog/product/attribute/read',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (190,1,'catalog/product/attribute/write',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (191,1,'catalog/product/attribute/types',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (192,1,'catalog/product/attribute/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (193,1,'catalog/product/attribute/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (194,1,'catalog/product/attribute/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (195,1,'catalog/product/attribute/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (196,1,'catalog/product/attribute/option',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (197,1,'catalog/product/attribute/option/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (198,1,'catalog/product/attribute/option/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (199,1,'catalog/product/attribute/set',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (200,1,'catalog/product/attribute/set/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (201,1,'catalog/product/attribute/set/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (202,1,'catalog/product/attribute/set/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (203,1,'catalog/product/attribute/set/attribute_add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (204,1,'catalog/product/attribute/set/attribute_remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (205,1,'catalog/product/attribute/set/group_add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (206,1,'catalog/product/attribute/set/group_rename',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (207,1,'catalog/product/attribute/set/group_remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (208,1,'catalog/product/link',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (209,1,'catalog/product/link/assign',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (210,1,'catalog/product/link/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (211,1,'catalog/product/link/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (212,1,'catalog/product/media',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (213,1,'catalog/product/media/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (214,1,'catalog/product/media/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (215,1,'catalog/product/media/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (216,1,'catalog/product/option',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (217,1,'catalog/product/option/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (218,1,'catalog/product/option/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (219,1,'catalog/product/option/types',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (220,1,'catalog/product/option/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (221,1,'catalog/product/option/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (222,1,'catalog/product/option/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (223,1,'catalog/product/option/value',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (224,1,'catalog/product/option/value/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (225,1,'catalog/product/option/value/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (226,1,'catalog/product/option/value/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (227,1,'catalog/product/option/value/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (228,1,'catalog/product/option/value/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (229,1,'catalog/product/tag',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (230,1,'catalog/product/tag/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (231,1,'catalog/product/tag/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (232,1,'catalog/product/tag/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (233,1,'catalog/product/tag/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (234,1,'catalog/product/tag/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (235,1,'catalog/product/downloadable_link',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (236,1,'catalog/product/downloadable_link/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (237,1,'catalog/product/downloadable_link/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (238,1,'catalog/product/downloadable_link/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (239,1,'sales',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (240,1,'sales/order',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (241,1,'sales/order/change',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (242,1,'sales/order/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (243,1,'sales/order/shipment',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (244,1,'sales/order/shipment/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (245,1,'sales/order/shipment/comment',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (246,1,'sales/order/shipment/track',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (247,1,'sales/order/shipment/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (248,1,'sales/order/shipment/send',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (249,1,'sales/order/invoice',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (250,1,'sales/order/invoice/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (251,1,'sales/order/invoice/comment',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (252,1,'sales/order/invoice/capture',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (253,1,'sales/order/invoice/void',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (254,1,'sales/order/invoice/cancel',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (255,1,'sales/order/invoice/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (256,1,'sales/order/creditmemo',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (257,1,'sales/order/creditmemo/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (258,1,'sales/order/creditmemo/comment',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (259,1,'sales/order/creditmemo/cancel',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (260,1,'sales/order/creditmemo/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (261,1,'sales/order/creditmemo/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (262,1,'cataloginventory',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (263,1,'cataloginventory/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (264,1,'cataloginventory/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (265,1,'cart',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (266,1,'cart/create',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (267,1,'cart/order',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (268,1,'cart/info',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (269,1,'cart/totals',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (270,1,'cart/license',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (271,1,'cart/product',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (272,1,'cart/product/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (273,1,'cart/product/update',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (274,1,'cart/product/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (275,1,'cart/product/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (276,1,'cart/product/moveToCustomerQuote',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (277,1,'cart/customer',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (278,1,'cart/customer/set',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (279,1,'cart/customer/addresses',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (280,1,'cart/shipping',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (281,1,'cart/shipping/method',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (282,1,'cart/shipping/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (283,1,'cart/payment',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (284,1,'cart/payment/method',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (285,1,'cart/payment/list',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (286,1,'cart/coupon',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (287,1,'cart/coupon/add',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (288,1,'cart/coupon/remove',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (289,1,'giftmessage',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (290,1,'giftmessage/set',NULL,0,'G','deny');
+INSERT INTO `api_rule` VALUES (291,1,'all',NULL,0,'G','allow');
 /*!40000 ALTER TABLE `api_rule` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -414,7 +640,7 @@ CREATE TABLE `api_user` (
   `reload_acl_flag` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Refresh ACL flag',
   `is_active` smallint(6) NOT NULL DEFAULT '1' COMMENT 'Account status',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Api Users';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Api Users';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,6 +649,7 @@ CREATE TABLE `api_user` (
 
 LOCK TABLES `api_user` WRITE;
 /*!40000 ALTER TABLE `api_user` DISABLE KEYS */;
+INSERT INTO `api_user` VALUES (1,'Light','Speed','moezjaffer@gmail.com','lightspeed','875ee9902d67d32d1e29cab299a6c153:s0AmEY7glVTcXHMBNcuY3BbQRqIpUWjU','2014-06-18 23:49:28','2014-06-18 23:51:08',0,0,1);
 /*!40000 ALTER TABLE `api_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -767,6 +994,70 @@ INSERT INTO `catalog_category_entity_varchar` VALUES (5,3,41,1,2,'Default Catego
 INSERT INTO `catalog_category_entity_varchar` VALUES (6,3,49,1,2,'PRODUCTS');
 INSERT INTO `catalog_category_entity_varchar` VALUES (7,3,43,1,2,'default-category');
 /*!40000 ALTER TABLE `catalog_category_entity_varchar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `catalog_category_flat_store_1`
+--
+
+DROP TABLE IF EXISTS `catalog_category_flat_store_1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `catalog_category_flat_store_1` (
+  `entity_id` int(10) unsigned NOT NULL COMMENT 'entity_id',
+  `parent_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'parent_id',
+  `created_at` timestamp NULL DEFAULT NULL COMMENT 'created_at',
+  `updated_at` timestamp NULL DEFAULT NULL COMMENT 'updated_at',
+  `path` varchar(255) NOT NULL DEFAULT '' COMMENT 'path',
+  `position` int(11) NOT NULL COMMENT 'position',
+  `level` int(11) NOT NULL DEFAULT '0' COMMENT 'level',
+  `children_count` int(11) NOT NULL COMMENT 'children_count',
+  `store_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Store Id',
+  `all_children` text COMMENT 'All Children',
+  `available_sort_by` text COMMENT 'Available Product Listing Sort By',
+  `children` text COMMENT 'Children',
+  `custom_apply_to_products` int(11) DEFAULT NULL COMMENT 'Apply To Products',
+  `custom_design` varchar(255) DEFAULT NULL COMMENT 'Custom Design',
+  `custom_design_from` datetime DEFAULT NULL COMMENT 'Active From',
+  `custom_design_to` datetime DEFAULT NULL COMMENT 'Active To',
+  `custom_layout_update` text COMMENT 'Custom Layout Update',
+  `custom_use_parent_settings` int(11) DEFAULT NULL COMMENT 'Use Parent Category Settings',
+  `default_sort_by` varchar(255) DEFAULT NULL COMMENT 'Default Product Listing Sort By',
+  `description` text COMMENT 'Description',
+  `display_mode` varchar(255) DEFAULT NULL COMMENT 'Display Mode',
+  `filter_price_range` decimal(12,4) DEFAULT NULL COMMENT 'Layered Navigation Price Step',
+  `image` varchar(255) DEFAULT NULL COMMENT 'Image',
+  `include_in_menu` int(11) DEFAULT NULL COMMENT 'Include in Navigation Menu',
+  `is_active` int(11) DEFAULT NULL COMMENT 'Is Active',
+  `is_anchor` int(11) DEFAULT NULL COMMENT 'Is Anchor',
+  `landing_page` int(11) DEFAULT NULL COMMENT 'CMS Block',
+  `meta_description` text COMMENT 'Meta Description',
+  `meta_keywords` text COMMENT 'Meta Keywords',
+  `meta_title` varchar(255) DEFAULT NULL COMMENT 'Page Title',
+  `name` varchar(255) DEFAULT NULL COMMENT 'Name',
+  `page_layout` varchar(255) DEFAULT NULL COMMENT 'Page Layout',
+  `path_in_store` text COMMENT 'Path In Store',
+  `thumbnail` varchar(255) DEFAULT NULL COMMENT 'Thumbnail Image',
+  `url_key` varchar(255) DEFAULT NULL COMMENT 'URL Key',
+  `url_path` varchar(255) DEFAULT NULL COMMENT 'Url Path',
+  PRIMARY KEY (`entity_id`),
+  KEY `IDX_CATALOG_CATEGORY_FLAT_STORE_1_STORE_ID` (`store_id`),
+  KEY `IDX_CATALOG_CATEGORY_FLAT_STORE_1_PATH` (`path`),
+  KEY `IDX_CATALOG_CATEGORY_FLAT_STORE_1_LEVEL` (`level`),
+  CONSTRAINT `FK_CAT_CTGR_FLAT_STORE_1_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_CATALOG_CATEGORY_FLAT_STORE_1_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Category Flat (Store 1)';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `catalog_category_flat_store_1`
+--
+
+LOCK TABLES `catalog_category_flat_store_1` WRITE;
+/*!40000 ALTER TABLE `catalog_category_flat_store_1` DISABLE KEYS */;
+INSERT INTO `catalog_category_flat_store_1` VALUES (1,0,'2014-06-18 23:34:39','2014-06-18 23:34:39','1',0,0,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,'Root Catalog',NULL,NULL,NULL,'root-catalog',NULL);
+INSERT INTO `catalog_category_flat_store_1` VALUES (2,1,'2014-06-18 23:34:43','2014-06-18 23:34:43','1/2',1,1,0,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'PRODUCTS',NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,'Default Category',NULL,NULL,NULL,'default-category',NULL);
+/*!40000 ALTER TABLE `catalog_category_flat_store_1` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1664,6 +1955,73 @@ CREATE TABLE `catalog_product_entity_varchar` (
 LOCK TABLES `catalog_product_entity_varchar` WRITE;
 /*!40000 ALTER TABLE `catalog_product_entity_varchar` DISABLE KEYS */;
 /*!40000 ALTER TABLE `catalog_product_entity_varchar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `catalog_product_flat_1`
+--
+
+DROP TABLE IF EXISTS `catalog_product_flat_1`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `catalog_product_flat_1` (
+  `entity_id` int(10) unsigned NOT NULL COMMENT 'entity_id',
+  `attribute_set_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'attribute_set_id',
+  `type_id` varchar(32) NOT NULL DEFAULT 'simple' COMMENT 'type_id',
+  `cost` decimal(12,4) DEFAULT NULL COMMENT 'cost',
+  `created_at` timestamp NULL DEFAULT NULL COMMENT 'created_at',
+  `gift_message_available` smallint(6) DEFAULT NULL COMMENT 'gift_message_available',
+  `has_options` smallint(6) NOT NULL DEFAULT '0' COMMENT 'has_options',
+  `image_label` varchar(255) DEFAULT NULL COMMENT 'image_label',
+  `is_recurring` smallint(6) DEFAULT NULL COMMENT 'is_recurring',
+  `links_exist` int(11) DEFAULT NULL COMMENT 'links_exist',
+  `links_purchased_separately` int(11) DEFAULT NULL COMMENT 'links_purchased_separately',
+  `links_title` varchar(255) DEFAULT NULL COMMENT 'links_title',
+  `msrp` decimal(12,4) DEFAULT NULL COMMENT 'msrp',
+  `msrp_display_actual_price_type` varchar(255) DEFAULT NULL COMMENT 'msrp_display_actual_price_type',
+  `msrp_enabled` smallint(6) DEFAULT NULL COMMENT 'msrp_enabled',
+  `name` varchar(255) DEFAULT NULL COMMENT 'name',
+  `news_from_date` datetime DEFAULT NULL COMMENT 'news_from_date',
+  `news_to_date` datetime DEFAULT NULL COMMENT 'news_to_date',
+  `price` decimal(12,4) DEFAULT NULL COMMENT 'price',
+  `price_type` int(11) DEFAULT NULL COMMENT 'price_type',
+  `price_view` int(11) DEFAULT NULL COMMENT 'price_view',
+  `recurring_profile` text COMMENT 'recurring_profile',
+  `required_options` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'required_options',
+  `shipment_type` int(11) DEFAULT NULL COMMENT 'shipment_type',
+  `short_description` text COMMENT 'short_description',
+  `sku` varchar(64) DEFAULT NULL COMMENT 'sku',
+  `sku_type` int(11) DEFAULT NULL COMMENT 'sku_type',
+  `small_image` varchar(255) DEFAULT NULL COMMENT 'small_image',
+  `small_image_label` varchar(255) DEFAULT NULL COMMENT 'small_image_label',
+  `special_from_date` datetime DEFAULT NULL COMMENT 'special_from_date',
+  `special_price` decimal(12,4) DEFAULT NULL COMMENT 'special_price',
+  `special_to_date` datetime DEFAULT NULL COMMENT 'special_to_date',
+  `tax_class_id` int(10) unsigned DEFAULT NULL COMMENT 'tax_class_id',
+  `thumbnail` varchar(255) DEFAULT NULL COMMENT 'thumbnail',
+  `thumbnail_label` varchar(255) DEFAULT NULL COMMENT 'thumbnail_label',
+  `updated_at` timestamp NULL DEFAULT NULL COMMENT 'updated_at',
+  `url_key` varchar(255) DEFAULT NULL COMMENT 'url_key',
+  `url_path` varchar(255) DEFAULT NULL COMMENT 'url_path',
+  `visibility` smallint(5) unsigned DEFAULT NULL COMMENT 'visibility',
+  `weight` decimal(12,4) DEFAULT NULL COMMENT 'weight',
+  `weight_type` int(11) DEFAULT NULL COMMENT 'weight_type',
+  PRIMARY KEY (`entity_id`),
+  KEY `IDX_CATALOG_PRODUCT_FLAT_1_TYPE_ID` (`type_id`),
+  KEY `IDX_CATALOG_PRODUCT_FLAT_1_ATTRIBUTE_SET_ID` (`attribute_set_id`),
+  KEY `IDX_CATALOG_PRODUCT_FLAT_1_NAME` (`name`),
+  KEY `IDX_CATALOG_PRODUCT_FLAT_1_PRICE` (`price`),
+  CONSTRAINT `FK_CAT_PRD_FLAT_1_ENTT_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Catalog Product Flat (Store 1)';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `catalog_product_flat_1`
+--
+
+LOCK TABLES `catalog_product_flat_1` WRITE;
+/*!40000 ALTER TABLE `catalog_product_flat_1` DISABLE KEYS */;
+/*!40000 ALTER TABLE `catalog_product_flat_1` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -2579,6 +2937,7 @@ CREATE TABLE `catalog_product_index_website` (
 
 LOCK TABLES `catalog_product_index_website` WRITE;
 /*!40000 ALTER TABLE `catalog_product_index_website` DISABLE KEYS */;
+INSERT INTO `catalog_product_index_website` VALUES (1,'2014-06-18',1);
 /*!40000 ALTER TABLE `catalog_product_index_website` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3883,7 +4242,7 @@ CREATE TABLE `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='Config Data';
+) ENGINE=InnoDB AUTO_INCREMENT=441 DEFAULT CHARSET=utf8 COMMENT='Config Data';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3893,7 +4252,7 @@ CREATE TABLE `core_config_data` (
 LOCK TABLES `core_config_data` WRITE;
 /*!40000 ALTER TABLE `core_config_data` DISABLE KEYS */;
 INSERT INTO `core_config_data` VALUES (1,'default',0,'general/region/display_all','1');
-INSERT INTO `core_config_data` VALUES (2,'default',0,'general/region/state_required','AT,CA,CH,DE,EE,ES,FI,FR,LT,LV,RO,US');
+INSERT INTO `core_config_data` VALUES (2,'default',0,'general/region/state_required','US');
 INSERT INTO `core_config_data` VALUES (3,'default',0,'catalog/category/root_id','2');
 INSERT INTO `core_config_data` VALUES (4,'default',0,'payment/paypal_express/skip_order_review_step','1');
 INSERT INTO `core_config_data` VALUES (5,'default',0,'admin/dashboard/enable_charts','1');
@@ -3904,6 +4263,434 @@ INSERT INTO `core_config_data` VALUES (9,'default',0,'general/locale/timezone','
 INSERT INTO `core_config_data` VALUES (10,'default',0,'currency/options/base','USD');
 INSERT INTO `core_config_data` VALUES (11,'default',0,'currency/options/default','USD');
 INSERT INTO `core_config_data` VALUES (12,'default',0,'currency/options/allow','USD');
+INSERT INTO `core_config_data` VALUES (13,'default',0,'general/country/default','US');
+INSERT INTO `core_config_data` VALUES (14,'default',0,'general/country/allow','US');
+INSERT INTO `core_config_data` VALUES (15,'default',0,'general/country/optional_zip_countries','AF');
+INSERT INTO `core_config_data` VALUES (16,'default',0,'general/country/eu_countries','AF');
+INSERT INTO `core_config_data` VALUES (17,'default',0,'general/locale/firstday','0');
+INSERT INTO `core_config_data` VALUES (18,'default',0,'general/locale/weekend','0,6');
+INSERT INTO `core_config_data` VALUES (19,'default',0,'general/store_information/name','Panache Bead Company');
+INSERT INTO `core_config_data` VALUES (20,'default',0,'general/store_information/phone','804-360-3799');
+INSERT INTO `core_config_data` VALUES (21,'default',0,'general/store_information/merchant_country','US');
+INSERT INTO `core_config_data` VALUES (22,'default',0,'general/store_information/merchant_vat_number',NULL);
+INSERT INTO `core_config_data` VALUES (23,'default',0,'general/store_information/address','11561 West Broad St.\r\nRichmond, VA 23233');
+INSERT INTO `core_config_data` VALUES (24,'default',0,'paypal/general/merchant_country','US');
+INSERT INTO `core_config_data` VALUES (25,'default',0,'payment/payflow_advanced/partner','PayPal');
+INSERT INTO `core_config_data` VALUES (26,'default',0,'payment/payflow_advanced/vendor','PayPal');
+INSERT INTO `core_config_data` VALUES (27,'default',0,'payment/payflow_advanced/user','jeff@panachegemsandbeads.com');
+INSERT INTO `core_config_data` VALUES (28,'default',0,'payment/payflow_advanced/pwd','8dL/MR9prOZwv52NWd3C2tfWJvlNW+v1');
+INSERT INTO `core_config_data` VALUES (29,'default',0,'payment/payflow_advanced/sandbox_flag','0');
+INSERT INTO `core_config_data` VALUES (30,'default',0,'payment/payflow_advanced/use_proxy','0');
+INSERT INTO `core_config_data` VALUES (31,'default',0,'paypal/general/business_account','jeff@panachegemsandbeads.com');
+INSERT INTO `core_config_data` VALUES (32,'default',0,'paypal/wpp/api_authentication','0');
+INSERT INTO `core_config_data` VALUES (33,'default',0,'paypal/wpp/api_username','kIEm4yjZ+s6BkxraLtVdhV7HggXUZWE2UmDXmz3JMl9vvtxxc1lMXsHoFJAmjIziEW1dNyZZLyw=');
+INSERT INTO `core_config_data` VALUES (34,'default',0,'paypal/wpp/api_password','gKBBsBRMsym+fEtmCfezgwIFcy8UDZMd');
+INSERT INTO `core_config_data` VALUES (35,'default',0,'paypal/wpp/api_signature','bwH0A+6p04ZzHIqGRC/aRV6AjebJW6ozu5XIL5pJ5H8HDMnByoiK0uJqDfGLaXaHvaVxXNv08+fTvPZ66H6/QF3o4RCxU5pKbKov6un0DJE=');
+INSERT INTO `core_config_data` VALUES (36,'default',0,'paypal/wpp/sandbox_flag','0');
+INSERT INTO `core_config_data` VALUES (37,'default',0,'paypal/wpp/use_proxy','0');
+INSERT INTO `core_config_data` VALUES (38,'default',0,'payment/payflow_advanced/active','1');
+INSERT INTO `core_config_data` VALUES (39,'default',0,'payment/paypal_express_bml/active','1');
+INSERT INTO `core_config_data` VALUES (40,'default',0,'payment/paypal_express_bml/publisher_id',NULL);
+INSERT INTO `core_config_data` VALUES (41,'default',0,'payment/paypal_express_bml/homepage_display','0');
+INSERT INTO `core_config_data` VALUES (42,'default',0,'payment/paypal_express_bml/homepage_position','0');
+INSERT INTO `core_config_data` VALUES (43,'default',0,'payment/paypal_express_bml/homepage_size','190x100');
+INSERT INTO `core_config_data` VALUES (44,'default',0,'payment/paypal_express_bml/categorypage_display','0');
+INSERT INTO `core_config_data` VALUES (45,'default',0,'payment/paypal_express_bml/categorypage_position','0');
+INSERT INTO `core_config_data` VALUES (46,'default',0,'payment/paypal_express_bml/categorypage_size','190x100');
+INSERT INTO `core_config_data` VALUES (47,'default',0,'payment/paypal_express_bml/productpage_display','0');
+INSERT INTO `core_config_data` VALUES (48,'default',0,'payment/paypal_express_bml/productpage_position','0');
+INSERT INTO `core_config_data` VALUES (49,'default',0,'payment/paypal_express_bml/productpage_size','190x100');
+INSERT INTO `core_config_data` VALUES (50,'default',0,'payment/paypal_express_bml/checkout_display','0');
+INSERT INTO `core_config_data` VALUES (51,'default',0,'payment/paypal_express_bml/checkout_position','0');
+INSERT INTO `core_config_data` VALUES (52,'default',0,'payment/paypal_express_bml/checkout_size','234x60');
+INSERT INTO `core_config_data` VALUES (53,'default',0,'payment/payflow_advanced/title','Credit Card');
+INSERT INTO `core_config_data` VALUES (54,'default',0,'payment/payflow_advanced/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (55,'default',0,'payment/payflow_advanced/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (56,'default',0,'payment/payflow_advanced/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (57,'default',0,'payment/payflow_advanced/debug','0');
+INSERT INTO `core_config_data` VALUES (58,'default',0,'payment/payflow_advanced/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (59,'default',0,'payment/payflow_advanced/csc_editable','1');
+INSERT INTO `core_config_data` VALUES (60,'default',0,'payment/payflow_advanced/csc_required','1');
+INSERT INTO `core_config_data` VALUES (61,'default',0,'payment/payflow_advanced/email_confirmation','0');
+INSERT INTO `core_config_data` VALUES (62,'default',0,'payment/payflow_advanced/url_method','GET');
+INSERT INTO `core_config_data` VALUES (63,'default',0,'payment/paypal_billing_agreement/active','1');
+INSERT INTO `core_config_data` VALUES (64,'default',0,'payment/paypal_billing_agreement/title','PayPal Billing Agreement');
+INSERT INTO `core_config_data` VALUES (65,'default',0,'payment/paypal_billing_agreement/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (66,'default',0,'payment/paypal_billing_agreement/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (67,'default',0,'payment/paypal_billing_agreement/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (68,'default',0,'payment/paypal_billing_agreement/debug','0');
+INSERT INTO `core_config_data` VALUES (69,'default',0,'payment/paypal_billing_agreement/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (70,'default',0,'payment/paypal_billing_agreement/line_items_enabled','0');
+INSERT INTO `core_config_data` VALUES (71,'default',0,'payment/paypal_billing_agreement/allow_billing_agreement_wizard','1');
+INSERT INTO `core_config_data` VALUES (72,'default',0,'paypal/fetch_reports/ftp_login',NULL);
+INSERT INTO `core_config_data` VALUES (73,'default',0,'paypal/fetch_reports/ftp_password',NULL);
+INSERT INTO `core_config_data` VALUES (74,'default',0,'paypal/fetch_reports/ftp_sandbox','0');
+INSERT INTO `core_config_data` VALUES (75,'default',0,'paypal/fetch_reports/ftp_ip',NULL);
+INSERT INTO `core_config_data` VALUES (76,'default',0,'paypal/fetch_reports/ftp_path',NULL);
+INSERT INTO `core_config_data` VALUES (77,'default',0,'paypal/fetch_reports/active','0');
+INSERT INTO `core_config_data` VALUES (78,'default',0,'paypal/fetch_reports/schedule','1');
+INSERT INTO `core_config_data` VALUES (79,'default',0,'paypal/fetch_reports/time','00,00,00');
+INSERT INTO `core_config_data` VALUES (80,'default',0,'paypal/style/logo','nowAccepting_150x60');
+INSERT INTO `core_config_data` VALUES (81,'default',0,'paypal/style/page_style',NULL);
+INSERT INTO `core_config_data` VALUES (82,'default',0,'paypal/style/paypal_hdrimg',NULL);
+INSERT INTO `core_config_data` VALUES (83,'default',0,'paypal/style/paypal_hdrbackcolor',NULL);
+INSERT INTO `core_config_data` VALUES (84,'default',0,'paypal/style/paypal_hdrbordercolor',NULL);
+INSERT INTO `core_config_data` VALUES (85,'default',0,'paypal/style/paypal_payflowcolor',NULL);
+INSERT INTO `core_config_data` VALUES (86,'default',0,'payment/paypal_express/title','PayPal Express Checkout');
+INSERT INTO `core_config_data` VALUES (87,'default',0,'payment/paypal_express/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (88,'default',0,'payment/paypal_express/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (89,'default',0,'payment/paypal_express/visible_on_cart','1');
+INSERT INTO `core_config_data` VALUES (90,'default',0,'payment/paypal_express/visible_on_product','1');
+INSERT INTO `core_config_data` VALUES (91,'default',0,'payment/paypal_express/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (92,'default',0,'payment/paypal_express/debug','0');
+INSERT INTO `core_config_data` VALUES (93,'default',0,'payment/paypal_express/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (94,'default',0,'payment/paypal_express/line_items_enabled','1');
+INSERT INTO `core_config_data` VALUES (95,'default',0,'payment/paypal_express/transfer_shipping_options','0');
+INSERT INTO `core_config_data` VALUES (96,'default',0,'paypal/wpp/button_flavor','dynamic');
+INSERT INTO `core_config_data` VALUES (97,'default',0,'payment/paypal_express/solution_type','Mark');
+INSERT INTO `core_config_data` VALUES (98,'default',0,'payment/paypal_express/require_billing_address','0');
+INSERT INTO `core_config_data` VALUES (99,'default',0,'payment/paypal_express/allow_ba_signup','never');
+INSERT INTO `core_config_data` VALUES (100,'default',0,'payment/paypal_direct/active','0');
+INSERT INTO `core_config_data` VALUES (101,'default',0,'payment/paypal_direct/title','PayPal Payments Pro');
+INSERT INTO `core_config_data` VALUES (102,'default',0,'payment/paypal_direct/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (103,'default',0,'payment/paypal_direct/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (104,'default',0,'payment/paypal_direct/cctypes','VI,MC');
+INSERT INTO `core_config_data` VALUES (105,'default',0,'payment/paypal_direct/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (106,'default',0,'payment/paypal_direct/debug','0');
+INSERT INTO `core_config_data` VALUES (107,'default',0,'payment/paypal_direct/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (108,'default',0,'payment/paypal_direct/line_items_enabled','0');
+INSERT INTO `core_config_data` VALUES (109,'default',0,'payment/paypal_direct/useccv','1');
+INSERT INTO `core_config_data` VALUES (110,'default',0,'payment/paypal_direct/centinel','0');
+INSERT INTO `core_config_data` VALUES (111,'default',0,'payment/paypal_standard/active','0');
+INSERT INTO `core_config_data` VALUES (112,'default',0,'payment/paypal_standard/title','PayPal Website Payments Standard');
+INSERT INTO `core_config_data` VALUES (113,'default',0,'payment/paypal_standard/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (114,'default',0,'payment/paypal_standard/payment_action','Sale');
+INSERT INTO `core_config_data` VALUES (115,'default',0,'payment/paypal_standard/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (116,'default',0,'payment/paypal_standard/sandbox_flag','0');
+INSERT INTO `core_config_data` VALUES (117,'default',0,'payment/paypal_standard/line_items_enabled','1');
+INSERT INTO `core_config_data` VALUES (118,'default',0,'payment/paypal_standard/debug','0');
+INSERT INTO `core_config_data` VALUES (119,'default',0,'payment/paypal_standard/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (120,'default',0,'payment/verisign/partner',NULL);
+INSERT INTO `core_config_data` VALUES (121,'default',0,'payment/verisign/user',NULL);
+INSERT INTO `core_config_data` VALUES (122,'default',0,'payment/verisign/vendor',NULL);
+INSERT INTO `core_config_data` VALUES (123,'default',0,'payment/verisign/pwd',NULL);
+INSERT INTO `core_config_data` VALUES (124,'default',0,'payment/verisign/sandbox_flag','0');
+INSERT INTO `core_config_data` VALUES (125,'default',0,'payment/verisign/use_proxy','0');
+INSERT INTO `core_config_data` VALUES (126,'default',0,'payment/verisign/active','0');
+INSERT INTO `core_config_data` VALUES (127,'default',0,'payment/paypaluk_express_bml/active','0');
+INSERT INTO `core_config_data` VALUES (128,'default',0,'payment/verisign/title','Payflow Pro');
+INSERT INTO `core_config_data` VALUES (129,'default',0,'payment/verisign/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (130,'default',0,'payment/verisign/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (131,'default',0,'payment/verisign/cctypes','AE,VI');
+INSERT INTO `core_config_data` VALUES (132,'default',0,'payment/verisign/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (133,'default',0,'payment/verisign/debug','0');
+INSERT INTO `core_config_data` VALUES (134,'default',0,'payment/verisign/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (135,'default',0,'payment/verisign/useccv','1');
+INSERT INTO `core_config_data` VALUES (136,'default',0,'payment/verisign/centinel','0');
+INSERT INTO `core_config_data` VALUES (137,'default',0,'payment/paypaluk_express/active','0');
+INSERT INTO `core_config_data` VALUES (138,'default',0,'payment/paypaluk_express/title','PayPal Express Checkout Payflow Edition');
+INSERT INTO `core_config_data` VALUES (139,'default',0,'payment/paypaluk_express/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (140,'default',0,'payment/paypaluk_express/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (141,'default',0,'payment/paypaluk_express/visible_on_cart','1');
+INSERT INTO `core_config_data` VALUES (142,'default',0,'payment/paypaluk_express/visible_on_product','1');
+INSERT INTO `core_config_data` VALUES (143,'default',0,'payment/paypaluk_express/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (144,'default',0,'payment/paypaluk_express/debug','0');
+INSERT INTO `core_config_data` VALUES (145,'default',0,'payment/paypaluk_express/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (146,'default',0,'payment/paypaluk_express/line_items_enabled','1');
+INSERT INTO `core_config_data` VALUES (147,'default',0,'payment/payflow_link/partner',NULL);
+INSERT INTO `core_config_data` VALUES (148,'default',0,'payment/payflow_link/vendor',NULL);
+INSERT INTO `core_config_data` VALUES (149,'default',0,'payment/payflow_link/user',NULL);
+INSERT INTO `core_config_data` VALUES (150,'default',0,'payment/payflow_link/pwd',NULL);
+INSERT INTO `core_config_data` VALUES (151,'default',0,'payment/payflow_link/sandbox_flag','0');
+INSERT INTO `core_config_data` VALUES (152,'default',0,'payment/payflow_link/use_proxy','0');
+INSERT INTO `core_config_data` VALUES (153,'default',0,'payment/payflow_link/active','0');
+INSERT INTO `core_config_data` VALUES (154,'default',0,'payment/paypal_express/active','1');
+INSERT INTO `core_config_data` VALUES (155,'default',0,'payment/payflow_link/title','Credit Card');
+INSERT INTO `core_config_data` VALUES (156,'default',0,'payment/payflow_link/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (157,'default',0,'payment/payflow_link/payment_action','Authorization');
+INSERT INTO `core_config_data` VALUES (158,'default',0,'payment/payflow_link/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (159,'default',0,'payment/payflow_link/debug','0');
+INSERT INTO `core_config_data` VALUES (160,'default',0,'payment/payflow_link/verify_peer','1');
+INSERT INTO `core_config_data` VALUES (161,'default',0,'payment/payflow_link/csc_editable','1');
+INSERT INTO `core_config_data` VALUES (162,'default',0,'payment/payflow_link/csc_required','1');
+INSERT INTO `core_config_data` VALUES (163,'default',0,'payment/payflow_link/email_confirmation','0');
+INSERT INTO `core_config_data` VALUES (164,'default',0,'payment/payflow_link/url_method','GET');
+INSERT INTO `core_config_data` VALUES (165,'default',0,'payment/ccsave/active','0');
+INSERT INTO `core_config_data` VALUES (166,'default',0,'payment/ccsave/title','Credit Card (saved)');
+INSERT INTO `core_config_data` VALUES (167,'default',0,'payment/ccsave/order_status','pending');
+INSERT INTO `core_config_data` VALUES (168,'default',0,'payment/ccsave/cctypes','AE,VI,MC,DI');
+INSERT INTO `core_config_data` VALUES (169,'default',0,'payment/ccsave/useccv','0');
+INSERT INTO `core_config_data` VALUES (170,'default',0,'payment/ccsave/centinel','0');
+INSERT INTO `core_config_data` VALUES (171,'default',0,'payment/ccsave/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (172,'default',0,'payment/ccsave/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (173,'default',0,'payment/ccsave/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (174,'default',0,'payment/ccsave/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (175,'default',0,'payment/checkmo/active','0');
+INSERT INTO `core_config_data` VALUES (176,'default',0,'payment/checkmo/title','Check / Money order');
+INSERT INTO `core_config_data` VALUES (177,'default',0,'payment/checkmo/order_status','pending');
+INSERT INTO `core_config_data` VALUES (178,'default',0,'payment/checkmo/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (179,'default',0,'payment/checkmo/payable_to',NULL);
+INSERT INTO `core_config_data` VALUES (180,'default',0,'payment/checkmo/mailing_address',NULL);
+INSERT INTO `core_config_data` VALUES (181,'default',0,'payment/checkmo/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (182,'default',0,'payment/checkmo/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (183,'default',0,'payment/checkmo/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (184,'default',0,'payment/free/title','No Payment Information Required');
+INSERT INTO `core_config_data` VALUES (185,'default',0,'payment/free/active','1');
+INSERT INTO `core_config_data` VALUES (186,'default',0,'payment/free/order_status','pending');
+INSERT INTO `core_config_data` VALUES (187,'default',0,'payment/free/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (188,'default',0,'payment/free/sort_order','1');
+INSERT INTO `core_config_data` VALUES (189,'default',0,'payment/banktransfer/active','0');
+INSERT INTO `core_config_data` VALUES (190,'default',0,'payment/banktransfer/title','Bank Transfer Payment');
+INSERT INTO `core_config_data` VALUES (191,'default',0,'payment/banktransfer/order_status','pending');
+INSERT INTO `core_config_data` VALUES (192,'default',0,'payment/banktransfer/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (193,'default',0,'payment/banktransfer/instructions',NULL);
+INSERT INTO `core_config_data` VALUES (194,'default',0,'payment/banktransfer/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (195,'default',0,'payment/banktransfer/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (196,'default',0,'payment/banktransfer/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (197,'default',0,'payment/cashondelivery/active','0');
+INSERT INTO `core_config_data` VALUES (198,'default',0,'payment/cashondelivery/title','Cash On Delivery');
+INSERT INTO `core_config_data` VALUES (199,'default',0,'payment/cashondelivery/order_status','pending');
+INSERT INTO `core_config_data` VALUES (200,'default',0,'payment/cashondelivery/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (201,'default',0,'payment/cashondelivery/instructions',NULL);
+INSERT INTO `core_config_data` VALUES (202,'default',0,'payment/cashondelivery/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (203,'default',0,'payment/cashondelivery/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (204,'default',0,'payment/cashondelivery/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (205,'default',0,'payment/purchaseorder/active','0');
+INSERT INTO `core_config_data` VALUES (206,'default',0,'payment/purchaseorder/title','Purchase Order');
+INSERT INTO `core_config_data` VALUES (207,'default',0,'payment/purchaseorder/order_status','pending');
+INSERT INTO `core_config_data` VALUES (208,'default',0,'payment/purchaseorder/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (209,'default',0,'payment/purchaseorder/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (210,'default',0,'payment/purchaseorder/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (211,'default',0,'payment/purchaseorder/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (212,'default',0,'payment/authorizenet_directpost/active','0');
+INSERT INTO `core_config_data` VALUES (213,'default',0,'payment/authorizenet_directpost/payment_action','authorize');
+INSERT INTO `core_config_data` VALUES (214,'default',0,'payment/authorizenet_directpost/title','Credit Card Direct Post (Authorize.net)');
+INSERT INTO `core_config_data` VALUES (215,'default',0,'payment/authorizenet_directpost/login',NULL);
+INSERT INTO `core_config_data` VALUES (216,'default',0,'payment/authorizenet_directpost/trans_key',NULL);
+INSERT INTO `core_config_data` VALUES (217,'default',0,'payment/authorizenet_directpost/trans_md5',NULL);
+INSERT INTO `core_config_data` VALUES (218,'default',0,'payment/authorizenet_directpost/order_status','processing');
+INSERT INTO `core_config_data` VALUES (219,'default',0,'payment/authorizenet_directpost/test','1');
+INSERT INTO `core_config_data` VALUES (220,'default',0,'payment/authorizenet_directpost/cgi_url','https://secure.authorize.net/gateway/transact.dll');
+INSERT INTO `core_config_data` VALUES (221,'default',0,'payment/authorizenet_directpost/currency','USD');
+INSERT INTO `core_config_data` VALUES (222,'default',0,'payment/authorizenet_directpost/debug','0');
+INSERT INTO `core_config_data` VALUES (223,'default',0,'payment/authorizenet_directpost/email_customer','0');
+INSERT INTO `core_config_data` VALUES (224,'default',0,'payment/authorizenet_directpost/merchant_email',NULL);
+INSERT INTO `core_config_data` VALUES (225,'default',0,'payment/authorizenet_directpost/cctypes','AE,VI,MC,DI');
+INSERT INTO `core_config_data` VALUES (226,'default',0,'payment/authorizenet_directpost/useccv','0');
+INSERT INTO `core_config_data` VALUES (227,'default',0,'payment/authorizenet_directpost/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (228,'default',0,'payment/authorizenet_directpost/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (229,'default',0,'payment/authorizenet_directpost/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (230,'default',0,'payment/authorizenet_directpost/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (231,'default',0,'payment/authorizenet/active','0');
+INSERT INTO `core_config_data` VALUES (232,'default',0,'payment/authorizenet/title','Credit Card (Authorize.net)');
+INSERT INTO `core_config_data` VALUES (233,'default',0,'payment/authorizenet/login',NULL);
+INSERT INTO `core_config_data` VALUES (234,'default',0,'payment/authorizenet/payment_action','authorize');
+INSERT INTO `core_config_data` VALUES (235,'default',0,'payment/authorizenet/trans_key',NULL);
+INSERT INTO `core_config_data` VALUES (236,'default',0,'payment/authorizenet/order_status','processing');
+INSERT INTO `core_config_data` VALUES (237,'default',0,'payment/authorizenet/test','1');
+INSERT INTO `core_config_data` VALUES (238,'default',0,'payment/authorizenet/cgi_url','https://secure.authorize.net/gateway/transact.dll');
+INSERT INTO `core_config_data` VALUES (239,'default',0,'payment/authorizenet/currency','USD');
+INSERT INTO `core_config_data` VALUES (240,'default',0,'payment/authorizenet/debug','0');
+INSERT INTO `core_config_data` VALUES (241,'default',0,'payment/authorizenet/email_customer','0');
+INSERT INTO `core_config_data` VALUES (242,'default',0,'payment/authorizenet/merchant_email',NULL);
+INSERT INTO `core_config_data` VALUES (243,'default',0,'payment/authorizenet/cctypes','AE,VI,MC,DI');
+INSERT INTO `core_config_data` VALUES (244,'default',0,'payment/authorizenet/useccv','0');
+INSERT INTO `core_config_data` VALUES (245,'default',0,'payment/authorizenet/allowspecific','0');
+INSERT INTO `core_config_data` VALUES (246,'default',0,'payment/authorizenet/min_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (247,'default',0,'payment/authorizenet/max_order_total',NULL);
+INSERT INTO `core_config_data` VALUES (248,'default',0,'payment/authorizenet/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (249,'default',0,'payment/authorizenet/allow_partial_authorization','0');
+INSERT INTO `core_config_data` VALUES (250,'default',0,'payment/authorizenet/centinel','0');
+INSERT INTO `core_config_data` VALUES (251,'default',0,'shipping/origin/country_id','US');
+INSERT INTO `core_config_data` VALUES (252,'default',0,'shipping/origin/region_id','12');
+INSERT INTO `core_config_data` VALUES (253,'default',0,'shipping/origin/postcode','23233');
+INSERT INTO `core_config_data` VALUES (254,'default',0,'shipping/origin/city','Richmond');
+INSERT INTO `core_config_data` VALUES (255,'default',0,'shipping/origin/street_line1','11561 West Broad St.');
+INSERT INTO `core_config_data` VALUES (256,'default',0,'shipping/origin/street_line2',NULL);
+INSERT INTO `core_config_data` VALUES (257,'default',0,'shipping/option/checkout_multiple','1');
+INSERT INTO `core_config_data` VALUES (258,'default',0,'shipping/option/checkout_multiple_maximum_qty','100');
+INSERT INTO `core_config_data` VALUES (259,'default',0,'carriers/flatrate/active','0');
+INSERT INTO `core_config_data` VALUES (260,'default',0,'carriers/flatrate/title','Flat Rate');
+INSERT INTO `core_config_data` VALUES (261,'default',0,'carriers/flatrate/name','Fixed');
+INSERT INTO `core_config_data` VALUES (262,'default',0,'carriers/flatrate/type','I');
+INSERT INTO `core_config_data` VALUES (263,'default',0,'carriers/flatrate/price','5.00');
+INSERT INTO `core_config_data` VALUES (264,'default',0,'carriers/flatrate/handling_type','F');
+INSERT INTO `core_config_data` VALUES (265,'default',0,'carriers/flatrate/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (266,'default',0,'carriers/flatrate/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (267,'default',0,'carriers/flatrate/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (268,'default',0,'carriers/flatrate/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (269,'default',0,'carriers/flatrate/showmethod','0');
+INSERT INTO `core_config_data` VALUES (270,'default',0,'carriers/flatrate/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (271,'default',0,'carriers/tablerate/active','0');
+INSERT INTO `core_config_data` VALUES (272,'default',0,'carriers/tablerate/title','Best Way');
+INSERT INTO `core_config_data` VALUES (273,'default',0,'carriers/tablerate/name','Table Rate');
+INSERT INTO `core_config_data` VALUES (274,'default',0,'carriers/tablerate/condition_name','package_weight');
+INSERT INTO `core_config_data` VALUES (275,'default',0,'carriers/tablerate/include_virtual_price','1');
+INSERT INTO `core_config_data` VALUES (276,'default',0,'carriers/tablerate/handling_type','F');
+INSERT INTO `core_config_data` VALUES (277,'default',0,'carriers/tablerate/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (278,'default',0,'carriers/tablerate/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (279,'default',0,'carriers/tablerate/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (280,'default',0,'carriers/tablerate/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (281,'default',0,'carriers/tablerate/showmethod','0');
+INSERT INTO `core_config_data` VALUES (282,'default',0,'carriers/tablerate/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (283,'default',0,'carriers/freeshipping/active','0');
+INSERT INTO `core_config_data` VALUES (284,'default',0,'carriers/freeshipping/title','Free Shipping');
+INSERT INTO `core_config_data` VALUES (285,'default',0,'carriers/freeshipping/name','Free');
+INSERT INTO `core_config_data` VALUES (286,'default',0,'carriers/freeshipping/free_shipping_subtotal',NULL);
+INSERT INTO `core_config_data` VALUES (287,'default',0,'carriers/freeshipping/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (288,'default',0,'carriers/freeshipping/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (289,'default',0,'carriers/freeshipping/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (290,'default',0,'carriers/freeshipping/showmethod','0');
+INSERT INTO `core_config_data` VALUES (291,'default',0,'carriers/freeshipping/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (292,'default',0,'carriers/ups/active','0');
+INSERT INTO `core_config_data` VALUES (293,'default',0,'carriers/ups/type','UPS');
+INSERT INTO `core_config_data` VALUES (294,'default',0,'carriers/ups/gateway_xml_url','https://onlinetools.ups.com/ups.app/xml/Rate');
+INSERT INTO `core_config_data` VALUES (295,'default',0,'carriers/ups/tracking_xml_url','https://onlinetools.ups.com/ups.app/xml/Track');
+INSERT INTO `core_config_data` VALUES (296,'default',0,'carriers/ups/shipconfirm_xml_url','https://onlinetools.ups.com/ups.app/xml/ShipConfirm');
+INSERT INTO `core_config_data` VALUES (297,'default',0,'carriers/ups/shipaccept_xml_url','https://onlinetools.ups.com/ups.app/xml/ShipAccept');
+INSERT INTO `core_config_data` VALUES (298,'default',0,'carriers/ups/mode_xml','1');
+INSERT INTO `core_config_data` VALUES (299,'default',0,'carriers/ups/password',NULL);
+INSERT INTO `core_config_data` VALUES (300,'default',0,'carriers/ups/username',NULL);
+INSERT INTO `core_config_data` VALUES (301,'default',0,'carriers/ups/access_license_number',NULL);
+INSERT INTO `core_config_data` VALUES (302,'default',0,'carriers/ups/origin_shipment','Shipments Originating in United States');
+INSERT INTO `core_config_data` VALUES (303,'default',0,'carriers/ups/title','United Parcel Service');
+INSERT INTO `core_config_data` VALUES (304,'default',0,'carriers/ups/gateway_url','http://www.ups.com/using/services/rave/qcostcgi.cgi');
+INSERT INTO `core_config_data` VALUES (305,'default',0,'carriers/ups/negotiated_active','0');
+INSERT INTO `core_config_data` VALUES (306,'default',0,'carriers/ups/shipment_requesttype','0');
+INSERT INTO `core_config_data` VALUES (307,'default',0,'carriers/ups/container','CP');
+INSERT INTO `core_config_data` VALUES (308,'default',0,'carriers/ups/shipper_number',NULL);
+INSERT INTO `core_config_data` VALUES (309,'default',0,'carriers/ups/dest_type','RES');
+INSERT INTO `core_config_data` VALUES (310,'default',0,'carriers/ups/unit_of_measure','LBS');
+INSERT INTO `core_config_data` VALUES (311,'default',0,'carriers/ups/pickup','CC');
+INSERT INTO `core_config_data` VALUES (312,'default',0,'carriers/ups/max_package_weight','150');
+INSERT INTO `core_config_data` VALUES (313,'default',0,'carriers/ups/min_package_weight','0.1');
+INSERT INTO `core_config_data` VALUES (314,'default',0,'carriers/ups/handling_type','F');
+INSERT INTO `core_config_data` VALUES (315,'default',0,'carriers/ups/handling_action','O');
+INSERT INTO `core_config_data` VALUES (316,'default',0,'carriers/ups/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (317,'default',0,'carriers/ups/allowed_methods','1DM,1DML,1DA,1DAL,1DAPI,1DP,1DPL,2DM,2DML,2DA,2DAL,3DS,GND,GNDCOM,GNDRES,STD,XPR,WXS,XPRL,XDM,XDML,XPD');
+INSERT INTO `core_config_data` VALUES (318,'default',0,'carriers/ups/free_method','GND');
+INSERT INTO `core_config_data` VALUES (319,'default',0,'carriers/ups/free_shipping_enable','0');
+INSERT INTO `core_config_data` VALUES (320,'default',0,'carriers/ups/free_shipping_subtotal',NULL);
+INSERT INTO `core_config_data` VALUES (321,'default',0,'carriers/ups/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (322,'default',0,'carriers/ups/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (323,'default',0,'carriers/ups/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (324,'default',0,'carriers/ups/debug','0');
+INSERT INTO `core_config_data` VALUES (325,'default',0,'carriers/ups/showmethod','0');
+INSERT INTO `core_config_data` VALUES (326,'default',0,'carriers/ups/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (327,'default',0,'carriers/usps/active','1');
+INSERT INTO `core_config_data` VALUES (328,'default',0,'carriers/usps/gateway_url','http://production.shippingapis.com/ShippingAPI.dll');
+INSERT INTO `core_config_data` VALUES (329,'default',0,'carriers/usps/gateway_secure_url','https://secure.shippingapis.com/ShippingAPI.dll');
+INSERT INTO `core_config_data` VALUES (330,'default',0,'carriers/usps/title','United States Postal Service');
+INSERT INTO `core_config_data` VALUES (331,'default',0,'carriers/usps/userid','6GqczKTrpeU2OMd627o6Hw==');
+INSERT INTO `core_config_data` VALUES (332,'default',0,'carriers/usps/password','4gs+NH+9WO89PAOBon3DIw==');
+INSERT INTO `core_config_data` VALUES (333,'default',0,'carriers/usps/mode','1');
+INSERT INTO `core_config_data` VALUES (334,'default',0,'carriers/usps/shipment_requesttype','0');
+INSERT INTO `core_config_data` VALUES (335,'default',0,'carriers/usps/container','FLAT RATE BOX');
+INSERT INTO `core_config_data` VALUES (336,'default',0,'carriers/usps/size','REGULAR');
+INSERT INTO `core_config_data` VALUES (337,'default',0,'carriers/usps/machinable','true');
+INSERT INTO `core_config_data` VALUES (338,'default',0,'carriers/usps/max_package_weight','70');
+INSERT INTO `core_config_data` VALUES (339,'default',0,'carriers/usps/handling_type','F');
+INSERT INTO `core_config_data` VALUES (340,'default',0,'carriers/usps/handling_action','O');
+INSERT INTO `core_config_data` VALUES (341,'default',0,'carriers/usps/handling_fee','0');
+INSERT INTO `core_config_data` VALUES (342,'default',0,'carriers/usps/allowed_methods','16,17,22,28,29,42,44');
+INSERT INTO `core_config_data` VALUES (343,'default',0,'carriers/usps/free_method','28');
+INSERT INTO `core_config_data` VALUES (344,'default',0,'carriers/usps/free_shipping_subtotal','50');
+INSERT INTO `core_config_data` VALUES (345,'default',0,'carriers/usps/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (346,'default',0,'carriers/usps/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (347,'default',0,'carriers/usps/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (348,'default',0,'carriers/usps/debug','0');
+INSERT INTO `core_config_data` VALUES (349,'default',0,'carriers/usps/showmethod','0');
+INSERT INTO `core_config_data` VALUES (350,'default',0,'carriers/usps/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (351,'default',0,'carriers/usps/free_shipping_enable','1');
+INSERT INTO `core_config_data` VALUES (352,'default',0,'carriers/fedex/active','0');
+INSERT INTO `core_config_data` VALUES (353,'default',0,'carriers/fedex/title','Federal Express');
+INSERT INTO `core_config_data` VALUES (354,'default',0,'carriers/fedex/account',NULL);
+INSERT INTO `core_config_data` VALUES (355,'default',0,'carriers/fedex/meter_number',NULL);
+INSERT INTO `core_config_data` VALUES (356,'default',0,'carriers/fedex/key',NULL);
+INSERT INTO `core_config_data` VALUES (357,'default',0,'carriers/fedex/password',NULL);
+INSERT INTO `core_config_data` VALUES (358,'default',0,'carriers/fedex/sandbox_mode','0');
+INSERT INTO `core_config_data` VALUES (359,'default',0,'carriers/fedex/shipment_requesttype','0');
+INSERT INTO `core_config_data` VALUES (360,'default',0,'carriers/fedex/packaging','YOUR_PACKAGING');
+INSERT INTO `core_config_data` VALUES (361,'default',0,'carriers/fedex/dropoff','REGULAR_PICKUP');
+INSERT INTO `core_config_data` VALUES (362,'default',0,'carriers/fedex/unit_of_measure','LB');
+INSERT INTO `core_config_data` VALUES (363,'default',0,'carriers/fedex/max_package_weight','150');
+INSERT INTO `core_config_data` VALUES (364,'default',0,'carriers/fedex/handling_type','F');
+INSERT INTO `core_config_data` VALUES (365,'default',0,'carriers/fedex/handling_action','O');
+INSERT INTO `core_config_data` VALUES (366,'default',0,'carriers/fedex/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (367,'default',0,'carriers/fedex/residence_delivery','0');
+INSERT INTO `core_config_data` VALUES (368,'default',0,'carriers/fedex/allowed_methods','EUROPE_FIRST_INTERNATIONAL_PRIORITY,FEDEX_1_DAY_FREIGHT,FEDEX_2_DAY_FREIGHT,FEDEX_2_DAY,FEDEX_2_DAY_AM,FEDEX_3_DAY_FREIGHT,FEDEX_EXPRESS_SAVER,FEDEX_GROUND,FIRST_OVERNIGHT,GROUND_HOME_DELIVERY,INTERNATIONAL_ECONOMY,INTERNATIONAL_ECONOMY_FREIGHT,INTERNATIONAL_FIRST,INTERNATIONAL_GROUND,INTERNATIONAL_PRIORITY,INTERNATIONAL_PRIORITY_FREIGHT,PRIORITY_OVERNIGHT,SMART_POST,STANDARD_OVERNIGHT,FEDEX_FREIGHT,FEDEX_NATIONAL_FREIGHT');
+INSERT INTO `core_config_data` VALUES (369,'default',0,'carriers/fedex/smartpost_hubid',NULL);
+INSERT INTO `core_config_data` VALUES (370,'default',0,'carriers/fedex/free_method','FEDEX_GROUND');
+INSERT INTO `core_config_data` VALUES (371,'default',0,'carriers/fedex/free_shipping_enable','0');
+INSERT INTO `core_config_data` VALUES (372,'default',0,'carriers/fedex/free_shipping_subtotal',NULL);
+INSERT INTO `core_config_data` VALUES (373,'default',0,'carriers/fedex/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (374,'default',0,'carriers/fedex/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (375,'default',0,'carriers/fedex/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (376,'default',0,'carriers/fedex/debug','0');
+INSERT INTO `core_config_data` VALUES (377,'default',0,'carriers/fedex/showmethod','0');
+INSERT INTO `core_config_data` VALUES (378,'default',0,'carriers/fedex/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (379,'default',0,'carriers/dhl/active','0');
+INSERT INTO `core_config_data` VALUES (380,'default',0,'carriers/dhl/gateway_url','https://eCommerce.airborne.com/ApiLandingTest.asp');
+INSERT INTO `core_config_data` VALUES (381,'default',0,'carriers/dhl/title','DHL (Deprecated)');
+INSERT INTO `core_config_data` VALUES (382,'default',0,'carriers/dhl/id',NULL);
+INSERT INTO `core_config_data` VALUES (383,'default',0,'carriers/dhl/password',NULL);
+INSERT INTO `core_config_data` VALUES (384,'default',0,'carriers/dhl/account',NULL);
+INSERT INTO `core_config_data` VALUES (385,'default',0,'carriers/dhl/shipping_key',NULL);
+INSERT INTO `core_config_data` VALUES (386,'default',0,'carriers/dhl/shipping_intlkey',NULL);
+INSERT INTO `core_config_data` VALUES (387,'default',0,'carriers/dhl/shipment_requesttype','0');
+INSERT INTO `core_config_data` VALUES (388,'default',0,'carriers/dhl/shipment_type','P');
+INSERT INTO `core_config_data` VALUES (389,'default',0,'carriers/dhl/handling_type','F');
+INSERT INTO `core_config_data` VALUES (390,'default',0,'carriers/dhl/handling_action','O');
+INSERT INTO `core_config_data` VALUES (391,'default',0,'carriers/dhl/contentdesc','Big Box');
+INSERT INTO `core_config_data` VALUES (392,'default',0,'carriers/dhl/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (393,'default',0,'carriers/dhl/max_package_weight','150');
+INSERT INTO `core_config_data` VALUES (394,'default',0,'carriers/dhl/dutiable','0');
+INSERT INTO `core_config_data` VALUES (395,'default',0,'carriers/dhl/dutypaymenttype','R');
+INSERT INTO `core_config_data` VALUES (396,'default',0,'carriers/dhl/allowed_methods','IE,E SAT,E 10:30AM,E,N,S,G');
+INSERT INTO `core_config_data` VALUES (397,'default',0,'carriers/dhl/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (398,'default',0,'carriers/dhl/free_method','G');
+INSERT INTO `core_config_data` VALUES (399,'default',0,'carriers/dhl/free_shipping_enable','0');
+INSERT INTO `core_config_data` VALUES (400,'default',0,'carriers/dhl/free_shipping_subtotal',NULL);
+INSERT INTO `core_config_data` VALUES (401,'default',0,'carriers/dhl/additional_protection_enabled','0');
+INSERT INTO `core_config_data` VALUES (402,'default',0,'carriers/dhl/additional_protection_min_value',NULL);
+INSERT INTO `core_config_data` VALUES (403,'default',0,'carriers/dhl/additional_protection_use_subtotal','0');
+INSERT INTO `core_config_data` VALUES (404,'default',0,'carriers/dhl/additional_protection_value',NULL);
+INSERT INTO `core_config_data` VALUES (405,'default',0,'carriers/dhl/additional_protection_rounding','0');
+INSERT INTO `core_config_data` VALUES (406,'default',0,'carriers/dhl/hazardous_materials','0');
+INSERT INTO `core_config_data` VALUES (407,'default',0,'carriers/dhl/default_length',NULL);
+INSERT INTO `core_config_data` VALUES (408,'default',0,'carriers/dhl/default_width',NULL);
+INSERT INTO `core_config_data` VALUES (409,'default',0,'carriers/dhl/default_height',NULL);
+INSERT INTO `core_config_data` VALUES (410,'default',0,'carriers/dhl/shipment_days','Mon,Tue,Wed,Thu,Fri,Sat');
+INSERT INTO `core_config_data` VALUES (411,'default',0,'carriers/dhl/intl_shipment_days','Mon,Tue,Wed,Thu,Fri');
+INSERT INTO `core_config_data` VALUES (412,'default',0,'carriers/dhl/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (413,'default',0,'carriers/dhl/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (414,'default',0,'carriers/dhl/showmethod','0');
+INSERT INTO `core_config_data` VALUES (415,'default',0,'carriers/dhl/debug','0');
+INSERT INTO `core_config_data` VALUES (416,'default',0,'carriers/dhl/sort_order',NULL);
+INSERT INTO `core_config_data` VALUES (417,'default',0,'carriers/dhlint/active','0');
+INSERT INTO `core_config_data` VALUES (418,'default',0,'carriers/dhlint/title','DHL');
+INSERT INTO `core_config_data` VALUES (419,'default',0,'carriers/dhlint/gateway_url','https://xmlpi-ea.dhl.com/XMLShippingServlet');
+INSERT INTO `core_config_data` VALUES (420,'default',0,'carriers/dhlint/id',NULL);
+INSERT INTO `core_config_data` VALUES (421,'default',0,'carriers/dhlint/password',NULL);
+INSERT INTO `core_config_data` VALUES (422,'default',0,'carriers/dhlint/account',NULL);
+INSERT INTO `core_config_data` VALUES (423,'default',0,'carriers/dhlint/content_type','D');
+INSERT INTO `core_config_data` VALUES (424,'default',0,'carriers/dhlint/handling_type','F');
+INSERT INTO `core_config_data` VALUES (425,'default',0,'carriers/dhlint/handling_action','O');
+INSERT INTO `core_config_data` VALUES (426,'default',0,'carriers/dhlint/handling_fee',NULL);
+INSERT INTO `core_config_data` VALUES (427,'default',0,'carriers/dhlint/divide_order_weight','1');
+INSERT INTO `core_config_data` VALUES (428,'default',0,'carriers/dhlint/unit_of_measure','K');
+INSERT INTO `core_config_data` VALUES (429,'default',0,'carriers/dhlint/size','0');
+INSERT INTO `core_config_data` VALUES (430,'default',0,'carriers/dhlint/doc_methods','2,5,6,7,9,B,C,D,U,K,L,G,W,I,N,O,R,S,T,X');
+INSERT INTO `core_config_data` VALUES (431,'default',0,'carriers/dhlint/ready_time',NULL);
+INSERT INTO `core_config_data` VALUES (432,'default',0,'carriers/dhlint/specificerrmsg','This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.');
+INSERT INTO `core_config_data` VALUES (433,'default',0,'carriers/dhlint/free_method_doc',NULL);
+INSERT INTO `core_config_data` VALUES (434,'default',0,'carriers/dhlint/free_shipping_enable','0');
+INSERT INTO `core_config_data` VALUES (435,'default',0,'carriers/dhlint/free_shipping_subtotal',NULL);
+INSERT INTO `core_config_data` VALUES (436,'default',0,'carriers/dhlint/sallowspecific','0');
+INSERT INTO `core_config_data` VALUES (437,'default',0,'carriers/dhlint/specificcountry',NULL);
+INSERT INTO `core_config_data` VALUES (438,'default',0,'carriers/dhlint/showmethod','0');
+INSERT INTO `core_config_data` VALUES (439,'default',0,'carriers/dhlint/debug','0');
+INSERT INTO `core_config_data` VALUES (440,'default',0,'carriers/dhlint/sort_order',NULL);
 /*!40000 ALTER TABLE `core_config_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3958,7 +4745,7 @@ CREATE TABLE `core_flag` (
   `last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Date of Last Flag Update',
   PRIMARY KEY (`flag_id`),
   KEY `IDX_CORE_FLAG_LAST_UPDATE` (`last_update`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Flag';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Flag';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3968,6 +4755,7 @@ CREATE TABLE `core_flag` (
 LOCK TABLES `core_flag` WRITE;
 /*!40000 ALTER TABLE `core_flag` DISABLE KEYS */;
 INSERT INTO `core_flag` VALUES (1,'admin_notification_survey',0,'a:1:{s:13:\"survey_viewed\";b:1;}','2014-06-18 23:36:46');
+INSERT INTO `core_flag` VALUES (2,'catalog_product_flat',0,'a:2:{s:8:\"is_built\";b:1;s:16:\"is_store_built_1\";b:1;}','2014-06-18 23:46:39');
 /*!40000 ALTER TABLE `core_flag` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8090,15 +8878,15 @@ CREATE TABLE `index_process` (
 
 LOCK TABLES `index_process` WRITE;
 /*!40000 ALTER TABLE `index_process` DISABLE KEYS */;
-INSERT INTO `index_process` VALUES (1,'catalog_product_attribute','require_reindex',NULL,NULL,'real_time');
-INSERT INTO `index_process` VALUES (2,'catalog_product_price','require_reindex',NULL,NULL,'real_time');
-INSERT INTO `index_process` VALUES (3,'catalog_url','require_reindex','2014-06-18 23:34:50','2014-06-18 23:34:50','real_time');
-INSERT INTO `index_process` VALUES (4,'catalog_product_flat','require_reindex',NULL,NULL,'real_time');
-INSERT INTO `index_process` VALUES (5,'catalog_category_flat','require_reindex',NULL,NULL,'real_time');
-INSERT INTO `index_process` VALUES (6,'catalog_category_product','require_reindex','2014-06-18 23:34:50','2014-06-18 23:34:50','real_time');
-INSERT INTO `index_process` VALUES (7,'catalogsearch_fulltext','require_reindex','2014-06-18 23:34:50','2014-06-18 23:34:50','real_time');
-INSERT INTO `index_process` VALUES (8,'cataloginventory_stock','require_reindex',NULL,NULL,'real_time');
-INSERT INTO `index_process` VALUES (9,'tag_summary','require_reindex',NULL,NULL,'real_time');
+INSERT INTO `index_process` VALUES (1,'catalog_product_attribute','pending','2014-06-18 23:46:33','2014-06-18 23:46:33','real_time');
+INSERT INTO `index_process` VALUES (2,'catalog_product_price','pending','2014-06-18 23:46:34','2014-06-18 23:46:35','real_time');
+INSERT INTO `index_process` VALUES (3,'catalog_url','pending','2014-06-18 23:46:35','2014-06-18 23:46:36','real_time');
+INSERT INTO `index_process` VALUES (4,'catalog_product_flat','pending','2014-06-18 23:46:36','2014-06-18 23:46:40','real_time');
+INSERT INTO `index_process` VALUES (5,'catalog_category_flat','pending','2014-06-18 23:46:41','2014-06-18 23:46:44','real_time');
+INSERT INTO `index_process` VALUES (6,'catalog_category_product','pending','2014-06-18 23:46:44','2014-06-18 23:46:44','real_time');
+INSERT INTO `index_process` VALUES (7,'catalogsearch_fulltext','pending','2014-06-18 23:46:46','2014-06-18 23:46:46','real_time');
+INSERT INTO `index_process` VALUES (8,'cataloginventory_stock','pending','2014-06-18 23:46:33','2014-06-18 23:46:33','real_time');
+INSERT INTO `index_process` VALUES (9,'tag_summary','pending','2014-06-18 23:46:46','2014-06-18 23:46:46','real_time');
 /*!40000 ALTER TABLE `index_process` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8258,6 +9046,7 @@ CREATE TABLE `log_url` (
 
 LOCK TABLES `log_url` WRITE;
 /*!40000 ALTER TABLE `log_url` DISABLE KEYS */;
+INSERT INTO `log_url` VALUES (1,1,'2014-06-18 23:43:47');
 /*!40000 ALTER TABLE `log_url` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8273,7 +9062,7 @@ CREATE TABLE `log_url_info` (
   `url` varchar(255) DEFAULT NULL COMMENT 'URL',
   `referer` varchar(255) DEFAULT NULL COMMENT 'Referrer',
   PRIMARY KEY (`url_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Log URL Info Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -8282,6 +9071,7 @@ CREATE TABLE `log_url_info` (
 
 LOCK TABLES `log_url_info` WRITE;
 /*!40000 ALTER TABLE `log_url_info` DISABLE KEYS */;
+INSERT INTO `log_url_info` VALUES (1,'http://72.167.252.235/panachebeadco_new/store/',NULL);
 /*!40000 ALTER TABLE `log_url_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8300,7 +9090,7 @@ CREATE TABLE `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -8309,6 +9099,7 @@ CREATE TABLE `log_visitor` (
 
 LOCK TABLES `log_visitor` WRITE;
 /*!40000 ALTER TABLE `log_visitor` DISABLE KEYS */;
+INSERT INTO `log_visitor` VALUES (1,'8b8mivv7k6v38t1thtnigdjvl1','2014-06-18 23:43:45','2014-06-18 23:43:47',1,1);
 /*!40000 ALTER TABLE `log_visitor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8337,6 +9128,7 @@ CREATE TABLE `log_visitor_info` (
 
 LOCK TABLES `log_visitor_info` WRITE;
 /*!40000 ALTER TABLE `log_visitor_info` DISABLE KEYS */;
+INSERT INTO `log_visitor_info` VALUES (1,NULL,'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',NULL,'en-US,en;q=0.8',0,1204568254);
 /*!40000 ALTER TABLE `log_visitor_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12366,7 +13158,7 @@ CREATE TABLE `tax_calculation` (
   CONSTRAINT `FK_TAX_CALCULATION_CUSTOMER_TAX_CLASS_ID_TAX_CLASS_CLASS_ID` FOREIGN KEY (`customer_tax_class_id`) REFERENCES `tax_class` (`class_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_TAX_CALC_TAX_CALC_RATE_ID_TAX_CALC_RATE_TAX_CALC_RATE_ID` FOREIGN KEY (`tax_calculation_rate_id`) REFERENCES `tax_calculation_rate` (`tax_calculation_rate_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_TAX_CALC_TAX_CALC_RULE_ID_TAX_CALC_RULE_TAX_CALC_RULE_ID` FOREIGN KEY (`tax_calculation_rule_id`) REFERENCES `tax_calculation_rule` (`tax_calculation_rule_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12377,6 +13169,8 @@ LOCK TABLES `tax_calculation` WRITE;
 /*!40000 ALTER TABLE `tax_calculation` DISABLE KEYS */;
 INSERT INTO `tax_calculation` VALUES (1,1,1,3,2);
 INSERT INTO `tax_calculation` VALUES (2,2,1,3,2);
+INSERT INTO `tax_calculation` VALUES (3,3,2,3,5);
+INSERT INTO `tax_calculation` VALUES (4,5,3,3,6);
 /*!40000 ALTER TABLE `tax_calculation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12401,7 +13195,7 @@ CREATE TABLE `tax_calculation_rate` (
   KEY `IDX_TAX_CALC_RATE_TAX_COUNTRY_ID_TAX_REGION_ID_TAX_POSTCODE` (`tax_country_id`,`tax_region_id`,`tax_postcode`),
   KEY `IDX_TAX_CALCULATION_RATE_CODE` (`code`),
   KEY `CA799F1E2CB843495F601E56C84A626D` (`tax_calculation_rate_id`,`tax_country_id`,`tax_region_id`,`zip_is_range`,`tax_postcode`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation Rate';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation Rate';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12412,6 +13206,9 @@ LOCK TABLES `tax_calculation_rate` WRITE;
 /*!40000 ALTER TABLE `tax_calculation_rate` DISABLE KEYS */;
 INSERT INTO `tax_calculation_rate` VALUES (1,'US',12,'*','US-CA-*-Rate 1',8.2500,NULL,NULL,NULL);
 INSERT INTO `tax_calculation_rate` VALUES (2,'US',43,'*','US-NY-*-Rate 1',8.3750,NULL,NULL,NULL);
+INSERT INTO `tax_calculation_rate` VALUES (3,'US',61,'*','VA__VA__',5.3000,NULL,NULL,NULL);
+INSERT INTO `tax_calculation_rate` VALUES (4,'US',0,'*','US__VA__',5.3000,NULL,NULL,NULL);
+INSERT INTO `tax_calculation_rate` VALUES (5,'US',0,'*','NO TAX__VA__',0.0000,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `tax_calculation_rate` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12461,7 +13258,7 @@ CREATE TABLE `tax_calculation_rule` (
   PRIMARY KEY (`tax_calculation_rule_id`),
   KEY `IDX_TAX_CALC_RULE_PRIORITY_POSITION_TAX_CALC_RULE_ID` (`priority`,`position`,`tax_calculation_rule_id`),
   KEY `IDX_TAX_CALCULATION_RULE_CODE` (`code`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation Rule';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Tax Calculation Rule';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12471,6 +13268,8 @@ CREATE TABLE `tax_calculation_rule` (
 LOCK TABLES `tax_calculation_rule` WRITE;
 /*!40000 ALTER TABLE `tax_calculation_rule` DISABLE KEYS */;
 INSERT INTO `tax_calculation_rule` VALUES (1,'Retail Customer-Taxable Goods-Rate 1',1,1,0);
+INSERT INTO `tax_calculation_rule` VALUES (2,'Default',0,0,0);
+INSERT INTO `tax_calculation_rule` VALUES (3,'No Tax',0,0,0);
 /*!40000 ALTER TABLE `tax_calculation_rule` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12486,7 +13285,7 @@ CREATE TABLE `tax_class` (
   `class_name` varchar(255) NOT NULL COMMENT 'Class Name',
   `class_type` varchar(8) NOT NULL DEFAULT 'CUSTOMER' COMMENT 'Class Type',
   PRIMARY KEY (`class_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='Tax Class';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='Tax Class';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -12498,6 +13297,8 @@ LOCK TABLES `tax_class` WRITE;
 INSERT INTO `tax_class` VALUES (2,'Taxable Goods','PRODUCT');
 INSERT INTO `tax_class` VALUES (3,'Retail Customer','CUSTOMER');
 INSERT INTO `tax_class` VALUES (4,'Shipping','PRODUCT');
+INSERT INTO `tax_class` VALUES (5,'Default','PRODUCT');
+INSERT INTO `tax_class` VALUES (6,'No Tax','PRODUCT');
 /*!40000 ALTER TABLE `tax_class` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -13027,4 +13828,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-18 15:37:39
+-- Dump completed on 2014-06-18 16:06:47
