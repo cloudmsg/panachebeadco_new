@@ -1,0 +1,10 @@
+2014-06-19T21:44:13+00:00 DEBUG (7): Array
+(
+    [request] => <?xml version="1.0" encoding="UTF-8"?>
+<RateV4Request USERID="789PANAC7096"><Revision>2</Revision><Package ID="0"><Service>PRIORITY</Service><ZipOrigination>23233</ZipOrigination><ZipDestination>30087</ZipDestination><Pounds>0</Pounds><Ounces>0</Ounces><Container>FLAT RATE BOX</Container><Size>REGULAR</Size><Machinable>true</Machinable></Package></RateV4Request>
+
+    [result] => <?xml version="1.0" encoding="UTF-8"?>
+<RateV4Response><Package ID="0"><Error><Number>-2147219500</Number><Source>DomesticRatesV4;clsRateV4.ValidateWeight;RateEngineV4.ProcessRequest</Source><Description>Please enter the package weight.  </Description><HelpFile/><HelpContext>1000440</HelpContext></Error></Package></RateV4Response>
+    [__pid] => 39592
+)
+
