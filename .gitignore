@@ -36,4 +36,5 @@ Icon
 .Spotlight-V100
 .Trashes
 
-store/var/cache
+store/var/cache/
+store/var/session/
