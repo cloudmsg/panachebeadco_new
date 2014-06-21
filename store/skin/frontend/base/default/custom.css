@@ -1,0 +1,12 @@
+/* KJH */
+
+.nivo-caption {
+	display: none !important;
+}
+
+.free-shipping ul {
+	font-family: Arial !important;
+	list-style: inherit !important;
+	line-height: inherit !important;
+	margin-left: 2em !important;
+}
