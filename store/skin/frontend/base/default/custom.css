@@ -10,3 +10,20 @@
 	line-height: inherit !important;
 	margin-left: 2em !important;
 }
+
+.ves-hometab .hometab-nav li.tabs-0 a,
+.tabs li.first {
+	background: #BFAE80 !important;
+}
+.ves-hometab .hometab-nav li.tabs-1 a,
+.tabs li.tabs_1 {
+	background: #F8BE6A !important;
+}
+.ves-hometab .hometab-nav li.tabs-2 a,
+.tabs li.tabs_2 {
+	background: #5BBE90 !important;
+}
+
+.block-layered-nav .block-title, .block-progress .block-title {
+	background: url(../../default/ves_gift/images/default/bg-block-list-default.png) top left repeat-x !important;
+}
