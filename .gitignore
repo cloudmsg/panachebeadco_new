@@ -38,3 +38,5 @@ Icon
 
 store/var/cache/
 store/var/session/
+store/media/catalog/product/cache
+store/var/locks
