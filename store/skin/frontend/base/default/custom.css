@@ -27,3 +27,16 @@
 .block-layered-nav .block-title, .block-progress .block-title {
 	background: url(../../default/ves_gift/images/default/bg-block-list-default.png) top left repeat-x !important;
 }
+
+.addthis_horizontal_follow_toolbox {
+	padding: 10px !important;
+	background: white !important;
+	margin-bottom: 15px !important;
+}
+.addthis_horizontal_follow_toolbox .addthis_toolbox.addthis_default_style.addthis_32x32_style {
+	width: 144px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.productscroll-action {display:none!important; }
