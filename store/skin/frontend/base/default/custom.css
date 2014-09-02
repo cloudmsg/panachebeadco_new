@@ -1,7 +1,30 @@
 /* KJH */
 
-.nivo-caption {
+/*.nivo-caption {
 	display: none !important;
+}*/
+.nivo-caption .des {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent !important;
+}
+.nivo-caption .des a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "" !important;
+}
+.nivo-caption .des a>span,
+.nivo-caption .des p.lof-info {
+	display: none;
+}
+
+.footer-links .links .links-top .container .left {
+	float: none !important;
 }
 
 .free-shipping ul {
