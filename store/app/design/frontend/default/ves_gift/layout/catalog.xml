@@ -126,7 +126,17 @@ Category layered navigation layout
 
     <catalog_category_layered translate="label">
         <label>Catalog Category (Anchor)</label>
+        
+        <!-- Added by KJH 9/2/14 -->
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
         <reference name="left">
+            <block type="catalog/layer_view" name="catalog.leftnav" before="cart_sidebar" template="catalog/layer/view.phtml"/>
+        </reference>
+
+        <!-- Commented out by KJH 9/2/14 -->
+        <!-- <reference name="left">
             <block type="catalog/layer_view" name="catalog.leftnav" after="currency" template="catalog/layer/view.phtml"/>
 			<remove name="tags_popular"/>
 			<block type="tag/popular" name="right_tags_popular" after="content" template="tag/popular.phtml"/>			
@@ -148,7 +158,7 @@ Category layered navigation layout
                     <label>Shopping Cart Sidebar Extra Actions</label>
                 </block>
             </block>
-        </reference>
+        </reference> -->
         <reference name="content">
             <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
                 <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
